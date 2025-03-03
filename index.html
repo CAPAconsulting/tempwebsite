@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Temporary homepage</title>
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.7/dist/gsap.min.js"></script>
+    <style>
+        body {
+            margin: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            background: white;
+        }
+        .square {
+            width: 200px;
+            height: 200px;
+            background: white;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            opacity: 1;
+            position: relative;
+        }
+        .logo {
+            width: 200px;
+            height: 200px;
+            background: white;
+            z-index: 1;
+        }
+               .info {
+            width: 200px;
+            position: absolute;
+            height: 200px;
+            background: white;
+            z-index: 2;
+            opacity: 0;
+        }
+    </style>
+</head>
+<body>
+    <div class="square" id="square">
+        <img src="info.png" alt="Info" class="info" id="info">
+        <img src="logo2.png" alt="Logo" class="logo" id="logo">
+
+    </div>
+
+
+ <script>
+    	var tl = gsap.timeline();
+
+    		tl.to("#logo", {y: -300, duration: 0.3,  ease: "power2.out"})
+			tl.to("#logo", {y: -200, duration: 0.3,  ease: "power2.in"})
+			tl.to("#logo", {y: -250, duration: 0.2,  ease: "power2.out"})
+			tl.to("#logo", {y: -200, duration: 0.2,  ease: "bounce.out"})
+			tl.to("#logo", {rotation: 30, x: -50, transformOrigin: "bottom right",  duration: 0.3,  ease: "power2.inOut"})
+    		tl.to("#logo", {rotation: 90, y: -200,  x: -200,duration: 0.4, transformOrigin: "bottom right", ease: "power2.in"})
+    		tl.to("#info", {opacity: 1, duration: 0.4, delay: 0.6,  ease: "power2.out"});
+    </script>
+
+
+</html>
+
+
+
+
+
+
+
+
