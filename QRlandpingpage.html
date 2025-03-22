@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Landing Page</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+    <style>
+        body {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+            background-color: white;
+            color: #111;
+            font-family: Arial, sans-serif;
+            text-align: center;
+            padding: 20px;
+        }
+        .hidden { display: none; }
+        .btn {
+            width: min(50vw, 200px);
+            height: min(50vw, 200px);
+            background-color: white;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            border: 1px solid black;
+            font-size: 15px;
+            cursor: pointer;
+            text-decoration: none;
+            color: black;
+        }
+        .linkedin { background-color: #0077b5; }
+        .meeting { background-color: #28a745; }
+        .resume { background-color: #ffc107; color: black; }
+        .connect { background-color: #dc3545; }
+        .yes { background-color: #0077b5; }
+        .no { background-color: #dc3545; }
+        .next { background-color: #28a745; }
+        .buttons-grid {
+            display:  hidden;
+            grid-template-columns: repeat(2, min(50vw, 200px));
+            grid-template-rows: repeat(2, min(50vw, 200px));
+            gap: 10px;
+            padding: 10px;
+        }
+        .raleway{
+         font-family: "Raleway", sans-serif;
+         font-optical-sizing: auto;
+        font-weight: 550;
+        font-style: normal;
+        }
+
+    </style>
+</head>
+<body>
+    <h1 id="hi">Hi!</h1>
+
+    <div id="buttons-container" class="buttons-grid hidden raleway">
+        <a href="https://www.linkedin.com/in/nicolasvl" class="btn">Let's connect on LinkedIn</a>
+        <a href="/contact" class="btn">Book a meeting</a>
+        <a href="/resume.pdf" class="btn">My resume</a>
+        <a href="/questionnaire" class="btn">Can we mean something to each other?</a>
+    </div>
+
+    <script>
+        function showGrid() {
+            document.querySelector('.buttons-grid').style.display = 'grid';
+        }
+    </script>
+
+    <script>
+    
+        gsap.to("#hi", { opacity: 0, duration: 1.5, delay: 1, onComplete: function() {
+            document.getElementById("hi").classList.add("hidden");
+            document.getElementById("buttons-container").classList.remove("hidden");
+            gsap.call(showGrid());
+
+        }});
+    </script>
+</body>
+</html>
