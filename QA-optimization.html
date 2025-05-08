@@ -1,0 +1,1593 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta name="description" content="CAPA Consulting's QA Optimization service helps pharmaceutical and medical companies achieve compliance while maximizing operational efficiency through strategic risk management.">
+	<meta name="keywords" content="QA Optimization, Quality Risk Management, Pharmaceutical Compliance, QMS Optimization, GMP Compliance, CAPA Process, Quality Assurance Consulting">
+	<meta property="og:title" content="QA Optimization Services | CAPA Consulting">
+	<meta property="og:description" content="Transform your quality assurance from cost center to strategic asset with our data-driven QA Optimization framework.">
+	<meta property="og:image" content="https://www.capaconsulting.be/logo-center-home.png">
+	<meta property="og:url" content="https://www.capaconsulting.be/QA-optimization">
+	<meta property="og:type" content="website">
+
+
+	<link rel="icon" href="logo-small-home.png" />
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Inter+Tight:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css2?family=Frank+Ruhl+Libre:wght@300..900&display=swap" rel="stylesheet">
+
+	<script src="https://cdn.jsdelivr.net/npm/gsap@3.12.7/dist/gsap.min.js"></script>
+	<script src="https://cdn.jsdelivr.net/npm/gsap@3.12.7/dist/ScrollToPlugin.min.js"></script>
+	<script src="https://cdn.jsdelivr.net/npm/gsap@3.12.7/dist/ScrollTrigger.min.js"></script>
+	<script>
+  		(function(h,o,t,j,a,r){
+      h.hj=h.hj||function(){(h.hj.q=h.hj.q||[]).push(arguments)};
+      h._hjSettings={hjid:5326149,hjsv:6};
+      a=o.getElementsByTagName('head')[0];
+      r=o.createElement('script');r.async=1;
+      r.src=t+h._hjSettings.hjid+j+h._hjSettings.hjsv;
+      a.appendChild(r);
+  		})(window,document,'https://static.hotjar.com/c/hotjar-','.js?sv=');
+  </script>
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Organization",
+    "name": "CAPA Consulting",
+    "url": "https://www.capaconsulting.be",
+    "email": "nicolas@CAPAconsulting.be",
+    "description": "Consulting in QA, QP/RP, and compliance for pharmaceutical and medical industries",
+    "address": {
+      "@type": "PostalAddress",
+      "addressCountry": "BE"
+    }
+  }
+  </script>
+
+
+	<title>CAPA Consulting – Quality Assurance Optimization</title>
+
+	<style>
+
+
+/* 
+######################################    HEADER CSS ####################################
+ */
+	body { 
+  		margin: 0px;
+ 		}
+
+ 	body::-webkit-scrollbar {
+ 		width:  0.25rem;
+ 		}
+ 	body::-webkit-scrollbar-track {
+ 		background: rgba(250,250,252,0.8);
+ 		}
+ 	body::-webkit-scrollbar-thumb {
+ 		background: #1d1d1f;
+ 		}
+
+		.header-container-outer {  
+			display: grid;
+		  grid-template-columns: 1fr minmax(0,1100px) 1fr;
+		  grid-template-rows: 45px 0px;
+		  background-color: rgba(250,250,252,0.8);
+		  position:  sticky;
+		  top:  0;
+		  transition: 200ms ease;
+		  z-index: 2;
+			}
+
+		.header-container-outer:hover {  
+		  grid-template-rows: 45px 100px;
+		  transition: 200ms ease;
+			}
+
+
+		.header-container-inner {
+			display: grid;
+			width: 100%;
+			grid-template-columns: 0.5fr 1fr 1fr 1fr 1fr;
+			grid-column-start: 2;
+			grid-column-end: 3;
+   		font-family: "Inter Tight", sans-serif;
+ 		  	font-size: 12px;
+   		font-weight: 400;
+   		justify-content: stretch;
+   		align-items: center;
+   		color: #1d1d1f;
+   		overflow: visible;
+		}
+
+		.header-element-image {
+			width: 12px;
+			padding: 10px;
+		}
+
+		.header-element-text {
+			justify-self: end;
+			color: inherit;
+			text-decoration: none;
+			padding-right: 5px;
+		}
+
+		.header-element-services-container {
+		  grid-row: 2;
+		  grid-column: 2;
+		  opacity: 0;
+		  display: grid;
+		  grid-template-columns: 1fr;
+		  margin-top: 10px;
+		  gap: 15px;
+		  transition: opacity 200ms ease;
+		  justify-items: end;
+		  align-items: end;
+		}
+
+		.header-container-outer:hover .header-element-services-container {
+			opacity: 1;
+		}
+
+		.header-element-text-services {
+		  display: block;
+		  color: inherit;
+		  text-decoration: none;
+		}
+
+/* 
+######################################    FOOTER CSS ####################################
+ */
+    .footer-container-outer {  
+			display: grid;
+		  	grid-template-columns: 1fr minmax(0,1100px) 1fr;
+		  	grid-template-rows: 90vh;
+		  	background-color: white;
+		  	grid-gap: 12px;
+		  	overflow-x: hidden;
+		}
+
+		.footer-container-inner {
+			display: grid;
+			grid-template-rows: 0.1fr 0.33fr 0.66fr;
+		  	grid-template-columns: 1fr minmax(0,1100px) 1fr;
+			grid-column: 1/4;
+		  	background-color: #333336;
+		}
+
+		.sub-container-footer-top {
+			display: grid;
+			grid-column: 2/3;
+			grid-row: 2/3;
+		  	grid-template-columns: 2fr repeat(3, 1fr) 2fr;
+		}
+
+		.sub-container-footer-bottom {
+			display: grid;
+			grid-column: 2/3;
+			grid-row: 3/4;
+		}
+
+		.sub-sub-container-footer-top {
+			display: grid;
+		  	grid-template-rows: 1fr 1fr 1fr;
+		}
+
+		.footer-logo {
+			justify-self: center;
+			align-self: center;
+			height:  250px;
+		}
+
+		.footer-text-middle {
+			justify-self: center;
+			align-self: start;
+   		font-family: "Inter Tight", sans-serif;
+ 		  	font-size: 17px;
+   		font-weight: 400;
+   		color:  #e8e8ed;
+   		padding: 0;
+   		margin: 0;
+		}
+
+		.footer-text-right {
+			justify-self: end;
+			align-self: start;
+   		font-family: "Inter Tight", sans-serif;
+ 		  	font-size: 17px;
+   		font-weight: 400;
+   		color:  #e8e8ed;
+   		padding: 0;
+   		margin: 0;
+		}
+
+		.footer-text-left-row-1 {
+			grid-row: 1;
+			justify-self: start;
+			align-self: start;
+   		font-family: "Inter Tight", sans-serif;
+ 		  	font-size: 17px;
+   		font-weight: 400;
+   		color:  #e8e8ed;
+		}
+
+		.footer-text-left-row-2 {
+			grid-row: 2;
+			justify-self: start;
+			align-self: start;
+   		font-family: "Inter Tight", sans-serif;
+ 		  	font-size: 17px;
+   		font-weight: 400;
+   		color:  #e8e8ed;
+   		padding: 0;
+			margin: 0;
+		}
+
+
+		.bold {
+			font-weight: 700;
+			padding: 0;
+			margin: 0;
+
+		}
+		.antibototics {
+			padding-top: 5px;
+			height: 19px;
+		}
+
+
+
+
+    
+
+
+
+/* 
+######################################    MAIN CSS ####################################
+ */
+    .main-container-outer {  
+			display: grid;
+		  	grid-template-columns: 1fr minmax(0,1100px) 1fr;
+		  	grid-template-rows: auto auto auto auto auto;
+		  	background-color: white;
+		  	grid-gap: 12px;
+		  	overflow-x: hidden;
+		}
+
+    .main-container-inner-gray-1 {  
+			display: grid;
+		  	grid-template-columns: 1fr minmax(0,1100px) 1fr;
+		  	background-color: #f5f5f7;
+		  	grid-column: 1/4;
+		  	grid-row: 1/2;
+			}
+
+    .sub-container-inner-gray-1 {  
+			display: grid;
+		  	grid-template-rows: 13% 15% 50% 22%;
+		  	grid-template-columns: 23.2fr 76.8fr;
+		  	background-color: #f5f5f7;
+		  	grid-column: 2/3;
+		  	grid-row: 1/2;
+		}
+
+    .main-container-inner-gray-3 {  
+			display: grid;
+		  	grid-template-columns: 1fr minmax(0,1100px) 1fr;
+		  	background-color: #f5f5f7;
+		  	grid-column: 1/4;
+		  	grid-row: 3/4;
+		}
+
+    .sub-container-inner-gray-3 {  
+			display: grid;
+		  	grid-template-columns: 45% 10% 45%;
+		  	grid-template-rows: auto auto auto auto;
+		  	background-color: #f5f5f7;
+		  	grid-column: 2/3;
+		  	grid-row: 1/2;
+		}	  
+
+
+	  .main-container-inner-gray-5 {  
+			display: grid;
+		  	grid-template-columns: 1fr minmax(0,1100px) 1fr;
+		  	grid-template-rows: auto auto auto;
+		  	background-color: #f5f5f7;
+		  	grid-column: 1/4;
+		  	grid-row: 5/6;
+		}
+
+		.sub-container-inner-2 {
+			display: grid;
+			grid-template-rows: auto auto auto;
+			grid-row: 2/3;
+			grid-column: 2/3;
+		}
+
+		.sub-sub-container-inner-2 {
+			display: grid;
+			grid-row: 2/3;
+			grid-template-rows: 44% 56%;
+		}
+
+		.sub-sub-sub-inner-2-text-div {
+			grid-row: 1/2;
+		}
+
+		.sub-sub-sub-inner-2-text-plot {
+			grid-row: 2/3;
+			width: 45vw ;
+			align-self: center;
+			justify-self: center;
+			margin-bottom: 100px;
+		}
+
+
+		.sub-container-inner-4 {
+			display: grid;
+			grid-template-rows: 0.09fr 0.285fr 0.285fr 0.319fr 0.021fr;
+			grid-row: 4/5;
+			grid-column: 2/3;
+			grid-gap: 20px;
+		}
+
+		.sub-sub-container-inner-4-top {
+			display: grid;
+			grid-template-rows: 32.8% 67.2%;
+			grid-row: 2/3;
+			grid-column: 2/3;
+		}
+
+		.sub-sub-container-inner-4-middle {
+			display: grid;
+			grid-template-rows: 32.8% 67.2%;
+			grid-row: 3/4;
+			grid-column: 2/3;
+		}
+
+		.sub-sub-container-inner-4-bottom {
+			display: grid;
+			grid-template-rows: 28% 72%;
+			grid-row: 4/5;
+			grid-column: 2/3;
+		}
+
+		.menu-background-2 {
+			background-color: #f5f5f7;
+			border-radius: 12px;
+			padding: 10px;
+			margin: 5px;
+			justify-self: stretch;
+		}
+
+		.sub-container-inner-3-left {
+			display: grid;
+			grid-template-rows: auto auto auto auto;
+			grid-template-columns: 20% 80%;
+			grid-column: 1/2;
+			grid-row: 3/4;
+		}
+
+		.sub-container-inner-3-right {
+			display: grid;
+			grid-template-rows: auto auto auto auto;
+			grid-template-columns: 20% 80%;
+			grid-column: 3/4;
+			grid-row: 3/4;
+		}
+
+		.menu-background-3 {
+			background-color: #ffffff;
+			border-radius: 12px;
+			padding: 10px;
+			margin: 20px;
+			justify-self: stretch;
+		}
+
+
+/* VANAF HIER VERDER IN DETAIL */
+
+		.symbol-top {
+			grid-row: 1/3;
+			grid-column: 1/2;
+			max-height: 100%;
+			justify-self:  center;
+			padding-top: 10px;
+			}
+
+		.text-top-title-div {
+			grid-row: 1/2;
+			grid-column: 2/3;
+   		align-self: end;
+   		justify-self: start;
+			}
+
+		.text-top-title-p {
+   			font-family: "Inter Tight", sans-serif;
+ 		  		font-size: 32px;
+   			font-weight: 500;
+   			color:  #1d1d1f;
+   			padding: 0;
+   			margin: 0;
+			}
+
+		.text-top-subtitle-div {
+			grid-row: 2/3;
+			grid-column: 2/3;
+   		align-self: end;
+   		justify-self: start;
+			}
+
+		.text-top-subtitle-p {
+   			font-family: "Inter Tight", sans-serif;
+ 		  		font-size: 32px;
+   			font-weight: 500;
+   			color:  #6e6e73;
+   			padding: 0;
+   			margin: 0;
+			}
+
+		.text-body-1-div {
+			grid-row: 3/4;
+			grid-column: 1/3;
+   		align-self: center;
+   		justify-self: start;
+			}
+
+		.text-body-p {
+   			font-family: "Inter Tight", sans-serif;
+ 		 		font-size: 17px;
+   			font-weight: 400;
+   			color:  #1d1d1f;
+   			justify-self: align;
+   			padding: 10px;
+   			margin: 0;
+    		text-align: justify;
+
+			}
+
+		.text-title-2-div {
+			grid-row: 1/2;
+			grid-column: 1/2;
+			align-self: center;
+			justify-self: start;
+			}
+
+		.text-title-3-div {
+			grid-row: 1/2;
+			grid-column: 1/4;
+			align-self: center;
+			justify-self: end;
+			}
+
+		.text-title-2-p {
+			font-family: "Frank Ruhl Libre", serif;
+			font-size:  4em;
+		  	font-optical-sizing: auto ;
+		  	font-weight: 300;
+		  	font-style: normal;
+		  	align-self: center;
+		  	justify-self: center;
+			}
+
+		.text-body-3-div {
+			grid-row: 2/3;
+			grid-column: 1/4;
+			}
+
+		.text-title-4-div {
+			grid-row: 1/2;
+			grid-column: 1/3;
+			align-self: center;
+			justify-self: center;
+			}
+
+		.text-title-4-p {
+			font-family: "Frank Ruhl Libre", serif;
+			font-size:  4em;
+		  	font-optical-sizing: auto ;
+		  	font-weight: 300;
+		  	font-style: normal;
+		  	align-self: center;
+		  	justify-self: center;
+			}
+
+		.phases-diagram {
+			grid-row: 2/5;
+			grid-column: 1/2;
+			width: 215px;
+			padding-left: 15px;
+			padding-right:  25px;
+			align-self: center;
+		}
+
+
+		.white-box {
+			grid-row: 2/5;
+			grid-column: 1/2;
+			width: 250px;
+			padding-left: 15px;
+			padding-right:  25px;
+			align-self: start;
+			z-index: 2;
+			}
+
+		.symbols-target {
+			height: 60px;
+			justify-self: center;
+			align-self: center;
+		}
+
+		.title-target-p {
+			font-family: "Inter Tight", sans-serif;
+		  	font-size: 28px;
+			font-weight: 500;
+			color:  #1d1d1f;
+			padding: 0;
+			margin: 0;
+			justify-self: start;
+			align-self: center;
+			}
+
+		.title-phases-p {
+			font-family: "Inter Tight", sans-serif;
+		  	font-size: 28px;
+			font-weight: 500;
+			color:  #1d1d1f;
+			padding: 10px;
+			margin: 0;
+			justify-self: start;
+			align-self: start;
+			}
+
+
+		.text-target-1 {
+			grid-row: 2/3;
+			grid-column: 1/3;
+			padding:  10px;
+			}
+
+		.text-target-2 {
+			grid-row: 3/4;
+			grid-column: 1/3;
+			padding: 10px;
+			}
+
+		.text-target-3 {
+			grid-row: 4/5;
+			grid-column: 1/3;
+			padding: 10px;
+			}
+
+		.text-top-title-5-div {
+			grid-row: 1/2;
+			grid-column: 2/3;
+			place-self: stretch;
+			}
+
+
+		.text-body-5-div {
+			grid-row: 2/3;
+			grid-column: 2/3;
+	   		align-self: center;
+	   		justify-self: start;
+			}
+
+		.webtest {
+			mask-image:  linear-gradient(to top, black 90%, transparent);
+		}
+.button-layout-div {
+  grid-row: 3/4;
+  grid-column: 2/3;
+  place-self: center;
+  margin: 50px;
+}
+
+.button-layout {
+  background-color: transparent;
+	border: 1px solid #1d1d1f;
+  font-family: "Inter Tight", sans-serif;
+  font-size: 17px;
+  color: #6e6e73;
+  padding: 10px;
+  margin: 20px;
+  border-radius: 20px;
+  border-color: #6e6e73;
+  text-decoration: none;
+}
+
+.button-layout:hover {
+  background-color: #ffffff;
+  cursor: pointer;
+}
+
+
+
+
+		@media (max-width: 768px) {
+
+		  .sub-container-inner-2-gray {
+		    grid-template-columns: 1fr;}
+		  .sub-container-inner-3-gray {
+		    grid-template-columns: 1fr;}
+		   .main-container-outer {  
+			grid-template-rows: auto;}
+			.header-container-inner	{
+			grid-template-columns: 	repeat(5, auto);}
+
+		  .sub-container-footer-top {
+	    	grid-template-columns: 1fr;
+	    	text-align: center;
+	    	justify-items: center;}
+
+		  .sub-sub-container-footer-top {
+	    	grid-template-rows: auto;}
+
+		  .footer-text-middle,
+		  .footer-text-right,
+		  .footer-text-left-row-1,
+		  .footer-text-left-row-2 {
+		    justify-self: center;
+		    text-align: center;}
+
+		  .footer-logo {
+		    height: 150px;}
+
+		  .footer-container-inner {
+		    grid-template-rows: auto auto auto;}
+
+		  .sub-container-inner-1,
+		  .sub-container-inner-2,
+		  .sub-container-inner-3,
+		  .sub-container-inner-4 {
+		    grid-template-columns: 1fr !important;
+		  }
+
+		  .sub-sub-container-inner-2,
+		  .sub-sub-container-inner-3 {
+		    grid-template-columns: 1fr !important;
+		  }
+		  .symbol-top {
+		  	width: 100px;
+		  }
+		  .sub-container-inner-gray-3 {
+		    grid-template-columns: 1fr;
+		  }
+  .main-container-outer,
+  .main-container-inner-gray-1,
+  .main-container-inner-gray-3,
+  .main-container-inner-gray-5,
+ {
+    grid-template-columns: 1fr;
+  }
+
+  .text-title-2-p {
+  	padding: 20px;
+  }
+
+
+
+
+  .sub-container-inner-gray-1,
+  .sub-container-inner-2,
+  .sub-sub-container-inner-2,
+  .sub-container-inner-4,
+  .sub-sub-container-inner-4-top,
+  .sub-sub-container-inner-4-middle,
+  .sub-sub-container-inner-4-bottom {
+    grid-template-columns: 1fr;
+  }
+   .symbol-top {
+    width: 80px;
+    height: auto;
+    justify-self: right;
+    align-self: end;
+    margin-bottom: 10px;
+    padding: 10px 20px;
+    grid-row: 1/2;
+  }
+  .text-top-title-div {
+  	grid-column: 1/2;
+  	grid-row: 2/3;
+  	padding: 10px 20px;
+  }
+
+  .text-top-subtitle-div {
+  	grid-column: 1/2;
+  	grid-row: 3/4;
+  	padding: 10px 20px;
+  	padding-bottom: 30px;
+
+  }
+  .text-body-1-div {
+  	grid-column: 1/2;
+  	grid-row: 4/5;
+
+  }
+  .text-body-p {
+  	padding: 10px 20px;
+  }
+
+  .selector {
+  	padding-bottom: 40px;
+  }
+
+  .selector2 {
+  	padding: 10px;
+
+  }
+
+
+  .sub-sub-sub-inner-2-text-plot {
+    width: 80vw;
+    margin-bottom: 10px;
+  }
+
+  .phases-diagram {
+    width: 180px;
+    padding: 0;
+    justify-self: center;
+  }
+
+    .sub-container-inner-gray-1 {  
+		  	grid-template-rows: auto auto auto auto;
+		}
+
+    .sub-container-inner-gray-1 {  
+		 grid-template-rows: auto auto auto auto;
+		}
+
+		.sub-container-inner-2 {
+		grid-template-rows: auto auto auto;
+		}
+
+		.sub-sub-container-inner-2 {
+			grid-template-rows: auto auto;
+		}
+
+
+/* pagina 3 */
+
+    .sub-container-inner-gray-3 {  
+		  	grid-template-rows: auto auto auto auto;
+		  	grid-template-columns: 1fr;
+
+		}	
+
+		.text-title-3-div {
+			grid-row: 1/2;
+			grid-column: 1/2;
+			}
+
+		.text-body-3-div {
+			grid-row: 2/3;
+			grid-column: 1/2;
+			}
+
+		.sub-container-inner-3-left {
+			grid-template-rows: auto auto auto auto;
+			grid-template-columns: 30% 70%;
+			grid-column: 1/2;
+			grid-row: 3/4;
+			margin: 15px;
+		}
+
+		.sub-container-inner-3-right {
+			grid-template-rows: auto auto auto auto;
+			grid-template-columns: 30% 70%;
+			grid-column: 1/2;
+			grid-row: 4/5;
+			margin: 15px;
+		}
+
+
+
+
+/* pagina 4 */
+
+		.sub-container-inner-4 {
+			grid-template-rows: auto auto auto auto auto;
+			grid-gap: 5px;
+		}
+
+		.sub-sub-container-inner-4-top {
+			grid-template-rows: auto auto;
+			grid-row: 2/3;
+			grid-column: 1/2;
+		}
+
+		.sub-sub-container-inner-4-middle {
+			grid-template-rows: auto auto;
+			grid-row: 3/4;
+			grid-column: 1/2;
+		}
+
+		.sub-sub-container-inner-4-bottom {
+			grid-template-rows: auto auto;
+			grid-row: 4/5;
+			grid-column: 1/2;
+		}
+		.phases-diagram {
+			display: none;
+			grid-row: 5/6;
+		}
+		.white-box {
+			display: none;
+			grid-row: 5/6;
+		}
+
+.button-layout-div {
+  grid-column: 1/2;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+		}
+
+	</style>
+
+</head>
+
+<body>
+	<header class="header-container-outer" role="banner">
+		<nav class="header-container-inner" role="navigation">
+			<a href="/index" >
+				<img src="logo-small-home.png" class="header-element-image">
+			</a>
+			<p class="header-element-text"> Services </p>
+			<a href="/about-CAPA" class="header-element-text">
+				About CAPA
+			</a>
+			<a href="/cases" class="header-element-text">
+				Cases
+			</a>
+			<a href="/contact" class="header-element-text">
+				Contact Us
+			</a>
+			<div class="header-element-services-container">
+			<a href="/QA-services" class="header-element-text-services">
+				QA Services
+			</a>
+			<a href="/QPRP-services" class="header-element-text-services">
+				QP/RP Services
+			</a>
+			<a href="/QA-optimization" class="header-element-text-services">
+				QA Optimization
+			</a>
+		</div>
+		</nav>
+	</header>
+
+
+<main class="main-container-outer">
+
+	<div class="main-container-inner-gray-1">
+		<div class="sub-container-inner-gray-1">
+			
+			<img src="symbol-QA-optimization.png" alt="Symbol QA Optimization" class="symbol-top">
+
+			<div class="text-top-title-div">
+				<h1 class="text-top-title-p"><b>QA <br>Optimization</b></h1>
+			</div>
+
+
+			<div class="text-top-subtitle-div">
+				<p class="text-top-subtitle-p">Unlocking Opportunities through Strategic Risk Management.</p>
+			</div>
+
+			<div class="text-body-1-div">
+				<p class="text-body-p"><b>QA Optimization</b> is a structured, three-phase process designed to identify risks and harness opportunities within your organization. Built on the solid foundation of <b>Quality Risk Management (QRM)</b> principles, this process addresses both <b>compliance and business risks in a unified approach,</b> ensuring your Quality Assurance (QA) remains fully compliant while optimizing operational and economic efficiency.</p><br>
+
+				<p class="text-body-p">We combine <b>data analysis, risk management tools</b> and <b>transparent risk communication</b> throughout the entire process. This methodology ensures that your QA system is not just compliant, but strategically positioned to thrive going forward.</p><br>
+
+				<p class="text-body-p selector">In short, through QA Optimization, we bring our motto to life: <b>“Quality is an investment, not a cost”</b>.</p>
+			</div>
+
+		</div>
+
+	</div>
+
+	<div class="sub-container-inner-2">
+		<div class="text-title-2-div">
+			<h2 class="text-title-2-p">What is the objective?</h2>
+		</div>
+
+		<div class="sub-sub-container-inner-2 menu-background-2">
+			<div class="sub-sub-sub-inner-2-text-div">
+			<p class="text-body-p selector2">
+				When <b>compliance is not met, risks emerge</b> — risks that carry <b>hidden costs</b> for your organization. On the other hand, full compliance often demands significant commitment. In practice, it is not uncommon to find that <b>processes are overengineered, exceeding legal requirements</b>. Although well-intentioned, this can lead to unnecessary complexity, inefficiency, and again, <b>hidden costs</b>. QA Optimization seeks to strike the right balance by identifying where compliance gaps exist and where overperformance adds no real value. Subsequently, these <b>inefficiencies are resolved</b> through targeted improvements.
+			</p> <br>
+
+			<p class="text-body-p selector2">
+				The ultimate objective is to position your organization within the <b>“CAPA-region”</b> (see plot below) — a conceptual zone where compliance is maintained, and economic efficiency is maximized. In doing so, your organization can <b>transform compliance from a static obligation into a dynamic source of continuous improvement</b>.
+			</p>
+			</div>
+
+			<img src="plot-CAPA-region.png" alt="CAPA plot" class="sub-sub-sub-inner-2-text-plot">
+		</div>
+	</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+	<div class="main-container-inner-gray-3">
+		<div class="sub-container-inner-gray-3">
+
+			<div class="text-title-3-div">
+				<h2 class="text-title-2-p">Who is the target audience?</h2>
+			</div>
+
+			<div class="text-body-3-div">
+				<p class="text-body-p">
+					Every business deserves a <b>QMS that drives growth, not frustration</b>. Whether your company is scaling rapidly or has a long-established framework, inefficiencies in QA can stifle progress, drain resources, and leave you vulnerable to compliance risks.
+				</p>
+			</div>
+
+			<div class="sub-container-inner-3-left menu-background-3">
+				<img src="symbol-Startup-SME.png" alt="Symbol Startup & SME" class="symbols-target">
+
+				<h3 class="title-target-p"><b>Startups and SMEs</b></h3>
+				<p class="text-target-1 text-body-p selector2">Startups and SMEs often rely on iterative QMS development, guided by periodic audits and the PDCA (Plan-Do-Check-Act) cycle. While this approach is tried-and-true, it’s inherently slow and reactive. 
+				</p>
+				<p class="text-target-2 text-body-p selector2">
+					<b>Challenges include:</b> <br><br>
+					
+					<span>&#8226;</span> <b>Short term fixes over Strategic Solutions:</b> Audit findings or deviations often lead to “duct tape” fixes, which in turn accumulate technical debt. <br>
+					<span>&#8226;</span> <b>Delayed maturity:</b> Without proactive guidance, gaps persist, exposing your organisation to avoidable risks.
+				</p>
+
+				<p class="text-target-3 text-body-p selector2">
+					<b>Our solution:</b><br> 
+					We accelerate your journey from <b>“nascent” to “mature”</b> by aligning your QMS with industry standards. We eliminate redundancy, automate workflows where possible, and turn audits into opportunities.
+				</p>
+			</div>
+
+			<div class="sub-container-inner-3-right menu-background-3">
+				<img src="symbol-Established.png" alt="Symbol Established player" class="symbols-target">
+
+				<h3 class="title-target-p"><b>Established players</b></h3>
+				<p class="text-body-p text-target-1 selector2">Mature QMS frameworks often become tangled webs of legacy processes, shaped by evolving regulations, leadership changes, and ad-hoc adjustments. While functional, these systems often harbor hidden risks.
+				</p>
+
+				<p class="text-body-p text-target-2 selector2">
+					<b>Challenges include:</b> <br><br>
+					
+					<span>&#8226;</span> <b>Institutionalized inefficiency:</b> “This is how we’ve always done it” - mentalities mask redundant steps, inflated costs, and compliance blind spots.<br>
+					<span>&#8226;</span> <b>Stakeholder Bias:</b> Internal teams, accustomed to existing workflows, may overlook optimization opportunities.
+				</p>
+
+				<p class="text-body-p text-target-3 selector2">
+					<b>Our solution:</b><br> 
+					As unbiased external party, we bring fresh eyes to your QMS. Through analysis, we identify inefficiencies, align processes with current best practices, and prioritize high-impact changes that balance compliance with agility.
+				</p>
+			</div>
+
+		</div>
+	</div>
+
+
+
+
+
+
+	<div class="sub-container-inner-4">
+		<div class="text-title-4-div">
+			<h2 class="text-title-2-p">The 3 Phases of QA Optimization</h2>
+		</div>
+
+		<img src="Flow QA Optimization.png" alt="QA Optimization flow" class="phases-diagram">
+		<img src="white-box.png" alt="white box" class="white-box webtest">
+
+		<div class="sub-sub-container-inner-4-top menu-background-2">
+			<h3 class="title-phases-p"> Phase I: <br> Risk Identification </h3>
+			<p class="text-body-p selector2"> Every successful QA transformation begins with clarity. Through a <b>collaborative self-inspection process,</b> we identify risks, inefficiencies, and opportunities. This phase is designed to build mutual trust, providing actionable insights without requiring full commitment upfront. <br> <br>
+			<b>Deliverable:</b> <br>
+			Self-Inspection Report (and with that, you already resolved the periodic requirement to conduct a self-inspection).
+			</p>
+			
+		</div>
+
+		<div class="sub-sub-container-inner-4-middle menu-background-2">
+			<h3 class="title-phases-p"> Phase II: <br> Risk Analysis & Evaluation </h3>
+			<p class="text-body-p selector2"> With risks, inefficiencies and opportunities identified, we shift to <b>analysis and prioritization</b>. We analyse the risks associated with identified hazards and evaluate these against established risk criteria. Together, we decide on control strategies to either reduce or accept these risks, culminating in a substantiated, action-ready CAPA plan. <br> <br>
+			<b>Deliverable:</b> <br>
+			Executable CAPA-plan
+			</p>
+		</div>
+
+		<div class="sub-sub-container-inner-4-bottom menu-background-2">
+			<h3 class="title-phases-p"> Phase III: <br> Risk Reduction & Acceptance </h3>
+			<p class="text-body-p selector2"> Execution is where <b>strategy becomes reality</b>. The final phase involves <b>executing, or guiding</b> your team through the implementation of the CAPA plan. The process <b>concludes with a Verification of Effectiveness (VoE)</b> to ensure that solutions are sustainable and aligned with your goals. <br>
+			 <br> <br>
+			<b>Deliverable:</b> <br>
+			Optimized, resilient and clutterless QA System that doesn’t just get you through audits but forms a strong foundation that helps your organization grow.
+			</p>
+		</div>
+
+	</div>
+
+	<div class="main-container-inner-gray-5">
+		<div class="text-top-title-5-div">
+			<h2 class="text-title-2-p">Eager to optimize?</h2>
+		</div>
+
+		<div class="text-body-5-div">
+		
+		<p class="text-body-p">
+			Why settle for constant, slow, reactive fixes when you get the opportunity to proactively act? Whether you need targeted support in a single phase or end-to-end guidance, <b>we’re here.</b> 
+			<br><br>
+			Let’s get in touch to discuss.
+		</p>
+
+		</div>
+		<div class="button-layout-div">
+			<a href="/contact-us" class="button-layout">Contact us</a>
+		</div>
+		
+	</div>
+
+</main>
+
+<footer class="footer-container-outer" role="contentinfo">
+	<div class="footer-container-inner">
+		<div class="sub-container-footer-top">
+
+			<div class="sub-sub-container-footer-top">
+				<div class="footer-text-left-row-1">
+					<p class="bold">CAPA Consulting</p>
+					<p class="bold">BE1022.648.333</p>
+				</div>
+				<div class="footer-text-left-row-2">
+					<p class="footer-text-left-row-2">nicolas@CAPAconsulting.be</p>
+					<img src="telefoonnummer.PNG" class="antibototics" alt="Telephone number">
+				</div>
+			</div>
+
+			<div class="footer-text-middle">
+				<a href="/terms-of-use" class="footer-text-right">Terms of use</a>
+			</div>
+
+			<div class="footer-text-middle">
+				<p class="footer-text-middle"></p>
+			</div>
+
+			<div class="footer-text-middle">
+				<a href="/privacy-policy" class="footer-text-right">Privacy Policy</a>
+			</div>
+
+			<div class="sub-sub-container-footer-top">
+				<a class="footer-text-right bold" id="backToTop" style="cursor: pointer;">Back to top</a>
+				<p class="footer-text-right">CAPA Consulting copyrights</p>
+			</div>
+
+		</div>
+
+		<div class="sub-container-footer-bottom">
+			<a href="/index" class="footer-logo"><img src="logo-footer.png" class="footer-logo"></a>
+		</div>
+
+	</div>
+	
+</footer>
+
+<script>
+  document.getElementById('backToTop').addEventListener('click', function () {
+    gsap.to(window, { duration: 1, scrollTo: 0, ease: "power3.inOut" });
+  });
+</script>
+
+
+
+
+
+
+
+
+  <script>
+    document.addEventListener("DOMContentLoaded", () => {
+      const elements = document.querySelectorAll('.fade-in-up');
+      elements.forEach((el, index) => {
+        el.style.animationDelay = `${index * 100}ms`;
+      });
+    });
+  </script>
+
+	<script>
+	    gsap.registerPlugin(ScrollTrigger);
+	    ScrollTrigger.matchMedia({
+	      "(min-width: 769px)": function() {
+
+	        gsap.from(".symbol-top", {
+	          scrollTrigger: {
+	            trigger: ".symbol-top",
+	            start: "top 70%",
+	            toggleActions: "play none none none",
+	          },
+	          opacity: 0,
+	          y: 30,
+	          scale: 1,
+	          duration: 0.7,
+	        });
+
+	        gsap.from(".text-top-title-div", {
+	          scrollTrigger: {
+	            trigger: ".symbol-top",
+	            start: "top 80%",
+	            toggleActions: "play none none none",
+	          },
+	          opacity: 0,
+	          y: 30,
+	          scale: 1,
+	          duration: 0.7,
+	          delay: 0.2,
+	        });
+
+	        gsap.from(".text-top-subtitle-div", {
+	          scrollTrigger: {
+	            trigger: ".symbol-top",
+	            start: "top 80%",
+	            toggleActions: "play none none none",
+	          },
+	          opacity: 0,
+	          y: 30,
+	          scale: 1,
+	          duration: 0.7,
+	          delay: 0.4,
+	        });
+
+	        gsap.from(".text-body-1-div", {
+	          scrollTrigger: {
+	            trigger: ".symbol-top",
+	            start: "top 10%",
+	            toggleActions: "play none none none",
+	          },
+	          opacity: 0,
+	          y: 30,
+	          scale: 1,
+	          duration: 0.7,
+	          delay: 0.6,
+	        });
+
+	        gsap.from(".text-title-2-div", {
+	          scrollTrigger: {
+	            trigger: ".text-title-2-div",
+	            start: "top 80%",
+	            toggleActions: "play none none none",
+	          },
+	          opacity: 0,
+	          y: 30,
+	          scale: 1,
+	          duration: 0.7,
+	        });
+
+	        gsap.from(".sub-sub-container-inner-2", {
+	          scrollTrigger: {
+	            trigger: ".sub-sub-container-inner-2",
+	            start: "top 80%",
+	            toggleActions: "play none none none",
+	          },
+	          opacity: 0,
+	          y: 30,
+	          scale: 1,
+	          duration: 0.7,
+	        });
+
+	        gsap.from(".sub-sub-sub-inner-2-text-plot", {
+	          scrollTrigger: {
+	            trigger: ".sub-sub-sub-inner-2-text-plot",
+	            start: "top 80%",
+	            toggleActions: "play none none none",
+	          },
+	          opacity: 0,
+	          y: 30,
+	          scale: 1,
+	          duration: 0.7,
+	        });
+
+	        gsap.from(".text-title-3-div", {
+	          scrollTrigger: {
+	            trigger: ".text-title-3-div",
+	            start: "top 80%",
+	            toggleActions: "play none none none",
+	          },
+	          opacity: 0,
+	          y: 30,
+	          scale: 1,
+	          duration: 0.7,
+	        });
+
+	        gsap.from(".text-body-3-div", {
+	          scrollTrigger: {
+	            trigger: ".text-body-3-div",
+	            start: "top 80%",
+	            toggleActions: "play none none none",
+	          },
+	          opacity: 0,
+	          y: 30,
+	          scale: 1,
+	          duration: 0.7,
+	        });
+
+	       gsap.from(".sub-container-inner-3-left", {
+	          scrollTrigger: {
+	            trigger: ".sub-container-inner-3-left",
+	            start: "top 80%",
+	            toggleActions: "play none none none",
+	          },
+	          opacity: 0,
+	          y: 30,
+	          scale: 1,
+	          duration: 0.7,
+	        });
+
+				gsap.from(".sub-container-inner-3-right", {
+	          scrollTrigger: {
+	            trigger: ".sub-container-inner-3-left",
+	            start: "top 80%",
+	            toggleActions: "play none none none",
+	          },
+	          opacity: 0,
+	          y: 30,
+	          scale: 1,
+	          duration: 0.7,
+	          delay: 0.2,
+	        });
+
+	        gsap.from(".text-title-4-div", {
+	          scrollTrigger: {
+	            trigger: ".text-title-4-div",
+	            start: "top 70%",
+	            toggleActions: "play none none none",
+	          },
+	          opacity: 0,
+	          y: 30,
+	          scale: 1,
+	          duration: 0.7,
+	        });
+
+
+
+gsap.to(".white-box", {
+  scrollTrigger: {
+    trigger: ".white-box",
+    scrub: 2,
+    start: "top 70%",
+    end: "bottom 80%"
+  },
+  scaleY: 0,
+  transformOrigin: "bottom", 
+  ease: "none"
+});
+
+
+
+	        gsap.from(".sub-sub-container-inner-4-top", {
+	          scrollTrigger: {
+	            trigger: ".sub-sub-container-inner-4-top",
+	            start: "top 80%",
+	            toggleActions: "play none none none",
+	          },
+	          opacity: 0,
+	          y: 30,
+	          scale: 1,
+	          duration: 0.7,
+	        });
+
+	        gsap.from(".sub-sub-container-inner-4-middle", {
+	          scrollTrigger: {
+	            trigger: ".sub-sub-container-inner-4-middle",
+	            start: "top 80%",
+	            toggleActions: "play none none none",
+	          },
+	          opacity: 0,
+	          y: 30,
+	          scale: 1,
+	          duration: 0.7,
+	        });
+
+	        gsap.from(".sub-sub-container-inner-4-bottom", {
+	          scrollTrigger: {
+	            trigger: ".sub-sub-container-inner-4-bottom",
+	            start: "top 80%",
+	            toggleActions: "play none none none",
+	          },
+	          opacity: 0,
+	          y: 30,
+	          scale: 1,
+	          duration: 0.7,
+	        });
+
+	        gsap.from(".text-top-title-5-div", {
+	          scrollTrigger: {
+	            trigger: ".text-top-title-5-div",
+	            start: "top 80%",
+	            toggleActions: "play none none none",
+	          },
+	          opacity: 0,
+	          y: 30,
+	          scale: 1,
+	          duration: 0.7,
+	        });
+
+	        gsap.from(".text-body-5-div", {
+	          scrollTrigger: {
+	            trigger: ".text-body-5-div",
+	            start: "top 80%",
+	            toggleActions: "play none none none",
+	          },
+	          opacity: 0,
+	          y: 30,
+	          scale: 1,
+	          duration: 0.7,
+	          });
+	        gsap.from(".button-layout-div", {
+	          scrollTrigger: {
+	            trigger: ".button-layout-div",
+	            start: "top 80%",
+	            toggleActions: "play none none none",
+	          },
+	          opacity: 0,
+	          y: 30,
+	          scale: 1,
+	          duration: 0.7,
+	        });
+
+	      },
+
+
+
+
+
+
+
+
+
+	      "(max-width: 769px)": function() {
+
+	        gsap.from(".symbol-top", {
+	          scrollTrigger: {
+	            trigger: ".symbol-top",
+	            start: "top 70%",
+	            toggleActions: "play none none none",
+	          },
+	          opacity: 0,
+	          y: 30,
+	          scale: 1,
+	          duration: 0.7,
+	        });
+
+	        gsap.from(".text-top-title-div", {
+	          scrollTrigger: {
+	            trigger: ".text-top-title-div",
+	            start: "top 80%",
+	            toggleActions: "play none none none",
+	          },
+	          opacity: 0,
+	          y: 30,
+	          scale: 1,
+	          duration: 0.7,
+	          delay: 0.2,
+	        });
+
+	        gsap.from(".text-top-subtitle-div", {
+	          scrollTrigger: {
+	            trigger: ".text-top-title-div",
+	            start: "top 80%",
+	            toggleActions: "play none none none",
+	          },
+	          opacity: 0,
+	          y: 30,
+	          scale: 1,
+	          duration: 0.7,
+	          delay: 0.4,
+	        });
+
+	        gsap.from(".text-body-1-div", {
+	          scrollTrigger: {
+	            trigger: ".text-body-1-div",
+	            start: "top 80%",
+	            toggleActions: "play none none none",
+	          },
+	          opacity: 0,
+	          y: 30,
+	          scale: 1,
+	          duration: 0.7,
+	          delay: 0.6,
+	        });
+
+	        gsap.from(".text-title-2-div", {
+	          scrollTrigger: {
+	            trigger: ".text-title-2-div",
+	            start: "top 80%",
+	            toggleActions: "play none none none",
+	          },
+	          opacity: 0,
+	          y: 30,
+	          scale: 1,
+	          duration: 0.7,
+	        });
+
+	        gsap.from(".sub-sub-container-inner-2", {
+	          scrollTrigger: {
+	            trigger: ".sub-sub-container-inner-2",
+	            start: "top 80%",
+	            toggleActions: "play none none none",
+	          },
+	          opacity: 0,
+	          y: 30,
+	          scale: 1,
+	          duration: 0.7,
+	        });
+
+
+	        gsap.from(".text-title-3-div", {
+	          scrollTrigger: {
+	            trigger: ".text-title-3-div",
+	            start: "top 80%",
+	            toggleActions: "play none none none",
+	          },
+	          opacity: 0,
+	          y: 30,
+	          scale: 1,
+	          duration: 0.7,
+	        });
+
+	        gsap.from(".text-body-3-div", {
+	          scrollTrigger: {
+	            trigger: ".text-body-3-div",
+	            start: "top 80%",
+	            toggleActions: "play none none none",
+	          },
+	          opacity: 0,
+	          y: 30,
+	          scale: 1,
+	          duration: 0.7,
+	        });
+
+	       gsap.from(".sub-container-inner-3-left", {
+	          scrollTrigger: {
+	            trigger: ".sub-container-inner-3-left",
+	            start: "top 80%",
+	            toggleActions: "play none none none",
+	          },
+	          opacity: 0,
+	          y: 30,
+	          scale: 1,
+	          duration: 0.7,
+	        });
+
+				gsap.from(".sub-container-inner-3-right", {
+	          scrollTrigger: {
+	            trigger: ".sub-container-inner-3-left",
+	            start: "top 80%",
+	            toggleActions: "play none none none",
+	          },
+	          opacity: 0,
+	          y: 30,
+	          scale: 1,
+	          duration: 0.7,
+	          stagger: 0.2,
+	        });
+
+	        gsap.from(".text-title-4-div", {
+	          scrollTrigger: {
+	            trigger: ".text-title-4-div",
+	            start: "top 80%",
+	            toggleActions: "play none none none",
+	          },
+	          opacity: 0,
+	          y: 30,
+	          scale: 1,
+	          duration: 0.7,
+	        });
+
+	        gsap.from(".sub-sub-container-inner-4-top", {
+	          scrollTrigger: {
+	            trigger: ".sub-sub-container-inner-4-top",
+	            start: "top 80%",
+	            toggleActions: "play none none none",
+	          },
+	          opacity: 0,
+	          y: 30,
+	          scale: 1,
+	          duration: 0.7,
+	        });
+
+	        gsap.from(".sub-sub-container-inner-4-middle", {
+	          scrollTrigger: {
+	            trigger: ".sub-sub-container-inner-4-middle",
+	            start: "top 80%",
+	            toggleActions: "play none none none",
+	          },
+	          opacity: 0,
+	          y: 30,
+	          scale: 1,
+	          duration: 0.7,
+	        });
+
+	        gsap.from(".sub-sub-container-inner-4-bottom", {
+	          scrollTrigger: {
+	            trigger: ".sub-sub-container-inner-4-bottom",
+	            start: "top 80%",
+	            toggleActions: "play none none none",
+	          },
+	          opacity: 0,
+	          y: 30,
+	          scale: 1,
+	          duration: 0.7,
+	        });
+
+	        gsap.from(".text-top-title-5-div", {
+	          scrollTrigger: {
+	            trigger: ".text-top-title-5-div",
+	            start: "top 80%",
+	            toggleActions: "play none none none",
+	          },
+	          opacity: 0,
+	          y: 30,
+	          scale: 1,
+	          duration: 0.7,
+	        });
+
+	        gsap.from(".text-body-5-div", {
+	          scrollTrigger: {
+	            trigger: ".text-body-5-div",
+	            start: "top 80%",
+	            toggleActions: "play none none none",
+	          },
+	          opacity: 0,
+	          y: 30,
+	          scale: 1,
+	          duration: 0.7,
+	        });
+
+	        gsap.from(".button-layout-div", {
+	          scrollTrigger: {
+	            trigger: ".button-layout-div",
+	            start: "top 80%",
+	            toggleActions: "play none none none",
+	          },
+	          opacity: 0,
+	          y: 30,
+	          scale: 1,
+	          duration: 0.7,
+	        });
+	      }
+	    });
+</script>
+
+
+
+
+
+
+
+</body>
+
+</html>
