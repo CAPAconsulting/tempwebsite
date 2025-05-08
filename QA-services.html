@@ -1,0 +1,1136 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta name="title" content="QA Services | CAPA - Quality Assurance Solutions">
+	<meta name="description" content="Strategic QA services tailored for compliance-driven industries. We provide audit-ready Quality Management Systems built on 10+ years of GMP, GDP, ISO standards expertise.">
+	<meta property="og:type" content="website">
+	<meta property="og:url" content="https://www.capaconsulting.be/QA-services">
+	<meta property="og:title" content="QA Services | CAPA - Quality Assurance Solutions">
+	<meta property="og:description" content="Get expert support in QA system implementation, compliance gap remediation, and interim QA staffing. Built for compliance, rooted in experience.">
+	<meta property="og:image" content="https://www.capaconsulting.be/logo-center-home.png">
+
+
+	<link rel="icon" href="logo-small-home.png" />
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Inter+Tight:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css2?family=Frank+Ruhl+Libre:wght@300..900&display=swap" rel="stylesheet">
+
+	<script src="https://cdn.jsdelivr.net/npm/gsap@3.12.7/dist/gsap.min.js"></script>
+	<script src="https://cdn.jsdelivr.net/npm/gsap@3.12.7/dist/ScrollToPlugin.min.js"></script>
+	<script src="https://cdn.jsdelivr.net/npm/gsap@3.12.7/dist/ScrollTrigger.min.js"></script>
+	<script>
+  		(function(h,o,t,j,a,r){
+      h.hj=h.hj||function(){(h.hj.q=h.hj.q||[]).push(arguments)};
+      h._hjSettings={hjid:5326149,hjsv:6};
+      a=o.getElementsByTagName('head')[0];
+      r=o.createElement('script');r.async=1;
+      r.src=t+h._hjSettings.hjid+j+h._hjSettings.hjsv;
+      a.appendChild(r);
+  		})(window,document,'https://static.hotjar.com/c/hotjar-','.js?sv=');
+  </script>
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Organization",
+    "name": "CAPA Consulting",
+    "url": "https://www.capaconsulting.be",
+    "email": "nicolas@CAPAconsulting.be",
+    "description": "Consulting in QA, QP/RP, and compliance for pharmaceutical and medical industries",
+    "address": {
+      "@type": "PostalAddress",
+      "addressCountry": "BE"
+    }
+  }
+  </script>
+
+	<title>CAPA Consulting – Quality Assurance Services</title>
+
+<style>
+  body { 
+    margin: 0px;
+  }
+
+  body::-webkit-scrollbar {
+    width: 0.25rem;
+  }
+  
+  body::-webkit-scrollbar-track {
+    background: rgba(250,250,252,0.8);
+  }
+  
+  body::-webkit-scrollbar-thumb {
+    background: #1d1d1f;
+  }
+
+  .header-container-outer {  
+    display: grid;
+    grid-template-columns: 1fr minmax(0,1100px) 1fr;
+    grid-template-rows: 45px 0px;
+    background-color: rgba(250,250,252,0.8);
+    position: sticky;
+    top: 0;
+    transition: 200ms ease;
+    z-index: 1;
+  }
+
+  .header-container-outer:hover {  
+    grid-template-rows: 45px 100px;
+    transition: 200ms ease;
+  }
+
+  .header-container-inner {
+    display: grid;
+    width: 100%;
+    grid-template-columns: 0.5fr 1fr 1fr 1fr 1fr;
+    grid-column-start: 2;
+    grid-column-end: 3;
+    font-family: "Inter Tight", sans-serif;
+    font-size: 12px;
+    font-weight: 400;
+    justify-content: stretch;
+    align-items: center;
+    color: #1d1d1f;
+    overflow: visible;
+  }
+
+  .header-element-image {
+    width: 12px;
+    padding: 10px;
+  }
+
+  .header-element-text {
+    justify-self: end;
+    color: inherit;
+    text-decoration: none;
+    padding-right: 5px;
+  }
+
+  .header-element-services-container {
+    grid-row: 2;
+    grid-column: 2;
+    opacity: 0;
+    display: grid;
+    grid-template-columns: 1fr;
+    margin-top: 10px;
+    gap: 15px;
+    transition: opacity 200ms ease;
+    justify-items: end;
+    align-items: end;
+  }
+
+  .header-container-outer:hover .header-element-services-container {
+    opacity: 1;
+  }
+
+  .header-element-text-services {
+    display: block;
+    color: inherit;
+    text-decoration: none;
+  }
+
+  /* ###################################### FOOTER CSS #################################### */
+  .footer-container-outer {  
+    display: grid;
+    grid-template-columns: 1fr minmax(0,1100px) 1fr;
+    grid-template-rows: 90vh;
+    background-color: white;
+    grid-gap: 12px;
+    overflow-x: hidden;
+  }
+
+  .footer-container-inner {
+    display: grid;
+    grid-template-rows: 0.1fr 0.33fr 0.66fr;
+    grid-template-columns: 1fr minmax(0,1100px) 1fr;
+    grid-column: 1/4;
+    background-color: #333336;
+  }
+
+  .sub-container-footer-top {
+    display: grid;
+    grid-column: 2/3;
+    grid-row: 2/3;
+    grid-template-columns: 2fr repeat(3, 1fr) 2fr;
+  }
+
+  .sub-container-footer-bottom {
+    display: grid;
+    grid-column: 2/3;
+    grid-row: 3/4;
+  }
+
+  .sub-sub-container-footer-top {
+    display: grid;
+    grid-template-rows: 1fr 1fr 1fr;
+  }
+
+  .footer-logo {
+    justify-self: center;
+    align-self: center;
+    height: 250px;
+  }
+
+  .footer-text-middle {
+    justify-self: center;
+    align-self: start;
+    font-family: "Inter Tight", sans-serif;
+    font-size: 17px;
+    font-weight: 400;
+    color: #e8e8ed;
+    padding: 0;
+    margin: 0;
+  }
+
+  .footer-text-right {
+    justify-self: end;
+    align-self: start;
+    font-family: "Inter Tight", sans-serif;
+    font-size: 17px;
+    font-weight: 400;
+    color: #e8e8ed;
+    padding: 0;
+    margin: 0;
+  }
+
+  .footer-text-left-row-1 {
+    grid-row: 1;
+    justify-self: start;
+    align-self: start;
+    font-family: "Inter Tight", sans-serif;
+    font-size: 17px;
+    font-weight: 400;
+    color: #e8e8ed;
+  }
+
+  .footer-text-left-row-2 {
+    grid-row: 2;
+    justify-self: start;
+    align-self: start;
+    font-family: "Inter Tight", sans-serif;
+    font-size: 17px;
+    font-weight: 400;
+    color: #e8e8ed;
+    padding: 0;
+    margin: 0;
+  }
+
+  .bold {
+    font-weight: 700;
+    padding: 0;
+    margin: 0;
+  }
+
+  .antibototics {
+    padding-top: 5px;
+    height: 19px;
+  }
+
+  /* ###################################### MAIN CSS #################################### */
+  .main-container-outer {  
+    display: grid;
+    grid-template-columns: 1fr minmax(0,1100px) 1fr;
+    grid-template-rows: 90vh auto auto 45vh;
+    background-color: white;
+    grid-gap: 12px;
+    overflow-x: hidden;
+  }
+
+  .main-container-inner-gray-1 {  
+    display: grid;
+    grid-template-columns: 1fr minmax(0,1100px) 1fr;
+    background-color: #f5f5f7;
+    grid-column: 1/4;
+    grid-row: 1/2;
+  }
+
+  .main-container-inner-gray-2 {  
+    display: grid;
+    grid-template-columns: 1fr minmax(0,1100px) 1fr;
+    background-color: #f5f5f7;
+    grid-column: 1/4;
+    grid-row: 3/4;
+  }
+
+  .sub-container-inner-1 {
+    display: grid;
+    grid-template-rows: 0.13fr 0.15fr 0.2fr 0.2fr 0.32fr;
+    grid-template-columns: 0.25fr 1fr;
+    grid-column: 2/3;
+  }
+
+  .sub-container-inner-2 {
+    display: grid;
+    grid-template-rows: 24.5% 70% 5.5%;
+    grid-column: 2/3;
+  }
+
+  .sub-sub-container-inner-2 {
+    display: grid;
+    grid-row: 2/3;
+    grid-column: 1/3;
+    grid-template-rows: 1.19fr 1.9fr 1.19fr 2.38fr 1.19fr 1.79fr 0.36fr;
+    grid-template-columns: 0.09fr 0.82fr 0.09fr;
+  }
+
+  .sub-container-inner-3 {
+    display: grid;
+    grid-template-rows: 24.5% 70% 5.5%;
+    grid-column: 2/3;
+  }
+
+  .sub-container-inner-4 {
+    display: grid;
+    grid-template-rows: 0.32fr 0.3fr 0.38fr;
+    grid-column: 2/3;
+    grid-row: 4/5;
+  }
+
+  .menu-background-2 {
+    background-color: #f5f5f7;
+    border-radius: 12px;
+    padding: 10px;
+    margin: 5px;
+    justify-self: stretch;
+  }
+
+  .menu-background-3 {
+    background-color: #ffffff;
+    border-radius: 12px;
+    padding: 10px;
+    margin: 5px;
+    justify-self: stretch;
+  }
+
+  .sub-sub-container-inner-3 {
+    display: grid;
+    grid-column: 1/3;
+    grid-row: 2/3;
+    grid-template-columns: 0.30fr 0.70fr;
+    grid-template-rows: repeat(9, 1fr);
+  }
+
+  .symbol-top {
+    grid-row: 1/3;
+    grid-column: 1/2;
+    max-height: 100%;
+    justify-self: center;
+    padding-top: 10px;
+  }
+
+  .text-top-title-div {
+    grid-row: 1/2;
+    grid-column: 2/3;
+    align-self: end;
+    justify-self: start;
+  }
+
+  .text-top-title-p {
+    font-family: "Inter Tight", sans-serif;
+    font-size: 32px;
+    font-weight: 500;
+    color: #1d1d1f;
+    padding: 0;
+    margin: 0;
+  }
+
+  .text-top-subtitle-div {
+    grid-row: 2/3;
+    grid-column: 2/3;
+    align-self: end;
+    justify-self: start;
+  }
+
+  .text-top-subtitle-p {
+    font-family: "Inter Tight", sans-serif;
+    font-size: 32px;
+    font-weight: 500;
+    color: #6e6e73;
+    padding: 0;
+    margin: 0;
+  }
+
+  .text-top-body1-div {
+    grid-row: 3/4;
+    grid-column: 1/3;
+    align-self: end;
+    justify-self: start;
+  }
+
+  .text-top-body2-div {
+    grid-row: 4/5;
+    grid-column: 1/3;
+    align-self: center;
+    justify-self: start;
+  }
+
+  .text-top-body-p {
+    font-family: "Inter Tight", sans-serif;
+    font-size: 17px;
+    font-weight: 400;
+    color: #1d1d1f;
+    padding: 0;
+    margin: 0;
+    text-align: justify;
+  }
+
+  .text-title-2-div {
+    grid-row: 1/2;
+    grid-column: 2/3;
+    align-self: center;
+    justify-self: end;
+  }
+
+  .text-title-2-p {
+    font-family: "Frank Ruhl Libre", serif;
+    font-size: 4em;
+    font-optical-sizing: auto;
+    font-weight: 300;
+    font-style: normal;
+    align-self: center;
+  }
+
+  .center {
+    justify-self: center;
+  }
+
+  .symbol-body-2-1-img {
+    grid-row: 1/2;
+    grid-column: 1/2;
+    max-height: 60px;
+    justify-self: center;
+    align-self: center;
+  }
+
+  .text-body-2-left {
+    font-family: "Inter Tight", sans-serif;
+    font-size: 28px;
+    font-weight: 400;
+    color: #1d1d1f;
+    align-self: center;
+    padding: 10px;
+    margin: 0;
+  }
+
+  .text-body-2-right {
+    font-family: "Inter Tight", sans-serif;
+    font-size: 28px;
+    font-weight: 400;
+    color: #1d1d1f;
+    align-self: center;
+    justify-self: end;
+    padding: 10px;
+    margin: 0;
+  }
+
+  .text-body-2-1-div {
+    grid-row: 2/3;
+    grid-column: 1/4;
+  }
+
+  .text-body-2-p {
+    font-family: "Inter Tight", sans-serif;
+    font-size: 17px;
+    font-weight: 400;
+    color: #1d1d1f;
+    padding: 10px;
+    margin: 0;
+    text-align: justify;
+  }
+
+  .text-body-2-2-div {
+    grid-row: 3/4;
+    grid-column: 1/3;
+  }
+
+  .text-body-2-3-div {
+    grid-row: 4/5;
+    grid-column: 1/4;
+  }
+
+  .symbol-body-2-2-img {
+    grid-row: 3/4;
+    grid-column: 3/4;
+    max-height: 60px;
+    justify-self: center;
+    align-self: center;
+  }
+
+  .symbol-body-2-3-img {
+    grid-row: 5/6;
+    grid-column: 1/2;
+    max-height: 60px;
+    justify-self: center;
+    padding: 5px;
+    align-self: center;
+  }
+
+  .text-body-2-4-div {
+    grid-row: 5/6;
+    grid-column: 2/4;
+  }
+
+  .text-body-2-5-div {
+    grid-row: 6/7;
+    grid-column: 1/4;
+  }
+
+  .button-layout-div {
+    grid-row: 3/4;
+    place-self: center;
+  }
+
+  .button-layout {
+	  background-color: transparent;
+		border: 1px solid #1d1d1f;
+	  font-family: "Inter Tight", sans-serif;
+	  font-size: 17px;
+	  color: #6e6e73;
+	  padding: 10px;
+	  margin: 20px;
+	  border-radius: 20px;
+	  border-color: #6e6e73;
+	  text-decoration: none;
+	}
+
+	.button-layout:hover {
+	  background-color: #f5f5f7;
+	  cursor: pointer;
+	}
+
+  .selector {}
+  .selector2 {}
+  .selector3 {}
+
+  @media (max-width: 768px) {
+    .main-container-outer {  
+      grid-template-rows: auto;
+    }
+    
+    .header-container-inner {
+      grid-template-columns: repeat(5, auto);
+    }
+
+    .sub-container-footer-top {
+      grid-template-columns: 1fr;
+      text-align: center;
+      justify-items: center;
+    }
+
+    .sub-sub-container-footer-top {
+      grid-template-rows: auto;
+    }
+
+    .footer-text-middle,
+    .footer-text-right,
+    .footer-text-left-row-1,
+    .footer-text-left-row-2 {
+      justify-self: center;
+      text-align: center;
+    }
+
+    .footer-logo {
+      height: 150px;
+    }
+
+    .footer-container-inner {
+      grid-template-rows: auto auto auto;
+    }
+
+    .sub-container-inner-1,
+    .sub-container-inner-2,
+    .sub-container-inner-3,
+    .sub-container-inner-4 {
+      grid-template-columns: 1fr !important;
+    }
+
+    .sub-sub-container-inner-2,
+    .sub-sub-container-inner-3 {
+      grid-template-columns: 1fr !important;
+    }
+
+    .sub-container-inner-1 {
+      grid-template-rows: auto auto auto auto auto auto;
+    }
+
+    .sub-container-inner-3 {
+      grid-template-rows: auto auto auto;
+    }
+
+    .sub-sub-container-inner-3 {
+      grid-template-rows: repeat(10, auto);
+      margin: 20px 12px;
+      margin-bottom: 80px;
+    }
+
+    .symbol-top {
+      width: 100px;
+      justify-self: right;
+      grid-row: 1/2;
+      padding: 10px 20px;
+    }
+
+    .text-top-title-div {        
+      grid-row: 2/3;
+      grid-column: 1/2;
+      justify-self: start;
+      padding: 10px 20px;
+    }
+
+    .text-top-subtitle-div {        
+      grid-row: 3/4;
+      grid-column: 1/2;
+      justify-self: start;
+      padding: 10px 20px;
+    }
+
+    .text-top-body1-div {
+      grid-row: 4/5;
+      grid-column: 1/2;
+      place-self: center;
+      padding: 10px 20px;
+    }
+
+    .text-top-body2-div {
+      grid-row: 5/6;
+      place-self: center;
+      padding: 10px 20px;
+      margin-bottom: 20px;
+    }
+
+    .text-title-2-p {
+      padding: 20px;
+    }
+  }
+</style>
+
+</head>
+
+<body>
+	<header class="header-container-outer" role="banner">
+		<nav class="header-container-inner" role="navigation">
+			<a href="/index" >
+				<img src="logo-small-home.png" class="header-element-image">
+			</a>
+			<p class="header-element-text"> Services </p>
+			<a href="/about-CAPA" class="header-element-text">
+				About CAPA
+			</a>
+			<a href="/cases" class="header-element-text">
+				Cases
+			</a>
+			<a href="/contact" class="header-element-text">
+				Contact Us
+			</a>
+			<div class="header-element-services-container">
+			<a href="/QA-services" class="header-element-text-services">
+				QA Services
+			</a>
+			<a href="/QPRP-services" class="header-element-text-services">
+				QP/RP Services
+			</a>
+			<a href="/QA-optimization" class="header-element-text-services">
+				QA Optimization
+			</a>
+		</div>
+		</nav>
+	</header>
+
+
+<main class="main-container-outer">
+
+	<div class="main-container-inner-gray-1">
+		<div class="sub-container-inner-1">
+			<img src="symbol-QA-services.png" alt="Symbol QA Services" class="symbol-top">
+			<div class="text-top-title-div">
+				<h1 class="text-top-title-p"><b>QA <br>Services</b></h1>
+			</div>
+			<div class="text-top-subtitle-div">
+				<p class="text-top-subtitle-p">Strategic QA Support rooted in Expertise,<br>Built for Compliance.</p>
+			</div>
+			<div class="text-top-body1-div">
+				<p class="text-top-body-p">In highly regulated industries, Quality Assurance (QA) plays a central role in <b>ensuring compliance and maintaining process reliability</b>. With over 10 years of hands-on experience in GMP, GDP, MDR, ISO13485, ISO22000 and other international standards, we help companies developing, implementing, and maintaining QA systems that are robust, audit-ready, and aligned with regulatory expectations.</p>
+			</div>
+			<div class="text-top-body2-div">
+				<p class="text-top-body-p">Whether you need <b>interim QA support, full-scale implementation of a Quality Management System, or assistance addressing compliance gaps</b> following audits or staff shortages, our tailored approach ensures your quality operations are efficient, future-proof, and fully compliant.</p>
+			</div>
+		</div>
+	</div>
+
+
+
+
+	<div class="sub-container-inner-2">
+		<div class="text-title-2-div">
+			<h2 class="text-title-2-p">Why choose us?</h2>
+		</div>
+		<div class="sub-sub-container-inner-2 menu-background-2">
+			<img src="symbol-Experience.png" alt="Symbol Experience" class="symbol-body-2-1-img">
+			<p class="text-body-2-left"><b>Industry experience</b></p>
+
+			<div class="text-body-2-1-div">
+				<p class="text-body-2-p">With <b>10+ years of operational QA experience</b>, we’ve worked across both <b>distribution and production environments</b>, supporting companies in the pharma, food, and other life sciences sectors. We don’t just follow regulations — <b>we understand them and apply them strategically</b>, ensuring compliance is both complete and appropriately integrated into your business operations without adding unnecessary complexity.</p>
+			</div>
+
+			<img src="symbol-Tailored.png" alt="Symbol Tailored" class="symbol-body-2-2-img">
+			<p class="text-body-2-2-div text-body-2-right"><b>Tailored, Analytical and Tech-Enabled</b></p>
+
+			<div class="text-body-2-3-div">
+				<p class="text-body-2-p">We <b>listen first, act second</b>, and always tailor the solutions around your business needs. <br>
+				Our work is driven by data — for us, <b>“What does the data say?”</b> is the starting point for tackling complex questions. We go <b>beyond spreadsheets</b>, using code (including Python) to analyze large datasets and uncover patterns that inform <b>smarter decisions</b>.<br>
+				In short: Your company's individuality isn't a hurdle — it's the foundation on which we build.</p>		
+			</div>
+			<img src="symbol-End-to-end.png" alt="Symbol End-to-end" class="symbol-body-2-3-img">
+			<p class="text-body-2-4-div text-body-2-left"><b>End-to-End QA Services</b></p>
+			<div class="text-body-2-5-div">
+				<p class="text-body-2-p">From <b>training junior QA staff</b> to preparing for <b>GMP, GDP, HACCP, ISO13485, ISO9001  or any other QA related audits</b>, we help you maintain or scale your quality system. We provide <b>fully outsourced QA support or team extension</b> with expertise and fresh insights, ensuring continued compliance even during temporary absences.</p>
+			</div>		
+		</div>	
+	</div>
+
+
+
+
+
+
+	<div class="main-container-inner-gray-2">
+		<div class="sub-container-inner-3">
+			<h2 class="text-title-2-p selector">Our core services.</h2>		
+			<div class="sub-sub-container-inner-3 menu-background-3">
+				<p class="text-body-2-p"><b>QMS Setup</b></p>
+				<p class="text-body-2-p">Design, refine and implement your Quality Management System from scratch.</p>
+				<p class="text-body-2-p"><b>QMS Support</b></p>
+				<p class="text-body-2-p">Assist your team in refining existing processes.</p>
+				<p class="text-body-2-p"><b>Compliance management <br>Support</b></p>
+				<p class="text-body-2-p">Assist your team in getting back on track.</p>
+				<p class="text-body-2-p"><b>Training</b></p>
+				<p class="text-body-2-p">Proper trainingsmanagement is a core element of QA. Improve internal knowledge.</p>
+				<p class="text-body-2-p"><b>Periodic QA Tasks & <br>Task Automation</b></p>
+				<p class="text-body-2-p">Outsource your recurring (and often time consuming) QA tasks – such as PQR drafting, requalification, mock recall execution, MRM preparation etc. Where the benefits outweigh the costs, task automation comes into play, which improves efficiency and avoids human error.</p>
+				<p class="text-body-2-p"><b>Audit Preparation & <br>Remediation</b></p>
+				<p class="text-body-2-p">Comprehensive support for internal/external audits and inspections, including follow-up and CAPA strategy design.</p>
+				<p class="text-body-2-p"><b>Deviation, Complaint & <br> CAPA handling</b></p>
+				<p class="text-body-2-p">These activities often present themselves in waves. Temporary support can help reduce/remove backlogs and adhere to predefined timelines.</p>
+				<p class="text-body-2-p"><b>Supplier Qualification & <br>Audit Execution</b></p>
+				<p class="text-body-2-p">End-to-end supplier qualification processes and audits that unburden your internal resources.</p>
+				<p class="text-body-2-p"><b>Legislation Interpretation & <br>Strategic Advise</b></p>
+				<p class="text-body-2-p">We help you interpret and apply complex regulations.</p>
+
+			</div>
+		</div>
+		
+
+	</div>
+
+	<div class="sub-container-inner-4">
+		<h2 class="text-title-2-p center selector2">Let's navigate QA together.</h2>
+		<p class="text-body-2-p selector3">Our role is to help you <b>confidently manage risks</b>, scale operations, and meet regulatory expectations with <b>long-term vision</b> — not just short-term fixes. In close collaboration, with modern tools, and a results-driven mindset, we provide support in every step of your QA journey. <br><br>
+		Get in touch to discuss how we can strengthen your quality systems and unburden your team.
+		</p>
+
+		<div class="button-layout-div">
+			<a href="/contact-us" class="button-layout">Contact us</a>
+		</div>
+
+		
+	</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+</main>
+
+<footer class="footer-container-outer" role="contentinfo">
+	<div class="footer-container-inner">
+		<div class="sub-container-footer-top">
+
+			<div class="sub-sub-container-footer-top">
+				<div class="footer-text-left-row-1">
+					<p class="bold">CAPA Consulting</p>
+					<p class="bold">BE1022.648.333</p>
+				</div>
+				<div class="footer-text-left-row-2">
+					<p class="footer-text-left-row-2">nicolas@CAPAconsulting.be</p>
+					<img src="telefoonnummer.PNG" class="antibototics" alt="Telephone number">
+				</div>
+			</div>
+
+			<div class="footer-text-middle">
+				<a href="/terms-of-use" class="footer-text-right">Terms of use</a>
+			</div>
+
+			<div class="footer-text-middle">
+				<p class="footer-text-middle"></p>
+			</div>
+
+			<div class="footer-text-middle">
+				<a href="/privacy-policy" class="footer-text-right">Privacy Policy</a>
+			</div>
+
+			<div class="sub-sub-container-footer-top">
+				<a class="footer-text-right bold" id="backToTop" style="cursor: pointer;">Back to top</a>
+				<p class="footer-text-right">CAPA Consulting copyrights</p>
+			</div>
+
+		</div>
+
+		<div class="sub-container-footer-bottom">
+			<a href="/index" class="footer-logo"><img src="logo-footer.png" class="footer-logo"></a>
+		</div>
+
+
+	</div>
+	
+</footer>
+
+<script>
+  document.getElementById('backToTop').addEventListener('click', function () {
+    gsap.to(window, { duration: 1, scrollTo: 0, ease: "power3.inOut" });
+  });
+</script>
+
+
+
+
+
+
+
+
+
+
+  <script>
+    document.addEventListener("DOMContentLoaded", () => {
+      const elements = document.querySelectorAll('.fade-in-up');
+      elements.forEach((el, index) => {
+        el.style.animationDelay = `${index * 100}ms`;
+      });
+    });
+  </script>
+
+	<script>
+	    gsap.registerPlugin(ScrollTrigger);
+	    ScrollTrigger.matchMedia({
+	      "(min-width: 769px)": function() {
+
+	        gsap.from(".symbol-top", {
+	          scrollTrigger: {
+	            trigger: ".symbol-top",
+	            start: "top 70%",
+	            toggleActions: "play none none none",
+	          },
+	          opacity: 0,
+	          y: 30,
+	          scale: 1,
+	          duration: 0.7,
+	        });
+
+	        gsap.from(".text-top-title-div", {
+	          scrollTrigger: {
+	            trigger: ".text-top-title-div",
+	            start: "top 80%",
+	            toggleActions: "play none none none",
+	          },
+	          opacity: 0,
+	          y: 30,
+	          scale: 1,
+	          duration: 0.7,
+	          delay: 0.2,
+	        });
+
+	        gsap.from(".text-top-subtitle-div", {
+	          scrollTrigger: {
+	            trigger: ".text-top-title-div",
+	            start: "top 80%",
+	            toggleActions: "play none none none",
+	          },
+	          opacity: 0,
+	          y: 30,
+	          scale: 1,
+	          duration: 0.7,
+	          delay: 0.4,
+	        });
+
+	        gsap.from(".text-top-body1-div", {
+	          scrollTrigger: {
+	            trigger: ".text-top-title-div",
+	            start: "top 80%",
+	            toggleActions: "play none none none",
+	          },
+	          opacity: 0,
+	          y: 30,
+	          scale: 1,
+	          duration: 0.7,
+	          delay: 0.6,
+	        });
+
+	        gsap.from(".text-top-body2-div", {
+	          scrollTrigger: {
+	            trigger: ".text-top-title-div",
+	            start: "top 80%",
+	            toggleActions: "play none none none",
+	          },
+	          opacity: 0,
+	          y: 30,
+	          scale: 1,
+	          duration: 0.7,
+	          delay: 0.8,
+	        });
+
+	        gsap.from(".text-title-2-div", {
+	          scrollTrigger: {
+	            trigger: ".text-title-2-div",
+	            start: "top 80%",
+	            toggleActions: "play none none none",
+	          },
+	          opacity: 0,
+	          y: 30,
+	          scale: 1,
+	          duration: 0.7,
+	        });
+
+	        gsap.from(".sub-sub-container-inner-2", {
+	          scrollTrigger: {
+	            trigger: ".sub-sub-container-inner-2",
+	            start: "top 80%",
+	            toggleActions: "play none none none",
+	          },
+	          opacity: 0,
+	          y: 30,
+	          scale: 1,
+	          duration: 0.7,
+	        });
+
+	        gsap.from(".selector", {
+	          scrollTrigger: {
+	            trigger: ".selector",
+	            start: "top 80%",
+	            toggleActions: "play none none none",
+	          },
+	          opacity: 0,
+	          y: 30,
+	          scale: 1,
+	          duration: 0.7,
+	        });
+
+	        gsap.from(".sub-sub-container-inner-3", {
+	          scrollTrigger: {
+	            trigger: ".sub-sub-container-inner-3",
+	            start: "top 80%",
+	            toggleActions: "play none none none",
+	          },
+	          opacity: 0,
+	          y: 30,
+	          scale: 1,
+	          duration: 0.7,
+	        });
+
+	        gsap.from(".selector2", {
+	          scrollTrigger: {
+	            trigger: ".selector2",
+	            start: "top 80%",
+	            toggleActions: "play none none none",
+	          },
+	          opacity: 0,
+	          y: 30,
+	          scale: 1,
+	          duration: 0.7,
+	        });
+
+	       gsap.from(".selector3", {
+	          scrollTrigger: {
+	            trigger: ".selector3",
+	            start: "top 80%",
+	            toggleActions: "play none none none",
+	          },
+	          opacity: 0,
+	          y: 30,
+	          scale: 1,
+	          duration: 0.7,
+	        });
+         gsap.from(".button-layout", {
+            scrollTrigger: {
+              trigger: ".button-layout",
+              start: "top 80%",
+              toggleActions: "play none none none",
+            },
+            opacity: 0,
+            y: 30,
+            scale: 1,
+            duration: 0.7,
+          });
+
+
+	      },
+
+	      "(max-width: 769px)": function() {
+
+	        gsap.from(".symbol-top", {
+	          scrollTrigger: {
+	            trigger: ".symbol-top",
+	            start: "top 70%",
+	            toggleActions: "play none none none",
+	          },
+	          opacity: 0,
+	          y: 30,
+	          scale: 1,
+	          duration: 0.7,
+	        });
+
+	        gsap.from(".text-top-title-div", {
+	          scrollTrigger: {
+	            trigger: ".text-top-title-div",
+	            start: "top 80%",
+	            toggleActions: "play none none none",
+	          },
+	          opacity: 0,
+	          y: 30,
+	          scale: 1,
+	          duration: 0.7,
+	          delay: 0.2,
+	        });
+
+	        gsap.from(".text-top-subtitle-div", {
+	          scrollTrigger: {
+	            trigger: ".text-top-title-div",
+	            start: "top 80%",
+	            toggleActions: "play none none none",
+	          },
+	          opacity: 0,
+	          y: 30,
+	          scale: 1,
+	          duration: 0.7,
+	          delay: 0.4,
+	        });
+
+	        gsap.from(".text-top-body1-div", {
+	          scrollTrigger: {
+	            trigger: ".text-top-title-div",
+	            start: "top 80%",
+	            toggleActions: "play none none none",
+	          },
+	          opacity: 0,
+	          y: 30,
+	          scale: 1,
+	          duration: 0.7,
+	          delay: 0.6,
+	        });
+
+	        gsap.from(".text-top-body2-div", {
+	          scrollTrigger: {
+	            trigger: ".text-top-title-div",
+	            start: "top 80%",
+	            toggleActions: "play none none none",
+	          },
+	          opacity: 0,
+	          y: 30,
+	          scale: 1,
+	          duration: 0.7,
+	          delay: 0.8,
+	        });
+
+	        gsap.from(".text-title-2-div", {
+	          scrollTrigger: {
+	            trigger: ".text-title-2-div",
+	            start: "top 80%",
+	            toggleActions: "play none none none",
+	          },
+	          opacity: 0,
+	          y: 30,
+	          scale: 1,
+	          duration: 0.7,
+	        });
+
+	        gsap.from(".sub-sub-container-inner-2", {
+	          scrollTrigger: {
+	            trigger: ".sub-sub-container-inner-2",
+	            start: "top 80%",
+	            toggleActions: "play none none none",
+	          },
+	          opacity: 0,
+	          y: 30,
+	          scale: 1,
+	          duration: 0.7,
+	        });
+
+	        gsap.from(".selector", {
+	          scrollTrigger: {
+	            trigger: ".selector",
+	            start: "top 80%",
+	            toggleActions: "play none none none",
+	          },
+	          opacity: 0,
+	          y: 30,
+	          scale: 1,
+	          duration: 0.7,
+	        });
+
+	        gsap.from(".sub-sub-container-inner-3", {
+	          scrollTrigger: {
+	            trigger: ".sub-sub-container-inner-3",
+	            start: "top 80%",
+	            toggleActions: "play none none none",
+	          },
+	          opacity: 0,
+	          y: 30,
+	          scale: 1,
+	          duration: 0.7,
+	        });
+
+	        gsap.from(".selector2", {
+	          scrollTrigger: {
+	            trigger: ".selector2",
+	            start: "top 80%",
+	            toggleActions: "play none none none",
+	          },
+	          opacity: 0,
+	          y: 30,
+	          scale: 1,
+	          duration: 0.7,
+	        });
+
+	       gsap.from(".selector3", {
+	          scrollTrigger: {
+	            trigger: ".selector3",
+	            start: "top 80%",
+	            toggleActions: "play none none none",
+	          },
+	          opacity: 0,
+	          y: 30,
+	          scale: 1,
+	          duration: 0.7,
+	        });
+          gsap.from(".button-layout", {
+            scrollTrigger: {
+              trigger: ".button-layout",
+              start: "top 80%",
+              toggleActions: "play none none none",
+            },
+            opacity: 0,
+            y: 30,
+            scale: 1,
+            duration: 0.7,
+          });
+
+	      },
+     });
+	</script>
+
+
+
+
+</body>
+
+</html>
