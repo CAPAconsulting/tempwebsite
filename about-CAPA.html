@@ -701,6 +701,29 @@
     gsap.registerPlugin(ScrollTrigger);
     ScrollTrigger.matchMedia({
       "(min-width: 769px)": function() {
+        gsap.from(".main-kappa", {
+          scrollTrigger: {
+            trigger: ".main-kappa",
+            start: "top 80%",
+            toggleActions: "play none none none",
+          },
+          opacity: 0,
+          y: 30,
+          scale: 1,
+          duration: 0.7,
+        });
+        gsap.from(".phonetics-kappa", {
+          scrollTrigger: {
+            trigger: ".main-kappa",
+            start: "top 80%",
+            toggleActions: "play none none none",
+          },
+          opacity: 0,
+          y: 30,
+          scale: 1,
+          duration: 0.7,
+          delay: 0.2,
+        });
         gsap.from(".sub-sub-container-inner-gray-1-top", {
           scrollTrigger: {
             trigger: ".sub-sub-container-inner-gray-1-top",
@@ -723,7 +746,6 @@
           scale: 1,
           duration: 0.7,
         });
-
         gsap.from(".text-title-p", {
           scrollTrigger: {
             trigger: ".text-title-p",
@@ -749,6 +771,29 @@
 
       },
       "(max-width: 768px)": function() {
+        gsap.from(".main-kappa", {
+          scrollTrigger: {
+            trigger: ".main-kappa",
+            start: "top 80%",
+            toggleActions: "play none none none",
+          },
+          opacity: 0,
+          y: 30,
+          scale: 1,
+          duration: 0.7,
+        });
+        gsap.from(".phonetics-kappa", {
+          scrollTrigger: {
+            trigger: ".main-kappa",
+            start: "top 80%",
+            toggleActions: "play none none none",
+          },
+          opacity: 0,
+          y: 30,
+          scale: 1,
+          duration: 0.7,
+          delay: 0.2,
+        });
         gsap.from(".sub-sub-container-inner-gray-1-top", {
           scrollTrigger: {
             trigger: ".sub-sub-container-inner-gray-1-top",
@@ -771,7 +816,6 @@
           scale: 1,
           duration: 0.7,
         });
-
         gsap.from(".text-title-p", {
           scrollTrigger: {
             trigger: ".text-title-p",
