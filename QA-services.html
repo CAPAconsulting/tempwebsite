@@ -133,7 +133,6 @@
     text-decoration: none;
   }
 
-  /* ###################################### FOOTER CSS #################################### */
   .footer-container-outer {  
     display: grid;
     grid-template-columns: 1fr minmax(0,1100px) 1fr;
@@ -230,7 +229,6 @@
     height: 19px;
   }
 
-  /* ###################################### MAIN CSS #################################### */
   .main-container-outer {  
     display: grid;
     grid-template-columns: 1fr minmax(0,1100px) 1fr;
@@ -661,9 +659,6 @@
 		</div>
 	</div>
 
-
-
-
 	<div class="sub-container-inner-2">
 		<div class="text-title-2-div">
 			<h2 class="text-title-2-p">Why choose us?</h2>
@@ -692,11 +687,6 @@
 		</div>	
 	</div>
 
-
-
-
-
-
 	<div class="main-container-inner-gray-2">
 		<div class="sub-container-inner-3">
 			<h2 class="text-title-2-p selector">Our core services.</h2>		
@@ -722,8 +712,6 @@
 
 			</div>
 		</div>
-		
-
 	</div>
 
 	<div class="sub-container-inner-4">
@@ -731,25 +719,10 @@
 		<p class="text-body-2-p selector3">Our role is to help you <b>confidently manage risks</b>, scale operations, and meet regulatory expectations with <b>long-term vision</b> — not just short-term fixes. In close collaboration, with modern tools, and a results-driven mindset, we provide support in every step of your QA journey. <br><br>
 		Get in touch to discuss how we can strengthen your quality systems and unburden your team.
 		</p>
-
 		<div class="button-layout-div">
 			<a href="/contact-us" class="button-layout">Contact us</a>
 		</div>
-
-		
 	</div>
-
-
-
-
-
-
-
-
-
-
-
-
 
 </main>
 
@@ -767,33 +740,24 @@
 					<img src="telefoonnummer.PNG" class="antibototics" alt="Telephone number">
 				</div>
 			</div>
-
 			<div class="footer-text-middle">
 				<a href="/terms-of-use" class="footer-text-right">Terms of use</a>
 			</div>
-
 			<div class="footer-text-middle">
 				<p class="footer-text-middle"></p>
 			</div>
-
 			<div class="footer-text-middle">
 				<a href="/privacy-policy" class="footer-text-right">Privacy Policy</a>
 			</div>
-
 			<div class="sub-sub-container-footer-top">
 				<a class="footer-text-right bold" id="backToTop" style="cursor: pointer;">Back to top</a>
 				<p class="footer-text-right">CAPA Consulting copyrights</p>
 			</div>
-
 		</div>
-
 		<div class="sub-container-footer-bottom">
 			<a href="/index" class="footer-logo"><img src="logo-footer.png" class="footer-logo"></a>
 		</div>
-
-
 	</div>
-	
 </footer>
 
 <script>
@@ -802,331 +766,323 @@
   });
 </script>
 
-
-
-
-
-
-
-
-
-
-  <script>
-    document.addEventListener("DOMContentLoaded", () => {
-      const elements = document.querySelectorAll('.fade-in-up');
-      elements.forEach((el, index) => {
-        el.style.animationDelay = `${index * 100}ms`;
-      });
+<script>
+  document.addEventListener("DOMContentLoaded", () => {
+    const elements = document.querySelectorAll('.fade-in-up');
+    elements.forEach((el, index) => {
+      el.style.animationDelay = `${index * 100}ms`;
     });
-  </script>
+  });
+</script>
 
-	<script>
-	    gsap.registerPlugin(ScrollTrigger);
-	    ScrollTrigger.matchMedia({
-	      "(min-width: 769px)": function() {
+<script>
+    gsap.registerPlugin(ScrollTrigger);
+    ScrollTrigger.matchMedia({
+      "(min-width: 769px)": function() {
 
-	        gsap.from(".symbol-top", {
-	          scrollTrigger: {
-	            trigger: ".symbol-top",
-	            start: "top 70%",
-	            toggleActions: "play none none none",
-	          },
-	          opacity: 0,
-	          y: 30,
-	          scale: 1,
-	          duration: 0.7,
-	        });
+        gsap.from(".symbol-top", {
+          scrollTrigger: {
+            trigger: ".symbol-top",
+            start: "top 70%",
+            toggleActions: "play none none none",
+          },
+          opacity: 0,
+          y: 30,
+          scale: 1,
+          duration: 0.7,
+        });
 
-	        gsap.from(".text-top-title-div", {
-	          scrollTrigger: {
-	            trigger: ".text-top-title-div",
-	            start: "top 80%",
-	            toggleActions: "play none none none",
-	          },
-	          opacity: 0,
-	          y: 30,
-	          scale: 1,
-	          duration: 0.7,
-	          delay: 0.2,
-	        });
+        gsap.from(".text-top-title-div", {
+          scrollTrigger: {
+            trigger: ".text-top-title-div",
+            start: "top 80%",
+            toggleActions: "play none none none",
+          },
+          opacity: 0,
+          y: 30,
+          scale: 1,
+          duration: 0.7,
+          delay: 0.2,
+        });
 
-	        gsap.from(".text-top-subtitle-div", {
-	          scrollTrigger: {
-	            trigger: ".text-top-title-div",
-	            start: "top 80%",
-	            toggleActions: "play none none none",
-	          },
-	          opacity: 0,
-	          y: 30,
-	          scale: 1,
-	          duration: 0.7,
-	          delay: 0.4,
-	        });
+        gsap.from(".text-top-subtitle-div", {
+          scrollTrigger: {
+            trigger: ".text-top-title-div",
+            start: "top 80%",
+            toggleActions: "play none none none",
+          },
+          opacity: 0,
+          y: 30,
+          scale: 1,
+          duration: 0.7,
+          delay: 0.4,
+        });
 
-	        gsap.from(".text-top-body1-div", {
-	          scrollTrigger: {
-	            trigger: ".text-top-title-div",
-	            start: "top 80%",
-	            toggleActions: "play none none none",
-	          },
-	          opacity: 0,
-	          y: 30,
-	          scale: 1,
-	          duration: 0.7,
-	          delay: 0.6,
-	        });
+        gsap.from(".text-top-body1-div", {
+          scrollTrigger: {
+            trigger: ".text-top-title-div",
+            start: "top 80%",
+            toggleActions: "play none none none",
+          },
+          opacity: 0,
+          y: 30,
+          scale: 1,
+          duration: 0.7,
+          delay: 0.6,
+        });
 
-	        gsap.from(".text-top-body2-div", {
-	          scrollTrigger: {
-	            trigger: ".text-top-title-div",
-	            start: "top 80%",
-	            toggleActions: "play none none none",
-	          },
-	          opacity: 0,
-	          y: 30,
-	          scale: 1,
-	          duration: 0.7,
-	          delay: 0.8,
-	        });
+        gsap.from(".text-top-body2-div", {
+          scrollTrigger: {
+            trigger: ".text-top-title-div",
+            start: "top 80%",
+            toggleActions: "play none none none",
+          },
+          opacity: 0,
+          y: 30,
+          scale: 1,
+          duration: 0.7,
+          delay: 0.8,
+        });
 
-	        gsap.from(".text-title-2-div", {
-	          scrollTrigger: {
-	            trigger: ".text-title-2-div",
-	            start: "top 80%",
-	            toggleActions: "play none none none",
-	          },
-	          opacity: 0,
-	          y: 30,
-	          scale: 1,
-	          duration: 0.7,
-	        });
+        gsap.from(".text-title-2-div", {
+          scrollTrigger: {
+            trigger: ".text-title-2-div",
+            start: "top 80%",
+            toggleActions: "play none none none",
+          },
+          opacity: 0,
+          y: 30,
+          scale: 1,
+          duration: 0.7,
+        });
 
-	        gsap.from(".sub-sub-container-inner-2", {
-	          scrollTrigger: {
-	            trigger: ".sub-sub-container-inner-2",
-	            start: "top 80%",
-	            toggleActions: "play none none none",
-	          },
-	          opacity: 0,
-	          y: 30,
-	          scale: 1,
-	          duration: 0.7,
-	        });
+        gsap.from(".sub-sub-container-inner-2", {
+          scrollTrigger: {
+            trigger: ".sub-sub-container-inner-2",
+            start: "top 80%",
+            toggleActions: "play none none none",
+          },
+          opacity: 0,
+          y: 30,
+          scale: 1,
+          duration: 0.7,
+        });
 
-	        gsap.from(".selector", {
-	          scrollTrigger: {
-	            trigger: ".selector",
-	            start: "top 80%",
-	            toggleActions: "play none none none",
-	          },
-	          opacity: 0,
-	          y: 30,
-	          scale: 1,
-	          duration: 0.7,
-	        });
+        gsap.from(".selector", {
+          scrollTrigger: {
+            trigger: ".selector",
+            start: "top 80%",
+            toggleActions: "play none none none",
+          },
+          opacity: 0,
+          y: 30,
+          scale: 1,
+          duration: 0.7,
+        });
 
-	        gsap.from(".sub-sub-container-inner-3", {
-	          scrollTrigger: {
-	            trigger: ".sub-sub-container-inner-3",
-	            start: "top 80%",
-	            toggleActions: "play none none none",
-	          },
-	          opacity: 0,
-	          y: 30,
-	          scale: 1,
-	          duration: 0.7,
-	        });
+        gsap.from(".sub-sub-container-inner-3", {
+          scrollTrigger: {
+            trigger: ".sub-sub-container-inner-3",
+            start: "top 80%",
+            toggleActions: "play none none none",
+          },
+          opacity: 0,
+          y: 30,
+          scale: 1,
+          duration: 0.7,
+        });
 
-	        gsap.from(".selector2", {
-	          scrollTrigger: {
-	            trigger: ".selector2",
-	            start: "top 80%",
-	            toggleActions: "play none none none",
-	          },
-	          opacity: 0,
-	          y: 30,
-	          scale: 1,
-	          duration: 0.7,
-	        });
+        gsap.from(".selector2", {
+          scrollTrigger: {
+            trigger: ".selector2",
+            start: "top 80%",
+            toggleActions: "play none none none",
+          },
+          opacity: 0,
+          y: 30,
+          scale: 1,
+          duration: 0.7,
+        });
 
-	       gsap.from(".selector3", {
-	          scrollTrigger: {
-	            trigger: ".selector3",
-	            start: "top 80%",
-	            toggleActions: "play none none none",
-	          },
-	          opacity: 0,
-	          y: 30,
-	          scale: 1,
-	          duration: 0.7,
-	        });
-         gsap.from(".button-layout", {
-            scrollTrigger: {
-              trigger: ".button-layout",
-              start: "top 80%",
-              toggleActions: "play none none none",
-            },
-            opacity: 0,
-            y: 30,
-            scale: 1,
-            duration: 0.7,
-          });
+       gsap.from(".selector3", {
+          scrollTrigger: {
+            trigger: ".selector3",
+            start: "top 80%",
+            toggleActions: "play none none none",
+          },
+          opacity: 0,
+          y: 30,
+          scale: 1,
+          duration: 0.7,
+        });
+       gsap.from(".button-layout-div", {
+          scrollTrigger: {
+            trigger: ".selector3",
+            start: "top 80%",
+            toggleActions: "play none none none",
+          },
+          opacity: 0,
+          y: 30,
+          scale: 1,
+          duration: 0.7,
+          delay:0.3,
+        });
 
 
-	      },
+      },
 
-	      "(max-width: 769px)": function() {
+      "(max-width: 769px)": function() {
 
-	        gsap.from(".symbol-top", {
-	          scrollTrigger: {
-	            trigger: ".symbol-top",
-	            start: "top 70%",
-	            toggleActions: "play none none none",
-	          },
-	          opacity: 0,
-	          y: 30,
-	          scale: 1,
-	          duration: 0.7,
-	        });
+        gsap.from(".symbol-top", {
+          scrollTrigger: {
+            trigger: ".symbol-top",
+            start: "top 70%",
+            toggleActions: "play none none none",
+          },
+          opacity: 0,
+          y: 30,
+          scale: 1,
+          duration: 0.7,
+        });
 
-	        gsap.from(".text-top-title-div", {
-	          scrollTrigger: {
-	            trigger: ".text-top-title-div",
-	            start: "top 80%",
-	            toggleActions: "play none none none",
-	          },
-	          opacity: 0,
-	          y: 30,
-	          scale: 1,
-	          duration: 0.7,
-	          delay: 0.2,
-	        });
+        gsap.from(".text-top-title-div", {
+          scrollTrigger: {
+            trigger: ".text-top-title-div",
+            start: "top 80%",
+            toggleActions: "play none none none",
+          },
+          opacity: 0,
+          y: 30,
+          scale: 1,
+          duration: 0.7,
+          delay: 0.2,
+        });
 
-	        gsap.from(".text-top-subtitle-div", {
-	          scrollTrigger: {
-	            trigger: ".text-top-title-div",
-	            start: "top 80%",
-	            toggleActions: "play none none none",
-	          },
-	          opacity: 0,
-	          y: 30,
-	          scale: 1,
-	          duration: 0.7,
-	          delay: 0.4,
-	        });
+        gsap.from(".text-top-subtitle-div", {
+          scrollTrigger: {
+            trigger: ".text-top-title-div",
+            start: "top 80%",
+            toggleActions: "play none none none",
+          },
+          opacity: 0,
+          y: 30,
+          scale: 1,
+          duration: 0.7,
+          delay: 0.4,
+        });
 
-	        gsap.from(".text-top-body1-div", {
-	          scrollTrigger: {
-	            trigger: ".text-top-title-div",
-	            start: "top 80%",
-	            toggleActions: "play none none none",
-	          },
-	          opacity: 0,
-	          y: 30,
-	          scale: 1,
-	          duration: 0.7,
-	          delay: 0.6,
-	        });
+        gsap.from(".text-top-body1-div", {
+          scrollTrigger: {
+            trigger: ".text-top-title-div",
+            start: "top 80%",
+            toggleActions: "play none none none",
+          },
+          opacity: 0,
+          y: 30,
+          scale: 1,
+          duration: 0.7,
+          delay: 0.6,
+        });
 
-	        gsap.from(".text-top-body2-div", {
-	          scrollTrigger: {
-	            trigger: ".text-top-title-div",
-	            start: "top 80%",
-	            toggleActions: "play none none none",
-	          },
-	          opacity: 0,
-	          y: 30,
-	          scale: 1,
-	          duration: 0.7,
-	          delay: 0.8,
-	        });
+        gsap.from(".text-top-body2-div", {
+          scrollTrigger: {
+            trigger: ".text-top-title-div",
+            start: "top 80%",
+            toggleActions: "play none none none",
+          },
+          opacity: 0,
+          y: 30,
+          scale: 1,
+          duration: 0.7,
+          delay: 0.8,
+        });
 
-	        gsap.from(".text-title-2-div", {
-	          scrollTrigger: {
-	            trigger: ".text-title-2-div",
-	            start: "top 80%",
-	            toggleActions: "play none none none",
-	          },
-	          opacity: 0,
-	          y: 30,
-	          scale: 1,
-	          duration: 0.7,
-	        });
+        gsap.from(".text-title-2-div", {
+          scrollTrigger: {
+            trigger: ".text-title-2-div",
+            start: "top 80%",
+            toggleActions: "play none none none",
+          },
+          opacity: 0,
+          y: 30,
+          scale: 1,
+          duration: 0.7,
+        });
 
-	        gsap.from(".sub-sub-container-inner-2", {
-	          scrollTrigger: {
-	            trigger: ".sub-sub-container-inner-2",
-	            start: "top 80%",
-	            toggleActions: "play none none none",
-	          },
-	          opacity: 0,
-	          y: 30,
-	          scale: 1,
-	          duration: 0.7,
-	        });
+        gsap.from(".sub-sub-container-inner-2", {
+          scrollTrigger: {
+            trigger: ".sub-sub-container-inner-2",
+            start: "top 80%",
+            toggleActions: "play none none none",
+          },
+          opacity: 0,
+          y: 30,
+          scale: 1,
+          duration: 0.7,
+        });
 
-	        gsap.from(".selector", {
-	          scrollTrigger: {
-	            trigger: ".selector",
-	            start: "top 80%",
-	            toggleActions: "play none none none",
-	          },
-	          opacity: 0,
-	          y: 30,
-	          scale: 1,
-	          duration: 0.7,
-	        });
+        gsap.from(".selector", {
+          scrollTrigger: {
+            trigger: ".selector",
+            start: "top 80%",
+            toggleActions: "play none none none",
+          },
+          opacity: 0,
+          y: 30,
+          scale: 1,
+          duration: 0.7,
+        });
 
-	        gsap.from(".sub-sub-container-inner-3", {
-	          scrollTrigger: {
-	            trigger: ".sub-sub-container-inner-3",
-	            start: "top 80%",
-	            toggleActions: "play none none none",
-	          },
-	          opacity: 0,
-	          y: 30,
-	          scale: 1,
-	          duration: 0.7,
-	        });
+        gsap.from(".sub-sub-container-inner-3", {
+          scrollTrigger: {
+            trigger: ".sub-sub-container-inner-3",
+            start: "top 80%",
+            toggleActions: "play none none none",
+          },
+          opacity: 0,
+          y: 30,
+          scale: 1,
+          duration: 0.7,
+        });
 
-	        gsap.from(".selector2", {
-	          scrollTrigger: {
-	            trigger: ".selector2",
-	            start: "top 80%",
-	            toggleActions: "play none none none",
-	          },
-	          opacity: 0,
-	          y: 30,
-	          scale: 1,
-	          duration: 0.7,
-	        });
+        gsap.from(".selector2", {
+          scrollTrigger: {
+            trigger: ".selector2",
+            start: "top 80%",
+            toggleActions: "play none none none",
+          },
+          opacity: 0,
+          y: 30,
+          scale: 1,
+          duration: 0.7,
+        });
 
-	       gsap.from(".selector3", {
-	          scrollTrigger: {
-	            trigger: ".selector3",
-	            start: "top 80%",
-	            toggleActions: "play none none none",
-	          },
-	          opacity: 0,
-	          y: 30,
-	          scale: 1,
-	          duration: 0.7,
-	        });
-          gsap.from(".button-layout", {
-            scrollTrigger: {
-              trigger: ".button-layout",
-              start: "top 80%",
-              toggleActions: "play none none none",
-            },
-            opacity: 0,
-            y: 30,
-            scale: 1,
-            duration: 0.7,
-          });
+       gsap.from(".selector3", {
+          scrollTrigger: {
+            trigger: ".selector3",
+            start: "top 80%",
+            toggleActions: "play none none none",
+          },
+          opacity: 0,
+          y: 30,
+          scale: 1,
+          duration: 0.7,
+        });
+        gsap.from(".button-layout", {
+          scrollTrigger: {
+            trigger: ".button-layout",
+            start: "top 80%",
+            toggleActions: "play none none none",
+          },
+          opacity: 0,
+          y: 30,
+          scale: 1,
+          duration: 0.7,
+        });
 
-	      },
-     });
-	</script>
+      },
+   });
+</script>
 
 
 
