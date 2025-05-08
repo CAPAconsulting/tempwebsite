@@ -367,6 +367,13 @@
 			grid-template-rows: 50% 50%;
 		}
 
+		.pos1{}
+		.pos2{}
+		.pos3{}
+		.pos4{}
+		.pos5{}
+		.pos6{}
+		.pos7{}
 
 		@media (max-width: 768px) {
 		  .sub-container-inner-2-gray,
@@ -383,6 +390,8 @@
 	    .main-inner-1-text,
 	    .main-inner-2-text,
 	    .main-inner-3-text {padding-left: 15px;}
+	    .main-inner-1-logo {
+	    	padding-top: 5px;}
 	    .sub-sub-container-inner-2 {
 	    	margin-left: 15px;
 	    	margin-right: 15px;}
@@ -442,7 +451,7 @@
 		<h2 class= "main-inner-2-text">What we do.</h2>
 		<div class="sub-container-inner-2-gray">
 			<div class="sub-sub-container-inner-2">
-				<div class="sub-sub-sub-container-inner-2 menu-background">
+				<div class="sub-sub-sub-container-inner-2 pos1 menu-background">
 					<div class="symbol-div">
 						<img src="symbol-QA-services.png" alt="symbol QA services" class="symbol">
 					</div>
@@ -456,7 +465,7 @@
 				</div>
 			</div>
 			<div class="sub-sub-container-inner-2">
-				<div class="sub-sub-sub-container-inner-2 menu-background">
+				<div class="sub-sub-sub-container-inner-2 pos2 menu-background">
 					<div class="symbol-div">
 						<img src="symbol-QPRP-services.png" alt="symbol QPRP services" class="symbol">
 					</div>
@@ -470,7 +479,7 @@
 				</div>
 			</div>
 			<div class="sub-sub-container-inner-2">
-				<div class="sub-sub-sub-container-inner-2 menu-background">
+				<div class="sub-sub-sub-container-inner-2 pos3 menu-background">
 					<div class="symbol-div">
 						<img src="symbol-QA-optimization.png" alt="symbol QA optimization" class="symbol">
 					</div>
@@ -489,7 +498,7 @@
 		<h2 class= "main-inner-3-text">Who we serve.</h2>
 		<div class="sub-container-inner-3-gray">
 			<div class="sub-sub-container-inner-2">
-				<div class="sub-sub-sub-container-inner-2 menu-background">
+				<div class="sub-sub-sub-container-inner-2 pos4 menu-background">
 					<div class="symbol-div">
 						<img src="symbol-Medicinal-product.png" alt="symbol Medicinal product" class="symbol">
 					</div>
@@ -501,7 +510,7 @@
 				</div>
 			</div>
 			<div class="sub-sub-container-inner-2">
-				<div class="sub-sub-sub-container-inner-2 menu-background">
+				<div class="sub-sub-sub-container-inner-2 pos5 menu-background">
 					<div class="symbol-div">
 						<img src="symbol-Medical-device.png" alt="symbol Medical device" class="symbol">
 					</div>
@@ -512,7 +521,7 @@
 				</div>
 			</div>
 			<div class="sub-sub-container-inner-2">
-				<div class="sub-sub-sub-container-inner-2 menu-background">
+				<div class="sub-sub-sub-container-inner-2 pos6 menu-background">
 					<div class="symbol-div">
 						<img src="symbol-Foodstuff.png" alt="symbol Foodstuff" class="symbol">
 					</div>
@@ -523,7 +532,7 @@
 				</div>
 			</div>
 			<div class="sub-sub-container-inner-2">
-				<div class="sub-sub-sub-container-inner-2 menu-background">
+				<div class="sub-sub-sub-container-inner-2 pos7 menu-background">
 					<div class="symbol-div">
 						<img src="symbol-Cosmetics.png" alt="symbol Cosmetics" class="symbol">
 					</div>
@@ -668,14 +677,14 @@
         const mobileStart = "top 80%";
         gsap.from(".main-inner-1-text", {
           scrollTrigger: {
-            trigger: ".main-inner-1-logo",
+            trigger: ".main-inner-1-text",
             start: mobileStart,
             toggleActions: "play none none none",
           },
           opacity: 0,
           y: 30,
           scale: 1,
-          duration: 0.9,
+          duration: 0.7,
         });
         gsap.from(".main-inner-2-text", {
           scrollTrigger: {
@@ -686,20 +695,7 @@
           opacity: 0,
           y: 30,
           scale: 1,
-          duration: 0.9,
-          stagger: 0.2,
-        });
-        gsap.from(".sub-container-inner-2-gray .sub-sub-container-inner-2", {
-          scrollTrigger: {
-            trigger: ".sub-container-inner-2-gray",
-            start: mobileStart,
-            toggleActions: "play none none none",
-          },
-          opacity: 0,
-          y: 30,
-          scale: 1,
-          duration: 0.9,
-          stagger: 0.2,
+          duration: 0.7,
         });
         gsap.from(".main-inner-3-text", {
           scrollTrigger: {
@@ -710,21 +706,87 @@
           opacity: 0,
           y: 30,
           scale: 1,
-          duration: 0.9,
-          stagger: 0.2,
+          duration: 0.7,
         });
-        gsap.from(".sub-container-inner-3-gray .sub-sub-container-inner-2", {
+        gsap.from(".pos1", {
           scrollTrigger: {
-            trigger: ".sub-container-inner-3-gray",
+            trigger: ".pos1",
             start: mobileStart,
             toggleActions: "play none none none",
           },
           opacity: 0,
           y: 30,
           scale: 1,
-          duration: 0.9,
-          stagger: 0.2,
+          duration: 0.7,
+        });        
+        gsap.from(".pos2", {
+          scrollTrigger: {
+            trigger: ".pos2",
+            start: mobileStart,
+            toggleActions: "play none none none",
+          },
+          opacity: 0,
+          y: 30,
+          scale: 1,
+          duration: 0.7,
         });
+        gsap.from(".pos3", {
+          scrollTrigger: {
+            trigger: ".pos3",
+            start: mobileStart,
+            toggleActions: "play none none none",
+          },
+          opacity: 0,
+          y: 30,
+          scale: 1,
+          duration: 0.7,
+        });
+        gsap.from(".pos4", {
+          scrollTrigger: {
+            trigger: ".pos4",
+            start: mobileStart,
+            toggleActions: "play none none none",
+          },
+          opacity: 0,
+          y: 30,
+          scale: 1,
+          duration: 0.7,
+        });
+        gsap.from(".pos5", {
+          scrollTrigger: {
+            trigger: ".pos5",
+            start: mobileStart,
+            toggleActions: "play none none none",
+          },
+          opacity: 0,
+          y: 30,
+          scale: 1,
+          duration: 0.7,
+        });
+        gsap.from(".pos6", {
+          scrollTrigger: {
+            trigger: ".pos6",
+            start: mobileStart,
+            toggleActions: "play none none none",
+          },
+          opacity: 0,
+          y: 30,
+          scale: 1,
+          duration: 0.7,
+        });
+        gsap.from(".pos7", {
+          scrollTrigger: {
+            trigger: ".pos7",
+            start: mobileStart,
+            toggleActions: "play none none none",
+          },
+          opacity: 0,
+          y: 30,
+          scale: 1,
+          duration: 0.7,
+        });
+
+
       }
     });
 </script>
