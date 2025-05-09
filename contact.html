@@ -534,6 +534,10 @@
 					  <label for="form-telephone" class="form-label">Telephone number</label>
 					  <input type="text" id="form-telephone" name="form-telephone-number" class="form-input">
 					</div>
+          <div style="display:none;">
+            <label for="website">Bot-Honeypot</label>
+            <input type="text" id="website" name="website" autocomplete="off">
+          </div>
 				</div>
 			</div>
 			<div class="text-message-div message-background">
@@ -798,11 +802,18 @@ document.getElementById("contact-me").addEventListener("submit", function (e) {
     let formData = new FormData(form);
     let answers = {};
 
+    if (formData.get("website")) {
+        console.warn("Honeypot");
+        return; 
+    }
+
     formData.forEach((value, key) => {
-        if (!answers[key]) {
-            answers[key] = [];
+        if (key !== "website") {
+            if (!answers[key]) {
+                answers[key] = [];
+            }
+            answers[key].push(value);
         }
-        answers[key].push(value);
     });
 
     let emailBody = "Contact-us page entries:\n\n";
