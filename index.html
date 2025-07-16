@@ -5,15 +5,16 @@
 
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<meta name="description" content="CAPA Consulting offers QA, QP/RP, and QA optimization services to pharmaceutical, medical device, cosmetic, and food industries.">
+	<meta name="description" content="CAPA Consulting offers QA services, QP/RP services, and QA optimization services to pharmaceutical (GMP and GDP), medical device (MDR and ISO13485), cosmetic, and food industries.">
 	<meta name="keywords" content="QA services, QA optimization, QP services, GMP compliance, CAPA Consulting, pharmaceutical consulting">
 	<meta property="og:title" content="CAPA Consulting – Quality is an investment, not a cost">
 	<meta property="og:description" content="QA and QP services for pharma and more.">
 	<meta property="og:image" content="https://www.capaconsulting.be/logo-center-home.png">
 	<meta property="og:url" content="https://www.capaconsulting.be">
 
+	<link rel="canonical" href="https://www.capaconsulting.be">
 	<link rel="icon" href="/favicon.ico" type="image/x-icon">
-	<link rel="icon" href="logo-small-home.png" />
+	<link rel="icon" href="logo-small-home.png">
 	<link rel="preconnect" href="https://fonts.googleapis.com">
 	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 	<link href="https://fonts.googleapis.com/css2?family=Inter+Tight:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
@@ -40,7 +41,7 @@
 	  "url": "https://www.capaconsulting.be",
 	  "logo": "https://www.capaconsulting.be/logo-center-home.png",
 	  "email": "nicolas@CAPAconsulting.be",
-	  "description": "CAPA Consulting provides expert QA, QP/RP, and compliance services for the pharmaceutical and medical device industries in Belgium and Europe.",
+	  "description": "CAPA Consulting provides expert QA services, QP/RP services, and QA Optimization services for the pharmaceutical and medical device industries in Belgium and Europe.",
 	  "address": {
 	    "@type": "PostalAddress",
 	    "addressCountry": "BE"
@@ -56,7 +57,7 @@
 	</script>
 
 
-	<title>CAPA Consulting – QA & QP/RP Services for the pharmaceutical industry</title>
+	<title>CAPA Consulting – QA & QP/RP Services for the pharmaceutical and medical device industry</title>
 
 	<style>
 
@@ -253,7 +254,7 @@
 
 		.main-container-inner-2-gray {
 			display: grid;
-			grid-template-rows: 0.33fr 0.66fr;
+			grid-template-rows: auto auto;
 		  	grid-template-columns: 1fr minmax(0,1100px) 1fr;
 			grid-column: 1/4;
 		  	background-color: #f5f5f7;
@@ -275,7 +276,7 @@
 
 		.sub-sub-container-inner-2 {
 			display: grid;
-		  grid-template-rows: 0.1fr 0.8fr 0.1fr;
+		  grid-template-rows: 1fr;
 		}
 
 		.sub-sub-container-inner-3 {
@@ -285,7 +286,7 @@
 
 		.sub-sub-sub-container-inner-2 {
 			display: grid;
-			grid-row: 2/3;
+			grid-row: 1/2;
 		  	grid-template-rows: 1fr 2.5fr 1fr;
 		}
 
@@ -296,6 +297,8 @@
 			padding: 20px;
 			margin: 5px;
 			justify-self: stretch;
+			margin-top: 70px;
+			margin-bottom: 70px;
 		}
 
 		.main-inner-1-logo {
@@ -402,7 +405,7 @@
 		.pos6{}
 		.pos7{}
 
-		@media (max-width: 768px) {
+		@media (max-width: 935px) {
 		  .sub-container-inner-2-gray,
 		  .sub-container-inner-3-gray {
 		    grid-template-columns: 1fr;}
@@ -416,7 +419,10 @@
 	    	justify-items: center;}
 	    .main-inner-1-text,
 	    .main-inner-2-text,
-	    .main-inner-3-text {padding-left: 15px;}
+	    .main-inner-3-text {
+	    	padding-left: 15px;
+	    	padding-right: 15px;
+	    	margin-top: 25px}
 	    .main-inner-1-logo {
 	    	padding-top: 5px;}
 	    .sub-sub-container-inner-2 {
@@ -434,6 +440,16 @@
 		    height: 150px;}
 		  .footer-container-inner {
 		    grid-template-rows: auto auto auto;}
+		   .menu-background{
+			margin-top: 35px;
+			margin-bottom: 35px;
+			}
+			.main-container-inner-2-gray {
+			grid-template-rows: auto auto;
+		  	grid-template-columns: 1fr minmax(0,1100px) 1fr;
+			grid-column: 1/4;
+		  	background-color: #f5f5f7;
+		}
 		}
 	</style>
 </head>
@@ -442,7 +458,7 @@
 	<header class="header-container-outer" role="banner">
 		<nav class="header-container-inner" role="navigation">
 			<a href="/index" >
-				<img src="logo-small-home.png" class="header-element-image">
+				<img src="logo-small-home.png" class="header-element-image" alt="logo of CAPAconsulting">
 			</a>
 			<p class="header-element-text"> Services </p>
 			<a href="/about-CAPA" class="header-element-text">
@@ -480,42 +496,42 @@
 			<div class="sub-sub-container-inner-2">
 				<div class="sub-sub-sub-container-inner-2 pos1 menu-background">
 					<div class="symbol-div">
-						<img src="symbol-QA-services.png" alt="symbol QA services" class="symbol">
+						<img src="symbol-QA-services.png" alt="symbol QA services" class="symbol" alt="Symbol for QA Services">
 					</div>
 					<div class="service-div">
 						<h3 class="service-h1">QA Services</h3>
 						<p class="service-p">Task outsourcing or team extension, according to your organization's needs.</p>
 					</div>
 					<div class="readmore-div">
-						<a href="/QA-services" class="readmore-a">READ MORE</a>	
+						<a href="/QA-services" class="readmore-a">Discover our QA services</a>	
 					</div>
 				</div>
 			</div>
 			<div class="sub-sub-container-inner-2">
 				<div class="sub-sub-sub-container-inner-2 pos2 menu-background">
 					<div class="symbol-div">
-						<img src="symbol-QPRP-services.png" alt="symbol QPRP services" class="symbol">
+						<img src="symbol-QPRP-services.png" alt="symbol QPRP services" class="symbol" alt="Symbol for QP and RP Services">
 					</div>
 					<div class="service-div">
 						<h3 class="service-h1">QP/RP Services</h3>
-						<p class="service-p">Bridge the gap between your site and the federal agency - Ensure compliance with GDP requirements and outsource EU GMP batch certification.</p>
+						<p class="service-p">The Qualified Person and Responsible Person bridge the gap between your site and the federal agency - Ensure compliance with EU GMP and GDP requirements and outsource EU GMP batch certification.</p>
 					</div>
 					<div class="readmore-div">
-						<a href="/QPRP-services" class="readmore-a">READ MORE</a>	
+						<a href="/QPRP-services" class="readmore-a">Discover our QP/RP services</a>	
 					</div>
 				</div>
 			</div>
 			<div class="sub-sub-container-inner-2">
 				<div class="sub-sub-sub-container-inner-2 pos3 menu-background">
 					<div class="symbol-div">
-						<img src="symbol-QA-optimization.png" alt="symbol QA optimization" class="symbol">
+						<img src="symbol-QA-optimization.png" alt="symbol QA optimization" class="symbol" alt="Symbol for QA Optimization">
 					</div>
 					<div class="service-div">
 						<h3 class="service-h1">QA Optimization</h3>
 						<p class="service-p">Are you doing too much, or not enough? We help you strike the right balance. Empirically, risk-based and without compromise to compliance.</p>
 					</div>
 					<div class="readmore-div">
-						<a href="/QA-optimization" class="readmore-a">READ MORE</a>	
+						<a href="/QA-optimization" class="readmore-a">Discover our QA Optimization strategy</a>	
 					</div>
 				</div>
 			</div>
@@ -527,7 +543,7 @@
 			<div class="sub-sub-container-inner-2">
 				<div class="sub-sub-sub-container-inner-2 pos4 menu-background">
 					<div class="symbol-div">
-						<img src="symbol-Medicinal-product.png" alt="symbol Medicinal product" class="symbol">
+						<img src="symbol-Medicinal-product.png" alt="symbol Medicinal product" class="symbol" alt="Symbol for Medicinal Products">
 					</div>
 					<div class="product-div">
 						<h3 class="service-h1">Medicinal Products</h3>
@@ -539,7 +555,7 @@
 			<div class="sub-sub-container-inner-2">
 				<div class="sub-sub-sub-container-inner-2 pos5 menu-background">
 					<div class="symbol-div">
-						<img src="symbol-Medical-device.png" alt="symbol Medical device" class="symbol">
+						<img src="symbol-Medical-device.png" alt="symbol Medical device" class="symbol" alt="Symbol for Medical Devices">
 					</div>
 					<div class="product-div">
 						<h3 class="service-h1">Medical Devices</h3>
@@ -550,7 +566,7 @@
 			<div class="sub-sub-container-inner-2">
 				<div class="sub-sub-sub-container-inner-2 pos6 menu-background">
 					<div class="symbol-div">
-						<img src="symbol-Foodstuff.png" alt="symbol Foodstuff" class="symbol">
+						<img src="symbol-Foodstuff.png" alt="symbol Foodstuff" class="symbol" alt="Symbol for Foodstuff">
 					</div>
 					<div class="product-div">
 						<h3 class="service-h1">Foodstuff & - supplements</h3>
@@ -561,7 +577,7 @@
 			<div class="sub-sub-container-inner-2">
 				<div class="sub-sub-sub-container-inner-2 pos7 menu-background">
 					<div class="symbol-div">
-						<img src="symbol-Cosmetics.png" alt="symbol Cosmetics" class="symbol">
+						<img src="symbol-Cosmetics.png" alt="symbol Cosmetics" class="symbol" alt="Symbol for Cosmetics">
 					</div>
 					<div class="product-div">
 						<h3 class="service-h1">Cosmetics</h3>
@@ -582,7 +598,7 @@
 				</div>
 				<div class="footer-text-left-row-2">
 					<p class="footer-text-left-row-2">nicolas@CAPAconsulting.be</p>
-					<img src="telefoonnummer.PNG" class="antibototics" alt="Telephone number">
+					<img src="telefoonnummer.PNG" class="antibototics" alt="Telephone number" alt="Telephone number as image">
 				</div>
 			</div>
 			<div class="footer-text-middle">
@@ -600,7 +616,7 @@
 			</div>
 		</div>
 		<div class="sub-container-footer-bottom">
-			<a href="/index" class="footer-logo"><img src="logo-footer.png" class="footer-logo"></a>
+			<a href="/index" class="footer-logo"><img src="logo-footer.png" class="footer-logo" alt="Logo of CAPAconsulting as footer"></a>
 		</div>
 	</div>
 </footer>
