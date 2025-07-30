@@ -240,7 +240,7 @@
     .main-container-outer {  
 			display: grid;
 		  	grid-template-columns: 1fr minmax(0,1100px) 1fr;
-		  	grid-template-rows: repeat(3, 90vh);
+		  	grid-template-rows: 90vh repeat(2, auto);
 		  	background-color: white;
 		  	grid-gap: 12px;
 		}
@@ -265,6 +265,9 @@
 			grid-row: 2/3;
 			grid-column: 2/3;
 		  	grid-template-columns: repeat(3, 1fr);
+		  	padding-bottom: 70px;
+		  	padding-top: 20px;
+
 		}
 
 		.sub-container-inner-3-gray {
@@ -272,6 +275,9 @@
 			grid-row: 2/3;
 			grid-column: 2/3;
 		  grid-template-columns: repeat(4, 1fr);
+		  	padding-bottom: 70px;
+		  	padding-top: 20px;
+
 		}
 
 		.sub-sub-container-inner-2 {
@@ -287,7 +293,7 @@
 		.sub-sub-sub-container-inner-2 {
 			display: grid;
 			grid-row: 1/2;
-		  	grid-template-rows: 1fr 2.5fr 1fr;
+		  	grid-template-rows: 1fr 2.5fr;
 		}
 
 
@@ -297,8 +303,8 @@
 			padding: 20px;
 			margin: 5px;
 			justify-self: stretch;
-			margin-top: 70px;
-			margin-bottom: 70px;
+
+
 		}
 
 		.main-inner-1-logo {
@@ -306,6 +312,7 @@
 			justify-self: center;
 			align-self: end;
 			height:  250px;
+			padding-top: 50px;
 		}
 
 		.main-inner-1-text {
@@ -332,6 +339,8 @@
 		  font-style: normal;
 		  margin: 0;
 		  color: #1d1d1f;
+		  padding-top: 50px;
+		  padding-bottom: 50px;
 		}
 
 		.main-inner-3-text {
@@ -346,6 +355,8 @@
 		  font-style: normal;
 		  margin: 0;
 		  color: #1d1d1f;
+		  padding-top: 50px;
+		  padding-bottom: 50px;
 		}
 
 		.symbol{
@@ -377,6 +388,8 @@
 		.readmore-div{
 			justify-self: start;
 			align-self: center;
+			padding-top: 30px;
+			padding-bottom: 30px;
 		}
 
 		.readmore-a{
