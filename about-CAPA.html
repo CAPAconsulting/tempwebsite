@@ -238,7 +238,7 @@
   .main-container-outer {  
     display: grid;
     grid-template-columns: 1fr minmax(0,1100px) 1fr;
-    grid-template-rows: 150vh 100vh;
+    grid-template-rows: auto auto;
     background-color: white;
     grid-gap: 12px;
     overflow-x: hidden;
@@ -254,15 +254,16 @@
 
   .sub-container-inner-gray-1 {  
     display: grid;
-    grid-template-rows: 14.5% 7.5% 38% 37% 3%;
+    grid-template-rows: auto auto auto auto auto;
     background-color: #f5f5f7;
     grid-column: 2/3;
     grid-row: 1/2;
+    padding-bottom: 50px;
   }
 
   .sub-sub-container-inner-gray-1-top {  
     display: grid;
-    grid-template-rows: 15% 85%;
+    grid-template-rows: auto auto;
     grid-template-columns: 12.5% 87.5%;
     grid-column: 1/2;
     grid-row: 3/4;
@@ -270,7 +271,7 @@
 
   .sub-sub-container-inner-gray-1-bottom {  
     display: grid;
-    grid-template-rows: 15% 85%;
+    grid-template-rows: auto auto;
     grid-template-columns: 87.5% 12.5%;
     grid-column: 1/2;
     grid-row: 4/5;
@@ -282,11 +283,13 @@
     padding: 10px;
     margin: 5px;
     justify-self: stretch;
+    margin-top: 30px;
+    padding-bottom: 20px;
   }
 
   .sub-container-inner-2 {
     display: grid;
-    grid-template-rows: 13.8% 72.2% 14%;
+    grid-template-rows: auto auto;
     grid-row: 2/3;
     grid-column: 2/3;
   }
@@ -303,6 +306,8 @@
     padding: 10px;
     margin: 5px;
     justify-self: stretch;
+    margin-bottom: 50px;
+    padding-bottom: 20px;
   }
 
   .text-top-title-p {
@@ -340,13 +345,15 @@
     grid-row: 1/2;
     width: 5cm;
     place-self: center;
-    padding-top: 10px;
+    padding-top: 50px;
+    padding-bottom: 20px;
   }
 
   .phonetics-kappa {
     grid-row: 2/3;
     width: 5cm;
     place-self: center;
+    padding-bottom: 50px;
   }
 
   .symbols {
@@ -365,6 +372,8 @@
     justify-self: start;
     align-self: center;
     grid-column: 2/3;
+    padding-top: 20px;
+    padding-bottom: 20px;
   }
 
   .body-1-div {
@@ -381,6 +390,8 @@
     margin: 0;
     justify-self: end;
     align-self: center;
+    padding-top: 20px;
+    padding-bottom: 20px;
   }
 
   .title-2-center {
