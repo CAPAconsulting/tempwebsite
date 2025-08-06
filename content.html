@@ -1,0 +1,1429 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="title" content="Content | CAPA Consulting – Content published by CAPA Consulting">
+
+  <meta name="description" content="Explore QA case studies, GMP updates, regulatory changes, and expert insights from CAPA Consulting. Navigate Compliance Management, Annex 22, and proactive quality strategies with real-world examples." />
+  <meta name="keywords" content="GMP updates, GDP changes, QA insights, CAPA Consulting, Annex 22, Compliance Management, EU regulations, pharma quality, QMS optimization, risk-based QA, proactive compliance" />
+  <meta name="author" content="CAPA Consulting" />
+  <link rel="canonical" href="https://www.capaconsulting.be/content" />
+
+  <meta property="og:type" content="website" />
+  <meta property="og:title" content="CAPA Consulting – Quality Insights, Updates & Case Learnings" />
+  <meta property="og:description" content="Discover in-depth quality assurance knowledge, including AI regulation in GMP, GDP transformation, and how to avoid costly compliance failures." />
+  <meta property="og:url" content="https://www.capaconsulting.be/content" />
+  <meta property="og:image" content="https://www.capaconsulting.be/logo-center-home.png" />
+
+
+  <link rel="icon" href="/favicon.ico" type="image/x-icon">
+  <link rel="icon" href="logo-small-home.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter+Tight:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Frank+Ruhl+Libre:wght@300..900&display=swap" rel="stylesheet">
+
+  <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.7/dist/gsap.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.7/dist/ScrollToPlugin.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.7/dist/ScrollTrigger.min.js"></script>
+  <script>
+      (function(h,o,t,j,a,r){
+      h.hj=h.hj||function(){(h.hj.q=h.hj.q||[]).push(arguments)};
+      h._hjSettings={hjid:5326149,hjsv:6};
+      a=o.getElementsByTagName('head')[0];
+      r=o.createElement('script');r.async=1;
+      r.src=t+h._hjSettings.hjid+j+h._hjSettings.hjsv;
+      a.appendChild(r);
+      })(window,document,'https://static.hotjar.com/c/hotjar-','.js?sv=');
+  </script>
+
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Organization",
+    "name": "CAPA Consulting",
+    "url": "https://www.capaconsulting.be",
+    "logo": "https://www.capaconsulting.be/logo-center-home.png",
+    "email": "nicolas@CAPAconsulting.be",
+    "description": "CAPA Consulting provides expert QA, QP/RP, and compliance services for the pharmaceutical and medical device industries in Belgium and Europe.",
+    "address": {
+      "@type": "PostalAddress",
+      "addressCountry": "BE"
+    },
+    "contactPoint": {
+      "@type": "ContactPoint",
+      "email": "nicolas@CAPAconsulting.be",
+      "contactType": "customer support",
+      "areaServed": "BE",
+      "availableLanguage": ["English", "French", "Dutch"]
+    }
+  }
+  </script>
+
+	<title>CAPA Consulting – Content</title>
+
+<style>
+  body { 
+    margin: 0px;
+  }
+
+  body::-webkit-scrollbar {
+    width: 0.25rem;
+  }
+  
+  body::-webkit-scrollbar-track {
+    background: rgba(250,250,252,0.8);
+  }
+  
+  body::-webkit-scrollbar-thumb {
+    background: #1d1d1f;
+  }
+
+* {
+  -webkit-tap-highlight-color: rgba(29, 29, 31, 0.5);
+}
+  .header-container-outer {  
+    display: grid;
+    grid-template-columns: 1fr minmax(0,1100px) 1fr;
+    grid-template-rows: 45px 0px;
+    background-color: rgba(250,250,252,0.8);
+    position: sticky;
+    top: 0;
+    transition: 200ms ease;
+    z-index: 1;
+  }
+
+  .header-container-outer:hover {  
+    grid-template-rows: 45px 100px;
+    transition: 200ms ease;
+  }
+
+  .header-container-inner {
+    display: grid;
+    width: 100%;
+    grid-template-columns: 0.2fr 1fr 1fr 1fr 1fr 1fr;
+    grid-column-start: 2;
+    grid-column-end: 3;
+    font-family: "Inter Tight", sans-serif;
+    font-size: 12px;
+    font-weight: 400;
+    justify-content: stretch;
+    align-items: center;
+    color: #1d1d1f;
+    overflow: visible;
+  }
+
+  .header-element-image {
+    width: 12px;
+    padding: 10px;
+  }
+
+  .header-element-text {
+    justify-self: end;
+    color: inherit;
+    text-decoration: none;
+    padding-right: 5px;
+  }
+
+  .header-element-services-container {
+    grid-row: 2;
+    grid-column: 2;
+    opacity: 0;
+    display: grid;
+    grid-template-columns: 1fr;
+    margin-top: 10px;
+    gap: 15px;
+    transition: opacity 200ms ease;
+    justify-items: end;
+    align-items: end;
+  }
+
+  .header-container-outer:hover .header-element-services-container {
+    opacity: 1;
+  }
+
+  .header-element-text-services {
+    display: block;
+    color: inherit;
+    text-decoration: none;
+  }
+
+  .footer-container-outer {  
+    display: grid;
+    grid-template-columns: 1fr minmax(0,1100px) 1fr;
+    grid-template-rows: 90vh;
+    background-color: white;
+    grid-gap: 12px;
+    overflow-x: hidden;
+  }
+
+  .footer-container-inner {
+    display: grid;
+    grid-template-rows: 0.1fr 0.33fr 0.66fr;
+    grid-template-columns: 1fr minmax(0,1100px) 1fr;
+    grid-column: 1/4;
+    background-color: #333336;
+  }
+
+  .sub-container-footer-top {
+    display: grid;
+    grid-column: 2/3;
+    grid-row: 2/3;
+    grid-template-columns: 2fr repeat(3, 1fr) 2fr;
+  }
+
+  .sub-container-footer-bottom {
+    display: grid;
+    grid-column: 2/3;
+    grid-row: 3/4;
+  }
+
+  .sub-sub-container-footer-top {
+    display: grid;
+    grid-template-rows: 1fr 1fr 1fr;
+  }
+
+  .footer-logo {
+    justify-self: center;
+    align-self: center;
+    height: 250px;
+  }
+
+  .footer-text-middle {
+    justify-self: center;
+    align-self: start;
+    font-family: "Inter Tight", sans-serif;
+    font-size: 17px;
+    font-weight: 400;
+    color: #e8e8ed;
+    padding: 0;
+    margin: 0;
+  }
+
+  .footer-text-right {
+    justify-self: end;
+    align-self: start;
+    font-family: "Inter Tight", sans-serif;
+    font-size: 17px;
+    font-weight: 400;
+    color: #e8e8ed;
+    padding: 0;
+    margin: 0;
+  }
+
+  .footer-text-left-row-1 {
+    grid-row: 1;
+    justify-self: start;
+    align-self: start;
+    font-family: "Inter Tight", sans-serif;
+    font-size: 17px;
+    font-weight: 400;
+    color: #e8e8ed;
+  }
+
+  .footer-text-left-row-2 {
+    grid-row: 2;
+    justify-self: start;
+    align-self: start;
+    font-family: "Inter Tight", sans-serif;
+    font-size: 17px;
+    font-weight: 400;
+    color: #e8e8ed;
+    padding: 0;
+    margin: 0;
+  }
+
+  .bold {
+    font-weight: 700;
+    padding: 0;
+    margin: 0;
+  }
+
+  .antibototics {
+    padding-top: 5px;
+    height: 19px;
+  }
+
+
+
+
+  .main-container-outer {  
+    display: grid;
+    grid-template-columns: 1fr minmax(0,550px) 1fr;
+    grid-template-rows: auto auto auto;
+    background-color: #f5f5f7;
+    overflow-x: hidden;
+  }
+
+  .main-container-inner-1 {
+    display: grid;
+    background-color: #f5f5f7;
+    grid-template-columns: 38% 62%;
+    grid-column: 2/3;
+    grid-row: 1/2;
+  }
+
+  .symbol-top {
+    grid-row: 1/2;
+    grid-column: 1/2;
+    max-height: 100%;
+    height: 100px;
+    justify-self: center;
+    padding-top: 10px;
+  }
+
+  .text-top-title-div {
+    grid-row: 1/2;
+    grid-column: 2/3;
+    align-self: end;
+    justify-self: center;
+  }
+
+  .main-container-inner-2 {
+    display: grid;
+    background-color: #f5f5f7;
+    grid-column: 2/3;
+    grid-row: 2/3;
+  }
+
+  .menu-background {
+    background-color: #ffffff;
+    border-radius: 12px;
+    padding: 10px;
+    margin: 5px;
+    justify-self: stretch;
+  }
+
+
+
+  .text-top-title-p {
+    font-family: "Frank Ruhl Libre", serif;
+    font-size: 4em;
+    font-optical-sizing: auto;
+    font-weight: 300;
+    font-style: normal;
+    align-self: center;
+    color: #1d1d1f;
+    margin-bottom: 40px;
+  }
+
+  .text-subtitle-p {
+    font-family: "Inter Tight", sans-serif;
+    font-size: 20px;
+    font-weight: 500;
+    color: #1d1d1f;
+    padding: 0;
+    margin: 0;
+    text-align: justify;
+  }
+
+  .text-body-p {
+    font-family: "Inter Tight", sans-serif;
+    font-size: 17px;
+    font-weight: 400;
+    color: #1d1d1f;
+    padding: 0;
+    margin: 0;
+    text-align: justify;
+  }
+
+
+  .case-grid {
+    display: grid;
+    grid-template-columns: 1fr; 
+    margin: 10px;
+    padding: 20px;
+    margin-bottom: 40px;
+    width: 1fr;
+  }
+
+  .case {
+    border: 1px solid #ccc;
+    border-top-left-radius: 8px;
+    border-top-right-radius: 8px;
+    margin-top: 20px;
+    overflow: hidden;
+
+  }
+
+
+  .case-title {
+    padding: 15px 20px;
+    background: #f5f5f7;
+    cursor: pointer;
+  }
+
+  .case-content {
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.4s ease, padding 0.3s ease;
+    padding: 0 20px;
+  }
+
+  .case-media {
+    width: 100%;
+    overflow: hidden;
+    cursor: pointer;
+    border-bottom-left-radius: 8px;
+    border-bottom-right-radius: 8px;
+  }
+
+  .case.open .case-content {
+   }
+
+  .content-container {
+    display: grid;
+    grid-template-rows: auto auto auto;
+  }
+
+
+
+    .carousel {
+      width: 100%;
+      max-width: 800px;
+      overflow: hidden;
+      margin: 0 auto;
+      position: relative;
+      border-left: 1px solid #ccc;
+      border-right: 1px solid #ccc;
+      border-bottom: 1px solid #ccc;
+      border-bottom-left-radius: 8px;
+      border-bottom-right-radius: 8px;
+  box-sizing: border-box;
+
+    }
+
+    .carousel-track {
+      display: flex;
+      will-change: transform;
+    }
+
+    .carousel-slide {
+      flex-shrink: 0;
+    }
+
+    .carousel-slide img {
+      width: 100%;
+      height: auto;
+      display: block;
+
+    }
+
+    .controls {
+      text-align: center;
+      margin-top: 10px;
+    }
+
+.carousel-controls {
+  position: absolute;
+  bottom: 10px;
+  left: 50%;
+  transform: translateX(-50%);
+  display: flex;
+  gap: 10px;
+  z-index: 10;
+}
+
+.carousel-controls button {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  border: none;
+  background-color: rgba(0, 0, 0, 0.4);
+  color: white;
+  font-size: 18px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: background-color 0.2s ease;
+}
+
+.carousel-controls button:hover {
+  background-color: rgba(0, 0, 0, 0.6);
+}
+
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  white-space: nowrap;
+  border: 0;
+}
+
+  .main-container-inner-3 {
+    display: grid;
+    grid-template-columns: 1fr minmax(0,1100px) 1fr;
+    background-color: #ffffff;
+    grid-column: 1/4;
+    grid-row: 3/4;
+  }
+
+
+
+  .sub-container-inner-4 {
+    display: grid;
+    grid-template-rows: auto auto auto;
+    grid-column: 2/3;
+    grid-row: 4/5;
+  }
+
+  .button-layout-div {
+    grid-row: 3/4;
+    place-self: center;
+    margin: 50px;
+  }
+
+  .button-layout {
+    background-color: transparent;
+    border: 1px solid #1d1d1f;
+    font-family: "Inter Tight", sans-serif;
+    font-size: 17px;
+    color: #6e6e73;
+    padding: 10px;
+    margin: 20px;
+    border-radius: 20px;
+    border-color: #6e6e73;
+    text-decoration: none;
+  }
+
+  .button-layout:hover {
+    background-color: #f5f5f7;
+    cursor: pointer;
+  }
+
+  .selector2 {}
+  .selector3 {
+    padding: 10px;
+  }
+
+
+  @media (max-width: 768px) {
+    .main-container-outer {  
+      grid-template-rows: auto;
+    }
+    .text-top-title-p {
+      padding-left: 10px;
+    }
+    
+    .header-container-inner {
+      grid-template-columns: repeat(6, auto);
+    }
+
+    .sub-container-footer-top {
+      grid-template-columns: 1fr;
+      text-align: center;
+      justify-items: center;
+    }
+
+    .sub-sub-container-footer-top {
+      grid-template-rows: auto;
+    }
+
+    .text-top-title-div {
+    grid-row: 2/3;
+    grid-column: 1/2;
+    align-self: end;
+    justify-self: center;
+    }
+
+    .footer-text-middle,
+    .footer-text-right,
+    .footer-text-left-row-1,
+    .footer-text-left-row-2 {
+      justify-self: center;
+      text-align: center;
+    }
+    .main-container-inner-1 {
+      grid-template-columns: auto;
+      grid-template-rows: auto auto;
+
+    }
+    .symbol-top {
+      padding-top: 40px;
+    }
+
+    .footer-logo {
+      height: 150px;
+    }
+
+    .footer-container-inner {
+      grid-template-rows: auto auto auto;
+    }
+
+  .case-grid {
+    padding: 5px;
+  }
+
+
+
+  }
+</style>
+
+</head>
+
+<body>
+	<header class="header-container-outer" role="banner">
+		<nav class="header-container-inner" role="navigation">
+			<a href="/index" >
+				<img src="logo-small-home.png" class="header-element-image">
+			</a>
+
+
+			<p class="header-element-text"> Services </p>
+			<a href="/about-CAPA" class="header-element-text">
+				About CAPA
+			</a>
+			<a href="/cases" class="header-element-text">
+				Cases
+			</a>
+      <a href="/content" class="header-element-text">
+        Content
+      </a>
+			<a href="/contact" class="header-element-text">
+				Contact Us
+			</a>
+			<div class="header-element-services-container">
+			<a href="/QA-services" class="header-element-text-services">
+				QA Services
+			</a>
+			<a href="/QPRP-services" class="header-element-text-services">
+				QP/RP Services
+			</a>
+			<a href="/QA-optimization" class="header-element-text-services">
+				QA Optimization
+			</a>
+		</div>
+		</nav>
+	</header>
+
+
+<main class="main-container-outer">
+
+	<div class="main-container-inner-1">
+			<img src="symbol-content.png" alt="Symbol content" class="symbol-top">
+			<div class="text-top-title-div">
+				<h1 class="text-top-title-p">Content</h1>
+			</div>
+	</div>
+
+
+
+
+	<div class="main-container-inner-2">
+
+      <div class="case-grid menu-background">
+
+        <div class="case" style="margin-top: 0px">
+
+          <div class="case-title text-subtitle-p">🚨 <strong>Compliance Management: What it Really Means (and Why You Want to Avoid It at all cost)</strong>
+          </div>
+
+          <div class="case-content">
+            <div class="content-container text-body-p">
+
+              <p>
+                I often compare a QMS system to a sailing ship. The goal of the QA team? Keep it afloat and on course (even when the weather gets bad or there’s a few holes in the hull).
+              </p>
+
+              <p>
+                However, when the Competent Authorities start losing trust in your system, you are placed under <strong>Compliance Management</strong>.
+                Once you’re under it… getting out requires a lot (!) of additional effort.
+              </p>
+
+              <h3>🔍 <strong>So... What is Compliance Management?</strong></h3>
+
+              <p>
+                It's a formal <em>escalation step</em> taken by the CA when inspectors determine that routine inspections are 
+                <strong>no longer sufficient to ensure GMP/GDP compliance</strong>.
+
+                In other words, your ship is now in a vortex.
+              </p>
+
+              <p>Once this process is triggered, you’re looking at:</p>
+              <ul>
+                <li><strong>Increased inspection frequency</strong> (to <em>every few months</em>)</li>
+                <li><strong>Periodic monitoring and reporting</strong> (progress reports, compliance metrics,...)</li>
+                <li><strong>Cautionary letters</strong> and <strong>Conditioned approvals</strong></li>
+              </ul>
+
+              <h3>❗ <strong>I’m in Compliance Management… Now what?</strong></h3>
+
+              <p>
+                Either you <strong>successfully return to a state of compliance within the predefined period</strong>. <br><br>
+
+                Or you <strong>fail to implement the required improvements within the predefined period</strong>, 
+                leading to <strong>Regulatory Action</strong> (suspension of license for X months, license revoked, publication of a statement of non-compliance,… the bad stuff).
+              </p>
+
+              <h3>📈 <strong>How do you get out of it?</strong></h3>
+
+              <p>
+                👉 In short, you need to <strong>regain trust from the CA</strong>. We can help you with that by providing the required additional wind in your sails. 
+                <strong>CAPA Consulting</strong> has first-hand experience in dealing with compliance management. 
+                
+              </p>
+
+              <p><strong>As always, it's better to prevent than to cure.</strong></p>
+
+
+            </div>
+          </div>
+
+        </div>
+       <img class="case-media" src="compliance-whirlpool.png" alt="Image of a ship on the edge of a whirlpool">
+
+
+
+
+
+        <div class="case">
+
+          <div class="case-title text-subtitle-p">✅ <strong>As promised, a deeper dive into the new EU GMP Annex 22 on Artificial Intelligence</strong>
+          </div>
+
+          <div class="case-content">
+            <div class="content-container text-body-p">
+
+              <p>
+                A few weeks ago, I shared some initial thoughts on the upcoming <strong>Annex 22</strong> and its impact on the GMP environment.
+              </p>
+
+              <p>
+                📊 I'm now pleased to share a <strong>dedicated slide deck</strong> that explores Annex 22 in more detail.
+              </p>
+
+              <p>
+                🧠 In addition, a <em>training session</em> will be organised in collaboration with <a href="https://www.upip-vapi.be/">UPIP-VAPI – Belgian Professional Association of Pharmacists</a> working in the Life Science Industry in the coming months, covering:
+              </p>
+              <ul>
+                <li>The new <strong>Annex 22</strong> (AI in GMP)</li>
+                <li>The updated <strong>Annex 11</strong> (Computerised Systems)</li>
+                <li>The revised <strong>Chapter 4</strong> (Documentation)</li>
+              </ul>
+
+              <p>👉 Stay tuned if you’d like to be notified when registration opens.</p>
+
+              <p>
+                If you’re currently working with <strong>AI in a GMP context</strong>, or need support aligning your processes with <strong>Annex 22</strong> 
+                (or any other GMP requirements), feel free to reach out. I’d be happy to assist.
+              </p>
+
+              <p>
+                📌 <em>Note: The annex 22 is currently in draft (stakeholders consultation) until 7 October. 
+                Nonetheless, it is highly unlikely that the content will undergo major changes from here.</em>
+              </p>
+
+              <p>Let’s keep the conversation going. 💬</p>
+
+
+            </div>
+          </div>
+
+        </div>
+       <div class="carousel">
+        <div class="carousel-track">
+          <div class="carousel-slide"><img src="Dia1.jpg" alt="Slide 1"></div>
+          <div class="visually-hidden">
+            <h3>EU GMP New Annex 22 (draft): Artificial Intelligence Overview</h3>
+            <p>This slide introduces Annex 22, focused on Artificial Intelligence within GMP. Date: 29 July 2025.</p>
+          </div>
+          <div class="carousel-slide"><img src="Dia2.jpg" alt="Slide 2"></div>
+          <div class="visually-hidden">
+            <h3>Scope</h3>
+            <p>
+              Key questions to determine if a computerized system is subject to Annex 22:
+              1. Is it used in manufacturing of medicinal products or active substances?
+              2. Does it directly impact patient safety, product quality, or data integrity?
+              3. Is functionality obtained through data training (Machine Learning)?
+              4. Does the model adapt over time with new data (Dynamic Model)?
+              5. Does a specific input always yield a fixed output (Deterministic Model)?
+            </p>
+            <p>Note: If no direct impact, it may be used cautiously with a trained Human In The Loop (HITL), whose performance must be monitored.</p>
+          </div>
+          <div class="carousel-slide"><img src="Dia3.jpg" alt="Slide 3"></div>
+          <div class="visually-hidden">
+            <h3>Principle</h3>
+            <p>
+              The goal is understanding intended use and associated risks. Requirements include:
+              - Close cooperation across all involved parties during algorithm selection, training, validation, testing, and operation.
+              - Adequate qualifications and responsibilities.
+              - Defined and appropriate access levels.
+              - Availability and review of all documentation, even from third parties.
+              - Quality Risk Management must assess risks to patient safety, product quality, and data integrity.
+            </p>
+          </div>
+          <div class="carousel-slide"><img src="Dia4.jpg" alt="Slide 4"></div>
+          <div class="visually-hidden">
+            <h3>Intended Use</h3>
+            <p>This slide defines the scope and purpose for which the AI model is implemented within GMP-regulated environments.</p>
+          </div>
+          <div class="carousel-slide"><img src="Dia5.jpg" alt="Slide 5"></div>
+          <div class="visually-hidden">
+            <h3>Acceptance Criteria</h3>
+            <p>
+              Test metrics (e.g., confusion matrix, accuracy, precision, F1-score) must be defined.
+              Acceptance criteria must be clearly documented and assigned to the SME.
+              If replacing an existing process, model performance must be at least as good as the original process.
+            </p>
+          </div>
+          <div class="carousel-slide"><img src="Dia6.jpg" alt="Slide 6"></div>
+          <div class="visually-hidden">
+            <h3>Test Data</h3>
+            <p>
+              Test data must represent the full sample space, including all subgroups and variations.
+              It should be large enough for statistically reliable metrics.
+              Important considerations:
+              - Pre-processing must be defined.
+              - Any data exclusions must be documented.
+              - AI-generated data is discouraged and must be justified if used.
+              - Labels must be verified with high correctness.
+            </p>
+          </div>
+          <div class="carousel-slide"><img src="Dia7.jpg" alt="Slide 7"></div>
+          <div class="visually-hidden">
+            <h3>Test Data Independence</h3>
+            <p>
+              Test data must be completely independent from training and validation data.
+              Staff who accessed test data should not participate in training/validation.
+              Access must be controlled, logged, and documented.
+              No unauthorized copies of test data are allowed outside the designated repository.
+            </p>
+          </div>
+          <div class="carousel-slide"><img src="Dia8.jpg" alt="Slide 8"></div>
+          <div class="visually-hidden">
+            <h3>Test Execution</h3>
+            <p>
+              The test must confirm model suitability for intended use and detect overfitting or underfitting.
+              A formal test plan is required, including:
+              - Intended use summary.
+              - Pre-defined metrics and criteria.
+              - Reference to test data.
+              - Step-by-step test script.
+              - Metric calculation methods.
+              All deviations and failures must be documented and justified.
+            </p>
+          </div>
+          <div class="carousel-slide"><img src="Dia9.jpg" alt="Slide 9"></div>
+          <div class="visually-hidden">
+            <h3>Explainability</h3>
+            <p>
+              During model testing, the features influencing decisions must be recorded (feature attribution).
+              These features must be reviewed and justified (feature justification).
+              Tools like SHAP values, LIME, or visual explanations may be used.
+            </p>
+          </div>
+          <div class="carousel-slide"><img src="Dia10.jpg" alt="Slide 10"></div>
+          <div class="visually-hidden">
+            <h3>Confidence</h3>
+            <p>
+              This slide likely covers the importance of understanding and evaluating the confidence level of AI model outputs.
+              Confidence metrics or scores should be available and interpreted appropriately to support reliable decision-making.
+              Where confidence is low, human review or additional safeguards may be necessary.
+            </p>
+          </div>
+          <div class="carousel-slide"><img src="Dia11.jpg" alt="Slide 11"></div>
+          <div class="visually-hidden">
+            <h3>Operations</h3>
+            <p>
+              Once a model has passed testing, it must be placed under configuration control before it is deployed in operational environments. This ensures protection against unauthorized changes.
+            </p>
+            <p>
+              Ongoing monitoring of the model’s performance is essential. It should include:
+              - System performance monitoring to detect degradation or anomalies.
+              - Input sample space monitoring to check if incoming data remains within the range the model was trained for.
+              - Detection of data drift, where input distributions shift over time.
+            </p>
+          </div>
+          <div class="carousel-slide"><img src="Dia12.jpg" alt="Slide 12"></div>
+          <div class="visually-hidden">
+            <h3>Need Support?</h3>
+            <p>
+              This closing slide invites viewers to seek support if needed. It implies the availability of resources or contacts to assist with implementation or interpretation of Annex 22 requirements related to Artificial Intelligence.
+            </p>
+          </div>          
+        </div>
+        <div class="carousel-controls">
+          <button id="prevBtn">&#8592;</button> 
+          <button id="nextBtn">&#8594;</button> 
+        </div>
+      </div>
+
+
+
+        <div class="case">
+          <div class="case-title text-subtitle-p">⚠️ <strong>Avoid damage control. Mitigate your risks before they make headlines. 📰</strong></h2>
+          </div>
+          <div class="case-content">
+            <div class="content-container text-body-p">
+            <p>
+                <em>Deviations, Complaints, Out-Of-Specs, Reworks, Recalls, Breakdowns, Rejects,…</em><br>
+                They all come with a <strong>hefty price tag 💸</strong> if you <em>really think about it</em>.
+              </p>
+
+              <p>
+                At <strong>CAPA Consulting</strong>, we create new and optimize existing <strong>QMS systems</strong> based on 
+                <em>independent risk assessments</em>.<br>
+                <strong>The goal?</strong> To keep your operational cost of QA activities as low as possible without compromising compliance. ✅
+              </p>
+
+              <p>
+                📩 <em>Want to hear more?</em><br>
+              </p>
+            </div>
+          </div>
+        </div>
+        <img class="case-media" src="meme-Astronomer-QRM.jpg" alt="Meme of viral Astronomer CEO kiss-cam">
+
+
+
+
+
+        <div class="case" style="border-bottom-left-radius: 8px; border-bottom-right-radius: 8px">
+          <div class="case-title text-subtitle-p" >💡<strong>Significant changes ahead in the realm of GDP</strong>
+          </div>
+          <div class="case-content">
+            <div class="content-container text-body-p">
+              
+            <p>
+              Yesterday, I attended the EIPG webinar on the revision of the <strong>Good Distribution Practice (GDP)</strong> guidelines. Some interesting insights were shared:
+            </p>
+
+            <p>🔍 <strong>Key Takeaways:</strong></p>
+            <ul>
+              <li>GDP will no longer be a <em>guideline</em> — it’s becoming an <strong>EU Regulation</strong>.</li>
+              <li>📌 <strong>Harmonisation</strong> across EU member states is the main objective.</li>
+              <li>The <strong>EMA</strong> is responsible for drafting the text, <strong>based on input from the Inspectors Working Group.</strong></li>
+            </ul>
+
+            <p>👤 <strong>What does this mean for Responsible Persons (RPs)?</strong></p>
+            <ul>
+              <li>For the first time, the role and responsibilities of the RP will be defined directly in <strong>EU legislation</strong>.</li>
+            </ul>
+
+            <p>📜 <strong>New focus areas include:</strong></p>
+            <ul>
+              <li>The use of <strong>AI</strong></li>
+              <li><strong>Cybersecurity</strong> measures (!)</li>
+              <li>Reducing audit fatigue through <strong>Joint Audits</strong></li>
+            </ul>
+
+            <p>📅 <strong>Expected Implementation Timeline:</strong> 2027 – 2028</p>
+
+            <p>👏 Special thanks to <a href="https://www.eipg.eu/">European Industrial Pharmacists Group</a> for organizing this webinar which offered an exclusive look behind the scenes.</p>
+
+            </div>
+          </div>
+        </div>
+
+
+
+
+        <div class="case" style="border-bottom-left-radius: 8px; border-bottom-right-radius: 8px">
+          <div class="case-title text-subtitle-p">🚨 <strong>Major EU GMP Updates in the pipeline: Drafts for Annex 11, Chapter 4 & NEW Annex 22 (AI) Now Open for Consultation</strong>
+          </div>
+          <div class="case-content">
+            <div class="content-container text-body-p">
+
+            <p><strong>Key Details:</strong></p>
+            <ul>
+              <li>📅 <strong>Consultation Window:</strong> July 7 – October 7, 2025</li>
+              <li>🔍 <strong>Scope:</strong>
+                <ul>
+                  <li>Revised <strong>Annex 11</strong> (Computerised Systems)</li>
+                  <li>Updated <strong>Chapter 4</strong> (Documentation)</li>
+                  <li>Brand-new <strong>Annex 22</strong> (AI in Pharma Manufacturing)</li>
+                </ul>
+              </li>
+              <li>🏛️ <strong>Developed by:</strong> EMA & PIC/S to harmonize digital/GMP standards globally.</li>
+            </ul>
+
+            <h3><strong>Highlights of Proposed Changes</strong></h3>
+
+            <h4>🔬 <strong>NEW Annex 22: AI in GMP</strong></h4>
+            <ul>
+              <li><strong>Scope:</strong> Only <em>static, deterministic AI models</em> permitted for critical applications (e.g., product release).</li>
+              <li><strong>Exclusions:</strong> Generative AI/LLMs banned from critical processes; "human-in-the-loop" required for non-critical uses.</li>
+              <li><strong>Critical Rules:</strong> Model explainability (e.g., SHAP/LIME), confidence scoring, and lifecycle monitoring.</li>
+            </ul>
+
+            <h4>🔒 <strong>Revised Annex 11: Computerised Systems</strong></h4>
+            <ul>
+              <li><strong>Security:</strong> Mandates MFA, penetration testing, and network segmentation.</li>
+              <li><strong>Data Integrity:</strong> Audit trails now <em>required</em> (not risk-based).</li>
+              <li><strong>Quality Integration:</strong> Direct links to Pharmaceutical Quality Systems (PQS) for deviations/CAPA.</li>
+            </ul>
+
+            <h4>📄 <strong>Revised Chapter 4: Documentation</strong></h4>
+            <ul>
+              <li><strong>ALCOA++ Principles:</strong> "Traceable + Enduring" standards for <em>all</em> data (text, images, audio).</li>
+              <li><strong>Hybrid Systems:</strong> Clear governance for electronic signatures and cloud-based solutions.</li>
+              <li><strong>Lifecycle Control:</strong> Risk-based retention/disposal protocols.</li>
+            </ul>
+
+            <h3><strong>Why This Matters</strong></h3>
+            <p>
+              These updates modernize EU GMP for the digital age — integrating AI governance, cybersecurity rigor, and end-to-end data integrity. Annex 22 sets a pioneering standard for trustworthy AI in pharma.
+            </p>
+
+            <p>🔜 <strong>Coming Soon:</strong> I’ll break down the implications of each proposed change in more detail. <em>Stay tuned!</em></p>
+
+            </div>
+          </div>
+        </div>
+
+
+
+
+
+
+        <div class="case" style="border-bottom-left-radius: 8px; border-bottom-right-radius: 8px">
+          <div class="case-title text-subtitle-p">🚀 <strong>Proactive vs. Reactive Quality: Stop Fighting Fires — Start Preventing Them</strong>
+          </div>
+          <div class="case-content">
+            <div class="content-container text-body-p">
+              
+
+            <p><em>(Less “Oops” — more “Aaaah!”)</em></p>
+
+            <p>
+              Waiting for problems to hit wastes time, money, and can jeopardize patient safety. Instead, shift to a <strong>proactive quality mindset</strong> — where issues are prevented before they happen. 
+              It’s a game-changer for <strong>compliance</strong> and <strong>efficiency of your QMS.</strong>
+            </p>
+
+            <h3>🔍 <strong>Key Contrasts:</strong></h3>
+            <ul>
+              <li><strong>Reactive:</strong> Occurrence → Detection → Correction <br />(High cost, Always late, Firefighting mode)</li>
+              <li><strong>Proactive:</strong> Assess → Prevent → Review <br />(Low cost, Forward-thinking, Quality-driven culture)</li>
+            </ul>
+
+            <h3>✅ <strong>Why Proactive Wins:</strong></h3>
+            <ul>
+              <li><strong>Cost Savings</strong> – Prevention slashes correction costs and waste</li>
+              <li><strong>Safety & Compliance</strong> – Fewer deviations and failures</li>
+              <li><strong>Regulatory Alignment</strong> – Most modern GxP guidelines support and encourage risk-based strategies</li>
+            </ul>
+
+            <h3>👉 <strong>Shift Your Mindset:</strong></h3>
+            <p>
+              Go from “<em>Are we compliant enough?</em>” to “<em>How do we prevent failure tomorrow?</em>”
+            </p>
+
+            <p>
+              💬 Interested in going proactive? <br />
+            </p>
+
+            <p>
+              Need tailored support? <strong>CAPA Consulting</strong> can help optimize your Quality System.<br />
+            </p>
+
+
+
+            </div>
+          </div>
+        </div>
+
+
+
+        <div class="case">
+          <div class="case-title text-subtitle-p"><strong>Two weeks after launching CAPA Consulting, I found myself in China - Leading an EU GMP audit at a sterile manufacturing site with over 1,200 employees.</strong> 🌍✈️
+          </div>
+          <div class="case-content">
+            <div class="content-container text-body-p">
+              
+              <p>
+                It was an incredible experience:<br />
+                An international project, a top-tier facility, and the opportunity to work alongside two brilliant co-auditors (and now, new friends).
+              </p>
+
+              <p>
+                Audits aren’t just about compliance — they’re moments of <strong>cross-pollination</strong>.<br />
+                I learned a lot.<br />
+                I shared a lot.<br />
+                And most rewarding of all: I witnessed teams thinking <em>together</em> to solve findings not by adding more procedures, but by <strong>improving the design</strong> of the existing system.
+              </p>
+
+              <p><strong>That's real quality culture in action.</strong> 🙌</p>
+
+              <p>
+                Beyond the audit, I gained a deeper appreciation for the local culture — The hospitality, work ethic, and the commitment to continuous improvement truly stood out.
+              </p>
+
+              <p>
+                If you’re looking for support with <strong>EU GMP</strong> or <strong>GDP audits</strong> — whether in Europe or abroad — don’t hesitate to reach out. I’d be happy to support you.
+              </p>
+
+            </div>
+          </div>
+        </div>
+        <img class="case-media" src="audit-china.jpg" alt="Selfie of me in Shanghai airport">
+
+
+
+        <div class="case">
+          <div class="case-title text-subtitle-p"><strong>Yesterday, I attended the GDP/RP refresher training organised by <a href="https://www.upip-vapi.be/">UPIP-VAPI</a> at <a href="https://www.clinigengroup.com/">Clinigen</a></strong> 
+          </div>
+          <div class="case-content">
+            <div class="content-container text-body-p">
+            <p>it was a great reminder of how essential training is in maintaining a strong quality culture.</p>
+
+           <p>As outlined in the GDP guidelines:<br>
+              <em>"Personnel should receive initial and continuing training relevant to their role…. The responsible person should also maintain their competence in GDP through regular training."</em>
+            </p>
+
+            <p>It's a simple statement — but there’s a lot behind it.</p>
+
+            <p>📚 <strong><em>Training is not just a requirement — it's a backbone of quality.</em></strong><br>
+              That perfect SOP is useless if stakeholders don’t know what’s in it, or worse, don’t follow it. That’s why training should never be treated as a checkbox exercise.
+            </p>
+
+            <p><strong><em>What resonated most?</em></strong> The real-world case studies. Let’s be honest: reality loves throwing curveballs ⚾️, and applying GDP principles often stretches beyond the written guidelines.</p>
+
+            <p>👏 Special thanks to Frank Peeters, Ludwig Everaert and Rizovsky Mounir for organising such a valuable event!</p>
+
+            <p>🔍 <strong><em>Do you struggle with training in your organisation?</em></strong><br>
+              Whether it's engagement, consistency, or real-world application — let’s talk. I’d love to hear where your challenges lie and explore how we can help.
+            </p>
+
+            <p><strong><em>P.S. Are you active as RP?</em></strong> Don’t forget to attend a GDP refresher training frequently — it’s a detail that inspectors always check during GDP inspections.</p>
+
+            </div>
+          </div>
+        </div>
+        <img class="case-media" src="RP-training.jpg" alt="Image of classroom during training">
+      </div>
+
+	</div>
+  <div class="main-container-inner-3">
+    <div class="sub-container-inner-4">
+      <h2 class="text-top-title-p selector2">Got a question?</h2>
+      <p class="text-body-p selector3">Get in touch via the link below.
+      </p>
+      <div class="button-layout-div">
+        <a href="/contact" class="button-layout">Contact us</a>
+      </div>
+    </div>
+  </div>
+
+</main>
+
+<footer class="footer-container-outer" role="contentinfo">
+	<div class="footer-container-inner">
+		<div class="sub-container-footer-top">
+
+			<div class="sub-sub-container-footer-top">
+				<div class="footer-text-left-row-1">
+					<p class="bold">CAPA Consulting</p>
+					<p class="bold">BE1022.648.333</p>
+				</div>
+				<div class="footer-text-left-row-2">
+					<p class="footer-text-left-row-2">nicolas@CAPAconsulting.be</p>
+					<img src="telefoonnummer.PNG" class="antibototics" alt="Telephone number">
+				</div>
+			</div>
+			<div class="footer-text-middle">
+				<a href="/terms-of-use" class="footer-text-right">Terms of use</a>
+			</div>
+			<div class="footer-text-middle">
+				<p class="footer-text-middle"></p>
+			</div>
+			<div class="footer-text-middle">
+				<a href="/privacy-policy" class="footer-text-right">Privacy Policy</a>
+			</div>
+			<div class="sub-sub-container-footer-top">
+				<a class="footer-text-right bold" id="backToTop" style="cursor: pointer;">Back to top</a>
+				<p class="footer-text-right">CAPA Consulting copyrights</p>
+			</div>
+		</div>
+		<div class="sub-container-footer-bottom">
+			<a href="/index" class="footer-logo"><img src="logo-footer.png" class="footer-logo"></a>
+		</div>
+	</div>
+</footer>
+
+<script>
+  document.getElementById('backToTop').addEventListener('click', function () {
+    gsap.to(window, { duration: 1, scrollTo: 0, ease: "power3.inOut" });
+  });
+</script>
+
+<script>
+  document.addEventListener("DOMContentLoaded", () => {
+    const elements = document.querySelectorAll('.fade-in-up');
+    elements.forEach((el, index) => {
+      el.style.animationDelay = `${index * 100}ms`;
+    });
+  });
+</script>
+
+<script>
+    gsap.registerPlugin(ScrollTrigger);
+    ScrollTrigger.matchMedia({
+      "(min-width: 769px)": function() {
+
+        gsap.from(".symbol-top", {
+          scrollTrigger: {
+            trigger: ".symbol-top",
+            start: "top 70%",
+            toggleActions: "play none none none",
+          },
+          opacity: 0,
+          y: 30,
+          scale: 1,
+          duration: 0.7,
+        });
+
+        gsap.from(".text-top-title-div", {
+          scrollTrigger: {
+            trigger: ".text-top-title-div",
+            start: "top 80%",
+            toggleActions: "play none none none",
+          },
+          opacity: 0,
+          y: 30,
+          scale: 1,
+          duration: 0.7,
+          delay: 0.2,
+        });
+
+        gsap.from(".main-container-inner-2", {
+          scrollTrigger: {
+            trigger: ".main-container-inner-2",
+            start: "top 80%",
+            toggleActions: "play none none none",
+          },
+          opacity: 0,
+          y: 30,
+          scale: 1,
+          duration: 0.7,
+          delay: 0.4,
+        });
+
+        gsap.from(".case", {
+          scrollTrigger: {
+            trigger: ".main-container-inner-2",
+            start: "top 80%",
+            toggleActions: "play none none none",
+          },
+          opacity: 0,
+          y: 30,
+          scale: 1,
+          duration: 0.7,
+        });
+
+
+        gsap.from(".selector2", {
+          scrollTrigger: {
+            trigger: ".selector2",
+            start: "top 80%",
+            toggleActions: "play none none none",
+          },
+          opacity: 0,
+          y: 30,
+          scale: 1,
+          duration: 0.7,
+        });
+
+       gsap.from(".selector3", {
+          scrollTrigger: {
+            trigger: ".selector3",
+            start: "top 80%",
+            toggleActions: "play none none none",
+          },
+          opacity: 0,
+          y: 30,
+          scale: 1,
+          duration: 0.7,
+        });
+       gsap.from(".button-layout-div", {
+          scrollTrigger: {
+            trigger: ".selector3",
+            start: "top 80%",
+            toggleActions: "play none none none",
+          },
+          opacity: 0,
+          y: 30,
+          scale: 1,
+          duration: 0.7,
+          delay:0.3,
+        });
+
+
+      },
+
+      "(max-width: 769px)": function() {
+
+        gsap.from(".symbol-top", {
+          scrollTrigger: {
+            trigger: ".symbol-top",
+            start: "top 70%",
+            toggleActions: "play none none none",
+          },
+          opacity: 0,
+          y: 30,
+          scale: 1,
+          duration: 0.7,
+        });
+
+        gsap.from(".text-top-title-div", {
+          scrollTrigger: {
+            trigger: ".text-top-title-div",
+            start: "top 80%",
+            toggleActions: "play none none none",
+          },
+          opacity: 0,
+          y: 30,
+          scale: 1,
+          duration: 0.7,
+          delay: 0.2,
+        });
+
+        gsap.from(".main-container-inner-2", {
+          scrollTrigger: {
+            trigger: ".main-container-inner-2",
+            start: "top 80%",
+            toggleActions: "play none none none",
+          },
+          opacity: 0,
+          y: 30,
+          scale: 1,
+          duration: 0.7,
+          delay: 0.4,
+        });
+
+        gsap.from(".case", {
+          scrollTrigger: {
+            trigger: ".case",
+            start: "top 80%",
+            toggleActions: "play none none none",
+          },
+          opacity: 0,
+          y: 30,
+          scale: 1,
+          duration: 0.7,
+        });
+
+
+        gsap.from(".selector2", {
+          scrollTrigger: {
+            trigger: ".selector2",
+            start: "top 80%",
+            toggleActions: "play none none none",
+          },
+          opacity: 0,
+          y: 30,
+          scale: 1,
+          duration: 0.7,
+        });
+
+       gsap.from(".selector3", {
+          scrollTrigger: {
+            trigger: ".selector3",
+            start: "top 80%",
+            toggleActions: "play none none none",
+          },
+          opacity: 0,
+          y: 30,
+          scale: 1,
+          duration: 0.7,
+        });
+       gsap.from(".button-layout-div", {
+          scrollTrigger: {
+            trigger: ".selector3",
+            start: "top 80%",
+            toggleActions: "play none none none",
+          },
+          opacity: 0,
+          y: 30,
+          scale: 1,
+          duration: 0.7,
+          delay:0.3,
+        });
+
+
+      },
+   });
+</script>
+<script>
+  document.querySelectorAll('.case-title, .case-media').forEach(title => {
+    title.addEventListener('click', () => {
+      let caseElement;
+
+      // Determine the associated .case element
+      if (title.classList.contains('case-media')) {
+        // The image is *after* the .case, so go to the previous sibling
+        caseElement = title.previousElementSibling;
+      } else {
+        // The title is *inside* the .case
+        caseElement = title.closest('.case');
+      }
+
+      const content = caseElement.querySelector('.case-content');
+      const isOpen = caseElement.classList.contains('open');
+
+      if (isOpen) {
+        content.style.maxHeight = '0';
+        content.style.paddingTop = '0';
+        content.style.paddingBottom = '0';
+        caseElement.classList.remove('open');
+      } else {
+        content.style.maxHeight = content.scrollHeight + 'px';
+        content.style.paddingTop = '15px';
+        content.style.paddingBottom = '15px';
+        caseElement.classList.add('open');
+      }
+    });
+  });
+</script>
+
+<script>
+  const track = document.querySelector('.carousel-track');
+  const slides = document.querySelectorAll('.carousel-slide');
+  const nextBtn = document.getElementById('nextBtn');
+  const prevBtn = document.getElementById('prevBtn');
+  const carousel = document.querySelector('.carousel');
+
+  let currentIndex = 0;
+
+  function setSlideWidths() {
+    const carouselWidth = carousel.clientWidth;
+    slides.forEach(slide => {
+      slide.style.width = `${carouselWidth}px`;
+    });
+    goToSlide(currentIndex); // Recalculate position after resize
+  }
+
+  function goToSlide(index) {
+    const slideWidth = slides[0].clientWidth;
+    const x = -index * slideWidth;
+    gsap.to(track, { x, duration: 0.6, ease: "power2.inOut" });
+  }
+
+  nextBtn.addEventListener('click', () => {
+    currentIndex = (currentIndex + 1) % slides.length;
+    goToSlide(currentIndex);
+  });
+
+  prevBtn.addEventListener('click', () => {
+    currentIndex = (currentIndex - 1 + slides.length) % slides.length;
+    goToSlide(currentIndex);
+  });
+
+  window.addEventListener('resize', setSlideWidths);
+
+  // Initial setup
+  setSlideWidths();
+</script>
+
+
+
+</body>
+
+</html>
