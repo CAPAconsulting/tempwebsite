@@ -286,7 +286,7 @@
 
   .sub-container-inner-3 {
     display: grid;
-    grid-template-rows: 24.5% 70% 5.5%;
+    grid-template-rows: auto auto auto;
     grid-column: 2/3;
   }
 
@@ -313,13 +313,6 @@
     justify-self: stretch;
   }
 
-  .sub-sub-container-inner-3 {
-    display: grid;
-    grid-column: 1/3;
-    grid-row: 2/3;
-    grid-template-columns: 0.30fr 0.70fr;
-    grid-template-rows: repeat(9, 1fr);
-  }
 
   .symbol-top {
     grid-row: 1/3;
@@ -477,6 +470,53 @@
     align-self: center;
   }
 
+  .symbol-body-3-1-img {
+    grid-row: 1/2;
+    grid-column: 1/2;
+    max-height: 60px;
+    justify-self: center;
+    padding: 5px;
+    align-self: center;
+  }
+
+
+  .container_services {
+    display: grid;
+    grid-template-columns: 50% 50%;
+  }
+
+  .container_left {
+    display: grid;
+    grid-template-rows: 7em 4em auto 5em;
+    background-color: white;
+    margin-right: 10px;
+    border-radius: 12px;
+    margin-bottom:  20px;
+    padding: 10px;
+  }
+
+  .container_right {
+    display: grid;
+    grid-template-rows: 7em 4em auto 5em;
+    background-color: white;
+    margin-left: 10px;
+    border-radius: 12px;
+    margin-bottom:  20px;
+    padding: 10px;
+  }
+
+  .text-body-3-center {
+    font-family: "Inter Tight", sans-serif;
+    font-size: 28px;
+    font-weight: 400;
+    color: #1d1d1f;
+    align-self: center;
+    justify-self: center;
+    padding: 10px;
+    margin: 0;
+  }
+
+
   .text-body-2-4-div {
     grid-row: 5/6;
     grid-column: 2/4;
@@ -489,6 +529,12 @@
 
   .button-layout-div {
     grid-row: 3/4;
+    place-self: center;
+    margin: 50px;
+  }
+
+  .button-layout-div-2 {
+    grid-row: 4/5;
     place-self: center;
     margin: 50px;
   }
@@ -519,7 +565,15 @@
     .main-container-outer {  
       grid-template-rows: auto;
     }
-    
+
+  .container_services {
+    display: grid;
+    grid-template-columns: auto;
+  }
+  .container_left, .container_right {
+    margin: 10px;
+  }
+
     .header-container-inner {
       grid-template-columns: repeat(6, auto);
     }
@@ -664,13 +718,13 @@
 				<h1 class="text-top-title-p"><b>QA <br>Services</b></h1>
 			</div>
 			<div class="text-top-subtitle-div">
-				<p class="text-top-subtitle-p">Strategic QA Support rooted in Expertise,<br>Built for Compliance.</p>
+				<p class="text-top-subtitle-p">Rooted in Expertise. Built for Compliance.</p>
 			</div>
 			<div class="text-top-body1-div">
-				<p class="text-top-body-p">In highly regulated industries, Quality Assurance (QA) plays a central role in <b>ensuring compliance and maintaining process reliability</b>. With over 10 years of hands-on experience in GMP, GDP, MDR, ISO13485, ISO22000 and other international standards, we help companies developing, implementing, and maintaining QA systems that are robust, audit-ready, and aligned with regulatory expectations.</p>
+				<p class="text-top-body-p">Quality Assurance (QA) plays a central role in <b>ensuring compliance and maintaining process reliability</b>. With over 10 years of hands-on experience in GMP, GDP, MDR, ISO13485, ISO22000 and other international standards, we help companies developing, implementing, and maintaining QA systems that make sense and are aligned with regulatory expectations.</p>
 			</div>
 			<div class="text-top-body2-div">
-				<p class="text-top-body-p">Whether you need <b>interim QA support, full-scale implementation of a Quality Management System, or assistance addressing compliance gaps</b> following audits or staff shortages, our tailored approach ensures your quality operations are efficient, future-proof, and fully compliant.</p>
+				<p class="text-top-body-p">Whether you need <b>interim QA support, full-scale implementation of a Quality Management System, or assistance addressing compliance gaps</b>, we make sure your quality operations are efficient, fully compliant and future-proof.</p>
 			</div>
 		</div>
 	</div>
@@ -684,56 +738,81 @@
 			<p class="text-body-2-left"><b>Industry experience</b></p>
 
 			<div class="text-body-2-1-div">
-				<p class="text-body-2-p">With <b>10+ years of operational QA experience</b>, we’ve worked across both <b>distribution and production environments</b>, supporting companies in the pharma, food, and other life sciences sectors. We don’t just follow regulations — <b>we understand them and apply them strategically</b>, ensuring compliance is both complete and appropriately integrated into your business operations without adding unnecessary complexity.</p>
+				<p class="text-body-2-p">With <b>10+ years of operational QA experience</b>, we’ve worked across both <b>distribution and production environments</b>, supporting companies in the pharma, and other life sciences sectors. We don’t just blindly follow regulations, <b>we understand them and apply them strategically</b>, ensuring compliance is both complete and appropriately integrated into your business operations without the unnecessary complexity.</p>
 			</div>
 
 			<img src="symbol-Tailored.png" alt="Symbol Tailored" class="symbol-body-2-2-img">
 			<p class="text-body-2-2-div text-body-2-right"><b>Tailored, Analytical and Tech-Enabled</b></p>
 
 			<div class="text-body-2-3-div">
-				<p class="text-body-2-p">We <b>listen first, act second</b>, and always tailor the solutions around your business needs. <br>
-				Our work is driven by data — for us, <b>“What does the data say?”</b> is the starting point for tackling complex questions. We go <b>beyond spreadsheets</b>, using code (including Python) to analyze large datasets and uncover patterns that inform <b>smarter decisions</b>.<br>
-				In short: Your company's individuality isn't a hurdle — it's the foundation on which we build.</p>		
+				<p class="text-body-2-p">We ensure that the solution fit your business needs by <b>listening first</b>. <br> <br>
+			<b><em>“What does the data say?”</em></b> is often overlooked when addressing complex issues. Where applicable, our guidance is supported by data analysis. These capabilities go <b>beyond spreadsheets</b>, using code (mainly Python) to analyze large and complex datasets to uncover insights that lead to <b>smarter decisions</b>.</p>
 			</div>
 			<img src="symbol-End-to-end.png" alt="Symbol End-to-end" class="symbol-body-2-3-img">
 			<p class="text-body-2-4-div text-body-2-left"><b>End-to-End QA Services</b></p>
 			<div class="text-body-2-5-div">
-				<p class="text-body-2-p">From <b>training junior QA staff</b> to preparing for <b>GMP, GDP, HACCP, ISO13485, ISO9001  or any other QA related audits</b>, we help you maintain or scale your quality system. We provide <b>fully outsourced QA support or team extension</b> with expertise and fresh insights, ensuring continued compliance even during temporary absences.</p>
+				<p class="text-body-2-p">From <b>training junior QA staff</b> to preparing for <b>GMP, GDP, HACCP, ISO13485  or any other QA related audits</b>, we help you maintain or scale your quality system. We provide <b>fully outsourced QA support or team extension</b> with expertise and fresh insights, ensuring continued compliance even during temporary absences.</p>
 			</div>		
 		</div>	
 	</div>
 
 	<div class="main-container-inner-gray-2">
 		<div class="sub-container-inner-3">
-			<h2 class="text-title-2-p selector">Our core services.</h2>		
-			<div class="sub-sub-container-inner-3 menu-background-3">
-				<p class="text-body-2-p"><b>QMS Setup</b></p>
-				<p class="text-body-2-p">Design, refine and implement your Quality Management System from scratch.</p>
-				<p class="text-body-2-p"><b>QMS Support</b></p>
-				<p class="text-body-2-p">Assist your team in refining existing processes.</p>
-				<p class="text-body-2-p"><b>Compliance management <br>Support</b></p>
-				<p class="text-body-2-p">Assist your team in getting back on track.</p>
-				<p class="text-body-2-p"><b>Training</b></p>
-				<p class="text-body-2-p">Proper trainingsmanagement is a core element of QA. Improve internal knowledge.</p>
-				<p class="text-body-2-p"><b>Periodic QA Tasks & <br>Task Automation</b></p>
-				<p class="text-body-2-p">Outsource your recurring (and often time consuming) QA tasks – such as PQR drafting, requalification, mock recall execution, MRM preparation etc. Where the benefits outweigh the costs, task automation comes into play, which improves efficiency and avoids human error.</p>
-				<p class="text-body-2-p"><b>Audit Preparation & <br>Remediation</b></p>
-				<p class="text-body-2-p">Comprehensive support for internal/external audits and inspections, including follow-up and CAPA strategy design.</p>
-				<p class="text-body-2-p"><b>Deviation, Complaint & <br> CAPA handling</b></p>
-				<p class="text-body-2-p">These activities often present themselves in waves. Temporary support can help reduce/remove backlogs and adhere to predefined timelines.</p>
-				<p class="text-body-2-p"><b>Supplier Qualification & <br>Audit Execution</b></p>
-				<p class="text-body-2-p">End-to-end supplier qualification processes and audits that unburden your internal resources.</p>
-				<p class="text-body-2-p"><b>Legislation Interpretation & <br>Strategic Advise</b></p>
-				<p class="text-body-2-p">We help you interpret and apply complex regulations.</p>
+			<h2 class="text-title-2-p selector">Our core services.</h2>
 
-			</div>
+      <div class="container_services">
+        <div class="container_left">
+          <img src="QA-as-a-S.png" alt="Symbol Quality as a Service" class="symbol-body-3-1-img">
+          <h3 class="text-body-3-center"><b>QA-as-a-Service</b></h3>
+          <p class="text-body-2-p">
+            Every business has unique Quality Assurance needs. Whether you are looking to outsource QA management, or need support regarding specific elements of your QMS, we’re here to help.
+            <br><br><br>
+            <b>Services include, but are not limited to:</b><br> <br>
+          
+              <strong>Training:</strong> On specific topics (for example periodic GMP/GDP refreshers) or complete outsourcing of your training management. <br><br>
+              <strong>Audits:</strong> Both internal audits and supplier audits worldwide. <br> <br>
+              <strong>Backlog resolution:</strong> A temporary extra set of hands to resolve backlogs on deviations, complaints, CAPA’s and Change Controls. <br> <br>
+              <strong>Document management:</strong> Creating, reviewing and maintaining your documents and records in accordance with Good Documentation Practices. <br><br>
+              <strong>Supplier & Customer qualification:</strong> Continuously maintaining your supplier and customer qualification status. <br><br>
+              <strong>Validation & Qualification activities:</strong> For equipment, premises, processes or computerized systems. <br> <br>
+              <strong>Compliance management support:</strong> Avoid Regulatory Action by acting now. <br> <br><br>
+              Have a specific activity in mind but it’s not listed? Let us know what you’re looking for and we’ll get back to you within 24 hours. <br><br>
+          </p>
+              <div class="button-layout-div-2">
+              <a href="/contact" class="button-layout">Get in touch!</a>
+              </div>
+          
+
+
+        </div>
+        <div class="container_right">
+          <img src="QMS-setup.png" alt="Symbol QMS setup" class="symbol-body-3-1-img">
+          <h3 class="text-body-3-center"><b>Fast-Track QMS Setup</b></h3>
+          <p class="text-body-2-p">
+
+            Speed is crucial when setting up a QMS. We’ll guide you through a rapid, yet thorough, process to get you certified as fast as possible.
+            <br><br><br><br>
+              <b>How we work:</b><br> <br>
+              <strong>Phase I. &nbsp;&nbsp;&nbsp;&nbsp; Development of essential documentation:</strong> <br> Based on our templates (that were challenged in past inspections) as a starting point. These are further tailored in close collaboration with your Subject Matter Experts.<br> <br>
+              <strong>Phase II. &nbsp;&nbsp;&nbsp;&nbsp; Training of staff & Implementation:</strong> <br>Training is a very important element for the success of your QMS. Not just to pass the inspection but also to ensure your company’s operations. <br> <br>
+              <strong>Phase III. &nbsp;&nbsp;&nbsp;&nbsp; Continued support:</strong><br>Our collaboration doesn’t have to end once you’re certified. We provide ongoing support to help you maintain and continuously improve your QMS. <br> <br>
+          </p>
+              <div class="button-layout-div-2">
+              <a href="/contact" class="button-layout">Request in quote</a>
+              </div>
+        </div>
+
+
+
+
+      </div>
 		</div>
 	</div>
 
 	<div class="sub-container-inner-4">
 		<h2 class="text-title-2-p center selector2">Let's navigate QA together.</h2>
-		<p class="text-body-2-p selector3">Our role is to help you <b>confidently manage risks</b> and meet regulatory expectations with <b>long-term vision</b> — not just short-term fixes. In close collaboration, with modern tools and a results-driven mindset, we provide support in every step of your QA journey. <br><br>
-		Get in touch to discuss how we can strengthen your quality systems and unburden your team.
+		<p class="text-body-2-p selector3">Our role is to help you <b>confidently manage risks</b> and meet regulatory expectations with <b>long-term vision</b>. In close collaboration, with modern tools and a results-driven mindset, we provide support in every step of your QA journey. <br><br>
+		Get in touch to discuss how we can strengthen your quality system and support your team.
 		</p>
 		<div class="button-layout-div">
 			<a href="/contact" class="button-layout">Contact us</a>
@@ -896,9 +975,9 @@
           duration: 0.7,
         });
 
-        gsap.from(".sub-sub-container-inner-3", {
+        gsap.from(".container_left", {
           scrollTrigger: {
-            trigger: ".sub-sub-container-inner-3",
+            trigger: ".container_left",
             start: "top 80%",
             toggleActions: "play none none none",
           },
@@ -906,6 +985,19 @@
           y: 30,
           scale: 1,
           duration: 0.7,
+        });
+
+        gsap.from(".container_right", {
+          scrollTrigger: {
+            trigger: ".container_left",
+            start: "top 80%",
+            toggleActions: "play none none none",
+          },
+          opacity: 0,
+          y: 30,
+          scale: 1,
+          duration: 0.7,
+          delay: 0.6,
         });
 
         gsap.from(".selector2", {
@@ -1049,9 +1141,21 @@
           duration: 0.7,
         });
 
-        gsap.from(".sub-sub-container-inner-3", {
+        gsap.from(".container_left", {
           scrollTrigger: {
-            trigger: ".sub-sub-container-inner-3",
+            trigger: ".container_left",
+            start: "top 80%",
+            toggleActions: "play none none none",
+          },
+          opacity: 0,
+          y: 30,
+          scale: 1,
+          duration: 0.7,
+        });
+
+        gsap.from(".container_right", {
+          scrollTrigger: {
+            trigger: ".container_right",
             start: "top 80%",
             toggleActions: "play none none none",
           },
