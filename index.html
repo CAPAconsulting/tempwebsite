@@ -274,7 +274,7 @@
 			display: grid;
 			grid-row: 2/3;
 			grid-column: 2/3;
-		  grid-template-columns: repeat(4, 1fr);
+		  	grid-template-columns: repeat(4, 1fr);
 		  	padding-bottom: 70px;
 		  	padding-top: 20px;
 
@@ -282,7 +282,7 @@
 
 		.sub-sub-container-inner-2 {
 			display: grid;
-		  grid-template-rows: 1fr;
+		  grid-template-rows: auto;
 		}
 
 		.sub-sub-container-inner-3 {
@@ -386,9 +386,9 @@
 		}
 
 		.readmore-div{
-			justify-self: start;
+			justify-self: center;
 			align-self: center;
-			padding-top: 30px;
+			padding-top: 50px;
 			padding-bottom: 30px;
 		}
 
@@ -417,6 +417,24 @@
 		.pos5{}
 		.pos6{}
 		.pos7{}
+
+		  .button-layout {
+	  background-color: transparent;
+		border: 1px solid #1d1d1f;
+	  font-family: "Inter Tight", sans-serif;
+	  font-size: 17px;
+	  color: #6e6e73;
+	  padding: 10px;
+	  border-radius: 20px;
+	  border-color: #6e6e73;
+	  text-decoration: none;
+	  justify-self: center;
+	}
+
+	.button-layout:hover {
+	  background-color: #f5f5f7;
+	  cursor: pointer;
+	}
 
 		@media (max-width: 935px) {
 		  .sub-container-inner-2-gray,
@@ -461,7 +479,17 @@
 			grid-template-rows: auto auto;
 		  	grid-template-columns: 1fr minmax(0,1100px) 1fr;
 			grid-column: 1/4;
-		  	background-color: #f5f5f7;
+		  	background-color: #f5f5f7;}
+		  	
+		  	.sub-sub-sub-container-inner-2 {
+		  		grid-template-rows: auto auto auto;
+		  	}
+		  	.service-div{
+		  		grid-template-rows: auto auto;
+		  	}
+		  	.product-div{
+		  		grid-template-rows: auto auto;
+		  	}
 		}
 		}
 	</style>
@@ -521,7 +549,7 @@
 						<p class="service-p">Task outsourcing or team extension, according to your organization's needs.</p>
 					</div>
 					<div class="readmore-div">
-						<a href="/QA-services" class="readmore-a">Discover our QA services</a>	
+						<a href="/QA-services" class="button-layout">Discover our QA Services</a>	
 					</div>
 				</div>
 			</div>
@@ -535,7 +563,7 @@
 						<p class="service-p">The Qualified Person and Responsible Person bridge the gap between your site and the federal agency - Ensure compliance with EU GMP and GDP requirements and outsource EU GMP batch certification.</p>
 					</div>
 					<div class="readmore-div">
-						<a href="/QPRP-services" class="readmore-a">Discover our QP/RP services</a>	
+						<a href="/QPRP-services" class="button-layout">Discover our QP/RP Services</a>	
 					</div>
 				</div>
 			</div>
@@ -549,7 +577,7 @@
 						<p class="service-p">Are you doing too much, or not enough? We help you strike the right balance. Empirically, risk-based and without compromise to compliance.</p>
 					</div>
 					<div class="readmore-div">
-						<a href="/QA-optimization" class="readmore-a">Discover our QA Optimization strategy</a>	
+						<a href="/QA-optimization" class="button-layout">Discover QA Optimization</a>	
 					</div>
 				</div>
 			</div>
