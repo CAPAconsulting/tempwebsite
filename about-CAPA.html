@@ -296,7 +296,7 @@
 
   .sub-sub-container-inner-2 {
     display: grid;
-    grid-template-rows: 10.5% 37.5% 12% 13% 27%;
+    grid-template-rows: 7em 4em 5em auto 5em auto;
     grid-row: 2/3;
   }
 
@@ -309,6 +309,14 @@
     margin-bottom: 50px;
     padding-bottom: 20px;
   }
+
+    .divider {
+      width: 60px;
+      height: 1px;
+      background: #333;
+      margin: 20px auto;
+      border-radius: 2px;
+    }
 
   .text-top-title-p {
     font-family: "Inter Tight", sans-serif;
@@ -409,7 +417,7 @@
     font-size: 32px;
     font-weight: 500;
     color: #1d1d1f;
-    padding: 10px 10px 20px;
+    padding: 10px 10px;
     margin: 0;
     justify-self: center;
     align-self: end;
@@ -420,10 +428,10 @@
     font-size: 2em;
     font-optical-sizing: auto;
     font-weight: 300;
-    font-style: italic;
     align-self: center;
     justify-self: center;
-    padding: 10px 10px 20px;
+    padding: 10px 10px;
+    margin: 0px;
   }
 
   @media (max-width: 768px) {
@@ -459,10 +467,6 @@
       grid-template-rows: auto auto auto;
     }
 
-    .sub-sub-container-inner-2,
-    .sub-sub-container-inner-3 {
-      grid-template-columns: 1fr !important;
-    }
 
     .symbol-top {
       width: 100px;
@@ -473,11 +477,6 @@
       grid-template-columns: 1fr;
     }
 
-    .sub-container-inner-gray-1,
-    .sub-container-inner-2,
-    .sub-sub-container-inner-2 {
-      grid-template-columns: 1fr;
-    }
 
     .symbol-top {
       width: 80px;
@@ -502,12 +501,7 @@
     }
 
     .sub-container-inner-2 {
-      grid-template-rows: auto auto auto;
       padding-bottom: 10px;
-    }
-
-    .sub-sub-container-inner-2 {
-      grid-template-rows: auto auto;
     }
 
     .main-kappa {
@@ -611,13 +605,14 @@
 					<img src="symbol-CAPA-quality.png" alt="Symbol QA" class="symbols">
 					<h1 class="title-1-left">CAPA in QA</h1>
 					<div class="body-1-div">		
-						<p class="text-body-p">CAPA, or <b>Corrective Action Preventive Action,</b> is more than just a response mechanism — it's the engine of continuous improvement in the world of Quality Assurance (QA). It is the structured process where <b>all quality signals converge</b>: deviations, complaints, inspection findings, or risks that exceed the acceptance threshold. A <b>CAPA defines a concrete action</b> plan based on root cause analysis, aimed at improvement, with a specified due date and a designated responsible. <br>
-						In essence, action is the catalyst for improvement. A lack of action inevitably leads to decline. CAPA ensures that quality issues, whether current or potential, are addressed, leaving no room for ambiguity or inertia.
-						<br><br>
+						<p class="text-body-p">CAPA, or Corrective Action Preventive Action, is the <b>response mechanism to all quality signals</b>: deviations, complaints, inspection findings, or risks that exceed your acceptance threshold.
+            <br><br>
 						<b>Corrective Action</b><br>
-						A corrective action is a <b>reactive measure</b> taken after the occurrence of a nonconformity, defect, or other undesirable situation. Its primary purpose is to <b>prevent recurrence</b>. This form of action ensures that past issues do not repeat, creating a feedback loop for continuous improvement. <br><br>
+						A corrective action is a <b>reactive</b> measure, taken in response to the occurrence of any unwanted situation. Its purpose is to <b>prevent recurrence</b>. <br><br>
 						<b>Preventive Action</b><br>
-						A preventive action is <b>proactive</b>, designed to identify and <b>mitigate potential issues before they occur</b>. This is often driven by risk assessments, trend analyses, or findings from internal self-inspections. By anticipating problems and taking early measures, preventive actions strengthen the robustness of a QA system and reduce the likelihood of future deviations.
+						A preventive action is a <b>proactive</b> measure, defined to mitigate issues before occurrence. These actions are typically initiated following risk assessments or trend analyses. Its purpose is to <b>reduce/avoid the occurrence</b> of future deviations and complaints.
+            <br> <br>
+            In other words: CAPA is the force behind <em>continuous improvement</em>.
 						</p>
 					</div>
 				</div>
@@ -627,14 +622,14 @@
 					<img src="symbol-KAPPA-statistics.png" alt="Symbol Statistics" class="symbols">
 
 					<div class="body-1-div">		
-						<p class="text-body-p">Cohen’s kappa (also known the <b>inter-rater reliability</b>) is a fundamental concept in statistics. It is the <b>degree to which two independent observers reach the same conclusion</b>. 
-						In our context, this applies to the alignment between <b>your organization’s interpretation of the law</b> (with our help) and <b>that of regulatory bodies</b> such as the FAMHP (Federal Agency for Medicines and Health Products). <br><br>
+						<p class="text-body-p">Cohen’s kappa (also known as the <b>inter-rater reliability</b>), is the <b>degree to which two independent observers reach the same conclusion</b>. 
+						In our context, this applies to the alignment between <b>your organization’s interpretation of the law</b> and <b>that of regulatory bodies</b> such as the FAMHP (Federal Agency for Medicines and Health Products). <br><br>
 
-						Through inspection experience, we understand how authorities perceive industry standards. This often goes beyond the written law or guidelines; it's about how these are interpreted and <b>where consensus lies across the industry</b>. While legislation forms the foundation, the FAMHP evaluates how this legislation is implemented and whether your interpretation aligns with theirs. <br><br>
+						Through inspection experience, we understand how authorities perceive industry standards. This often goes beyond the written law or guidelines. It's about how these are interpreted and <b>where consensus lies across the industry</b>. While legislation forms the foundation, regulatory bodies evaluate how this legislation is implemented and whether your interpretation aligns with theirs. <br><br>
 
-						Our goal at CAPA is to <b>maximize inter-rater reliability between clients and regulators</b> — ensuring that your interpretation of the law holds up under inspection, while doing so in the most economically efficient manner possible. <br><br>
+						Our goal at CAPA is to <b>maximize inter-rater reliability between our clients and regulators</b> in the economically most efficient manner possible. <br><br>
 
-						However, it’s not just about high inter-rater reliability; it’s about adopting an analytical, statistically sound approach. Important decisions should never be based on gut feeling alone. Even if luck is temporarily on your side, decisions made without relying on data will, in the long run, lead to suboptimal outcomes. <br>
+						However, it’s not just about high inter-rater reliability. It’s about adopting an analytical, statistically sound approach. Important decisions should never be based on gut feeling alone. Even if luck is temporarily on your side, decisions made without relying on data will, in the long run, lead to suboptimal outcomes. <br>
 
 						</p>
 						</div>				
@@ -646,19 +641,15 @@
 				<h1 class="text-title-p">CAPA as a company</h1>
 
 				<div class="sub-sub-container-inner-2 menu-background-2">
-					<h2 class="title-2-center">Who we are and what drives us</h2>
-					<p class="text-body-p">With over 10 years of hands-on experience in Quality Assurance (QA), CAPA's foundation is built on experience in diverse company sizes - from small enterprises to multinational organizations - allowing us to approach <b>quality challenges from multiple perspectives</b>. <br><br>
-
-					This professional expertise is reinforced by an academic background as Industrial Pharmacist, graduated from Ghent University. But what truly drives CAPA is an intrinsic curiosity — the inherent need to ask "Why?" and then, just as importantly, "How can it be done better?“<br><br>
-
-					That drive to improve goes beyond compliance. It’s rooted in analytical thinking, statistics, and a practical, hands-on approach to data — not limited to spreadsheets. This blend of technical knowledge and genuine curiosity is CAPA.
-					</p>
-					<h2 class="title-2-bottom">Our Mission & Vision</h2>
-					<p class="title-2-italic">"Quality is an investment, not a cost.”</p>
-					<p class="text-body-p">Our mission is to help companies navigate the increasingly complex landscape of regulatory requirements, not by simply “checking the boxes,” but by <b>embedding quality into the core</b> of your organization in a way that is <b>economically optimized</b>. 
+          <img src="vision.png" alt="Symbol company vision" class="symbols">
+					<h2 class="title-2-bottom">Mission & Vision</h2>
+            <div class="divider" style="align-self: end;"></div>
+					<p class="title-2-italic"><em>Quality is an investment, not a cost.</em></p>
+            <div class="divider"></div>
+					<p class="text-body-p">Our mission is to help you navigate the increasingly complex landscape of regulatory requirements, not by simply “checking the boxes,” but by <b>embedding quality into the core</b> of your organization's processes in such a way that it is <b>economically optimized</b>.
 					<br>
 					<br>
-					In the industry, <b>compliance equals trust</b>. Achieving full compliance is straightforward when resources are unlimited. But reaching and maintaining compliance in a way that adds value and enhances financial performance — that’s the real challenge. And that’s where our focus lies: <b>using quality as a lever for performance, not as a barrier</b>.
+					In the industry, <b>compliance equals trust</b>. Achieving full compliance is straightforward when resources are unlimited. The real challenge is reaching and maintaining compliance in a way that adds value and enhances financial performance. That’s where our focus lies: <b>using quality as a catalyst for performance</b>.
 					</p>
 					
 				</div>
