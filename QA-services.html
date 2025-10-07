@@ -241,7 +241,7 @@
   .main-container-outer {  
     display: grid;
     grid-template-columns: 1fr minmax(0,1100px) 1fr;
-    grid-template-rows: 90vh auto auto auto;
+    grid-template-rows: auto auto auto auto;
     background-color: white;
     grid-gap: 12px;
     overflow-x: hidden;
@@ -265,7 +265,7 @@
 
   .sub-container-inner-1 {
     display: grid;
-    grid-template-rows: 0.13fr 0.15fr 0.2fr 0.2fr 0.32fr;
+    grid-template-rows: 13% 15% 50% 22%;
     grid-template-columns: 0.25fr 1fr;
     grid-column: 2/3;
   }
@@ -334,6 +334,9 @@
     font-size: 32px;
     font-weight: 500;
     color: #1d1d1f;
+    margin:  0px;
+    padding: 0px;
+
   }
 
   .text-top-subtitle-div {
@@ -355,18 +358,11 @@
   .text-top-body1-div {
     grid-row: 3/4;
     grid-column: 1/3;
-    align-self: end;
-    justify-self: start;
-    padding-top: 20px;
-  }
-
-  .text-top-body2-div {
-    grid-row: 4/5;
-    grid-column: 1/3;
     align-self: center;
     justify-self: start;
-    padding-top: 20px;
+    padding: 10px;
   }
+
 
   .text-top-body-p {
     font-family: "Inter Tight", sans-serif;
@@ -631,7 +627,7 @@
     }
 
     .symbol-top {
-      width: 100px;
+      max-height:  100%;
       justify-self: right;
       grid-row: 1/2;
       padding: 10px 20px;
@@ -721,9 +717,7 @@
 				<p class="text-top-subtitle-p">Rooted in Expertise. Built for Compliance.</p>
 			</div>
 			<div class="text-top-body1-div">
-				<p class="text-top-body-p">Quality Assurance (QA) plays a central role in <b>ensuring compliance and maintaining process reliability</b>. With over 10 years of hands-on experience in GMP, GDP, MDR, ISO13485, ISO22000 and other international standards, we help companies developing, implementing, and maintaining QA systems that make sense and are aligned with regulatory expectations.</p>
-			</div>
-			<div class="text-top-body2-div">
+				<p class="text-top-body-p">Quality Assurance (QA) plays a central role in <b>ensuring compliance and maintaining process reliability</b>. With over 10 years of hands-on experience in GMP, GDP, MDR, ISO13485, ISO22000 and other international standards, we help companies developing, implementing, and maintaining QA systems that make sense and are aligned with regulatory expectations.</p> <br>
 				<p class="text-top-body-p">Whether you need <b>interim QA support, full-scale implementation of a Quality Management System, or assistance addressing compliance gaps</b>, we make sure your quality operations are efficient, fully compliant and future-proof.</p>
 			</div>
 		</div>
